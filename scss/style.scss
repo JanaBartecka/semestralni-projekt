@@ -1,0 +1,48 @@
+@use 'abstracts/basics';
+// @use 'abstracts/variables';
+@use 'components/header';
+@use 'components/menu';
+@use 'components/logo';
+@use 'components/carousel';
+
+@use 'components/regular-events';
+
+
+@use 'components/contact';
+
+
+
+
+
+
+
+
+// .obrazekdole {
+//     width: 100vw;
+//     height: calc(100vw*1066/1400);
+//     background-image: url(images/Kilimanjaro_my.svg);
+//     background-size: 100vw calc(100vw*1066/1400);
+//     background-repeat: no-repeat;
+//     background-color: white;
+//     bottom: 0;
+// }
+
+
+
+// .hornikontakt {
+//     display: flex;
+//     flex-direction: row;
+//     flex-grow: 1;
+//     flex-shrink: 0;
+//     justify-content: space-around;
+// }
+
+
+
+// main {
+//     background-color: yellow;
+// }
+
+// footer {
+//     background-color: blue;
+// }

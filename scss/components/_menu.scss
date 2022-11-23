@@ -1,0 +1,44 @@
+@use '../abstracts/variables' as v;
+
+.menu {
+    // margin: 20px auto 20px auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    display: block;
+    max-width: 900px;
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        margin: 0 auto 0 auto;
+        list-style: none;
+        font-size: 18px;
+        background-color: v.$primaryColor;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 0;
+    }
+
+    &__item {
+        // margin: 20px;
+        // padding: 20px;
+        display: inline-block;
+    }
+
+    &__link {
+        display: block;
+        text-decoration: none;
+        color: black;
+        padding: 20px;
+    }
+
+    &__link:hover {
+        color: white;
+        padding: 20px;
+        background-color: blue;
+        color: v.$primaryColor;
+    }
+}

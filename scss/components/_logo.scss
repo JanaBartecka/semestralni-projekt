@@ -1,0 +1,57 @@
+header {
+
+    &--picture-left {
+        left: 100px;
+    }
+
+    &--picture-right {
+        right: 100px;
+    }
+
+    @keyframes mrk {
+        0% {transform: scaleY(1)}
+        10% {transform: scaleY(0.1)}
+        50% {transform: scaleY(1)}
+        100% {transform: scaleY(1)}
+    }
+
+    @keyframes toceniocivlevo {
+        0% {transform: rotate(0)}
+        80% {transform: rotate(0)}
+        85% {transform: rotate(90deg)}
+        90% {transform: rotate(180deg)}
+        95% {transform: rotate(270deg)}
+        100% {transform: rotate(360deg)}
+    }
+
+    @keyframes toceniocivpravo {
+        0% {transform: rotate(0)}
+        80% {transform: rotate(0)}
+        85% {transform: rotate(-90deg)}
+        90% {transform: rotate(-180deg)}
+        95% {transform: rotate(-270deg)}
+        100% {transform: rotate(-360deg)}
+    }
+
+    #g2290 {
+        animation: mrk 4s infinite both ease;
+        transform-origin: 0 281.77px;
+    }
+
+    #path3163 {
+        animation: toceniocivlevo 4s infinite both ease;
+        transform-origin: 390px 281.77px;
+    }
+
+    #path3161 {
+        animation: toceniocivpravo 4s infinite both ease;
+        transform-origin: 440px 281.77px;
+    }
+
+    &--picture-left, &--picture-right {
+        height: 50%;
+        position: absolute;
+        bottom: 0;
+        display: none;
+    }
+}

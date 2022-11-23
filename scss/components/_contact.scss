@@ -1,0 +1,40 @@
+@use '../abstracts/variables' as v;
+
+.footer {
+    background-image: url(/images/Kilimanjaro_my1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    &__contact {
+        background-color: v.$primaryColor;
+        margin-left: v.$spacer-small;
+        margin-right: v.$spacer-small;
+        border-top-right-radius: v.$spacer-middle;
+        border-bottom-left-radius: v.$spacer-middle;
+        margin: 0 auto 240px auto;
+        padding: v.$spacer-middle;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        max-width: 500px;
+    }
+
+    &__title {
+        display: block;
+        margin-top: v.$spacer-middle;
+        margin-bottom: v.$spacer-small;
+    }
+
+    &__info, &__map {
+    }
+
+    &__copyright {
+        padding: v.$spacer-middle;
+        background-color: grey;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 300;
+        color: white;
+        transform: translateY(50px);
+    }
+}

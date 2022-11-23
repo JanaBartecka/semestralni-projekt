@@ -1,0 +1,30 @@
+@use '../abstracts/variables' as v;
+
+.carousel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 20px;
+
+    &--picture-1 {
+        background-image: url(/images/carousel-1.png);
+        background-size: cover;
+    }
+    
+    &__event-name {
+        font-size: 18px;
+        color:v.$carouselFontColor;
+        // background-color: $primaryColor;
+        margin-right: auto;
+        text-align: left;
+    }
+    
+    &__event-date {
+        color: v.$carouselFontColor;
+        font-size: 28px;
+        font-weight: 600;
+    }
+    
+}

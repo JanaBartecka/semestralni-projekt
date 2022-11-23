@@ -1,0 +1,56 @@
+@use '../abstracts/variables' as v;
+
+.regular-event {
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,auto);
+    row-gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    &__card {
+        background-color: v.$primaryColor;
+        border: 1px solid black;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        
+    }
+
+    &__day {
+        background-color: v.$secondaryColor;
+        padding: 20px;
+        border-top-right-radius: 15px;
+        color: white;
+    }
+
+    &--hyperlink {
+        text-decoration: none;
+        color: black;
+    }
+
+    &__program p:first-child {
+        padding-top: 20px;
+    }
+
+    &__program p:nth-child(even) {
+        padding-bottom: 20px;
+    }
+
+    &__program p:nth-child(even)::after {
+        background-color: v.$primaryColor; 
+        border: 1px dashed black;
+        bottom: 0;
+        content: '';
+        display: block;
+        height: 1px;
+        transform: translate(10%,0);
+        width: 80%;
+        margin-top: v.$spacer-small;
+    }
+
+    &__program p:nth-child(odd) {
+        padding-bottom: 10px;
+    }
+}

@@ -1,0 +1,27 @@
+@use '../abstracts/variables' as v;
+
+.recent-event {
+
+    &__card {
+        max-width: calc(100vw - 2*v.$spacer-small);
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: v.$spacer-big;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding: 20px;
+        background-color: v.$primaryColor;
+        border: 1px solid black;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    &--hyperlink {
+        text-decoration: none;
+        color: black;
+    }
+    &__image {
+        width: 100%;
+    }
+}

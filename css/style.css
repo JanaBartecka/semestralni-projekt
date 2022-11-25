@@ -50,9 +50,17 @@ h3 {
   font-size: 24px;
 }
 
+.body--background {
+  height: 100%;
+  background-image: url(/images/obloha1.svg), url(/images/Kilimanjaro_my1.svg);
+  background-repeat: repeat-x, no-repeat;
+  background-color: white;
+  background-position: left top, bottom;
+  background-size: contain, contain;
+}
+
 .header {
   width: 100%;
-  height: 1000px;
   position: relative;
   padding-bottom: 50px;
 }
@@ -61,14 +69,6 @@ h3 {
   grid-template-columns: 1fr;
   grid-template-rows: 130px 300px;
   gap: 40px;
-}
-.header--background {
-  height: 100%;
-  background-image: url(/images/obloha1.svg);
-  background-repeat: repeat-x;
-  background-color: white;
-  background-position: left top;
-  background-size: contain;
 }
 
 .menu {
@@ -107,10 +107,10 @@ h3 {
   color: #FFCC00;
 }
 
-header--picture-left {
+.header--picture-left {
   left: 100px;
 }
-header--picture-right {
+.header--picture-right {
   right: 100px;
 }
 @-webkit-keyframes mrk {
@@ -221,22 +221,22 @@ header--picture-right {
     transform: rotate(-360deg);
   }
 }
-header #g2290 {
+.header #g2290 {
   -webkit-animation: mrk 4s infinite both ease;
           animation: mrk 4s infinite both ease;
   transform-origin: 0 281.77px;
 }
-header #path3163 {
+.header #path3163 {
   -webkit-animation: toceniocivlevo 4s infinite both ease;
           animation: toceniocivlevo 4s infinite both ease;
   transform-origin: 390px 281.77px;
 }
-header #path3161 {
+.header #path3161 {
   -webkit-animation: toceniocivpravo 4s infinite both ease;
           animation: toceniocivpravo 4s infinite both ease;
   transform-origin: 440px 281.77px;
 }
-header--picture-left, header--picture-right {
+.header--picture-left, .header--picture-right {
   height: 50%;
   position: absolute;
   bottom: 0;
@@ -268,7 +268,7 @@ header--picture-left, header--picture-right {
 }
 
 .regular-event {
-  max-width: 500px;
+  max-width: calc(100vw - 20px);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, auto);
@@ -314,19 +314,85 @@ header--picture-left, header--picture-right {
   padding-bottom: 10px;
 }
 
-.footer {
-  background-image: url(/images/Kilimanjaro_my1.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
+.recent-event__card {
+  max-width: calc(100vw - 20px);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #FFCC00;
+  border: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
+.recent-event--hyperlink {
+  text-decoration: none;
+  color: black;
+}
+.recent-event__image {
+  width: 100%;
+}
+
+.separator {
+  width: 100%;
+  height: 50px;
+  background-image: url(/images/stopy.svg);
+  background-repeat: repeat-x;
+  background-size: contain;
+  margin: 40px;
+  transform: translateX(-40px);
+}
+
+.aboutus__card {
+  max-width: calc(100vw - 20px);
+  padding: 20px;
+  background-color: #FFCC00;
+  border: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.aboutus--hyperlink {
+  text-decoration: none;
+  color: black;
+}
+
+.sponsors {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  border: 1px solid black;
+  max-width: calc(100vw - 20px);
+  align-items: center;
+  justify-items: center;
+  max-width: calc(100vw - 20px);
+  margin-left: auto;
+  margin-right: auto;
+}
+.sponsors__img {
+  width: 100%;
+  margin: auto;
+}
+.sponsors__item {
+  padding: 20px;
+}
+.sponsors div + div {
+  border-left: 1px solid black;
+  margin: auto;
+}
+
 .footer__contact {
   background-color: #FFCC00;
   margin-left: 10px;
   margin-right: 10px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  margin: 0 auto 240px auto;
+  margin: 0 auto 25vw auto;
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);

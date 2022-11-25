@@ -1,7 +1,7 @@
 @use '../abstracts/variables' as v;
 
 .regular-event {
-    max-width: 500px;
+    max-width: calc(100vw - 2*v.$spacer-small);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5,auto);

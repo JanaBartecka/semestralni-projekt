@@ -1,12 +1,17 @@
 @use 'abstracts/basics';
 // @use 'abstracts/variables';
+@use 'components/background';
 @use 'components/header';
 @use 'components/menu';
 @use 'components/logo';
 @use 'components/carousel';
 
 @use 'components/regular-events';
+@use 'components/recent-events';
+@use 'components/separator';
+@use 'components/onas';
 
+@use 'components/sponsors';
 
 @use 'components/contact';
 

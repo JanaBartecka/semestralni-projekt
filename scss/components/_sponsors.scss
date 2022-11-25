@@ -1,0 +1,30 @@
+@use '../abstracts/variables' as v;
+
+.sponsors {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr;
+    border: 1px solid black;
+    max-width: calc(100vw - 2*v.$spacer-small);
+    align-items: center;
+    justify-items: center;
+    max-width: calc(100vw - 2*v.$spacer-small);
+    margin-left: auto;
+    margin-right: auto;
+
+    &__img {
+        width: 100%;
+        margin: auto;
+    }
+
+    &__item {
+        padding: v.$spacer-middle;
+    }
+
+    & div + div {
+        border-left: 1px solid black;
+        margin: auto;
+    }
+
+}
+

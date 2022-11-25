@@ -1,0 +1,11 @@
+@use '../abstracts/variables' as v;
+
+.separator {
+    width: 100%;
+    height: 50px;
+    background-image: url(/images/stopy.svg);
+    background-repeat: repeat-x;
+    background-size: contain;
+    margin: v.$spacer-big;
+    transform: translateX(calc(-1*v.$spacer-big));
+}

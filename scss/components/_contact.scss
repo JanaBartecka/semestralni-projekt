@@ -1,10 +1,6 @@
 @use '../abstracts/variables' as v;
 
 .footer {
-    background-image: url(/images/Kilimanjaro_my1.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
 
     &__contact {
         background-color: v.$primaryColor;
@@ -12,7 +8,7 @@
         margin-right: v.$spacer-small;
         border-top-right-radius: v.$spacer-middle;
         border-bottom-left-radius: v.$spacer-middle;
-        margin: 0 auto 240px auto;
+        margin: 0 auto 25vw auto;
         padding: v.$spacer-middle;
         display: grid;
         grid-template-columns: repeat(2,1fr);

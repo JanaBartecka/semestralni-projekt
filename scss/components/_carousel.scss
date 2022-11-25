@@ -6,7 +6,7 @@
     flex-direction: column;
     align-items: stretch;
     justify-content: space-between;
-    padding: 20px;
+    padding: v.$spacer-middle;
 
     &--picture-1 {
         background-image: url(/images/carousel-1.png);
@@ -14,7 +14,7 @@
     }
     
     &__event-name {
-        font-size: 18px;
+        font-size: 1.2rem;
         color:v.$carouselFontColor;
         // background-color: $primaryColor;
         margin-right: auto;
@@ -23,7 +23,7 @@
     
     &__event-date {
         color: v.$carouselFontColor;
-        font-size: 28px;
+        font-size: 1.5rem;
         font-weight: 600;
     }
     

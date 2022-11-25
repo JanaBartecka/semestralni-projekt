@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5,auto);
-    row-gap: 20px;
+    row-gap: v.$spacer-middle;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -13,15 +13,15 @@
     &__card {
         background-color: v.$primaryColor;
         border: 1px solid black;
-        border-top-right-radius: 15px;
-        border-bottom-left-radius: 15px;
+        border-top-right-radius: v.$radius;
+        border-bottom-left-radius: v.$radius;
         
     }
 
     &__day {
         background-color: v.$secondaryColor;
-        padding: 20px;
-        border-top-right-radius: 15px;
+        padding: v.$spacer-middle;
+        border-top-right-radius: v.$radius;
         color: white;
     }
 
@@ -31,11 +31,11 @@
     }
 
     &__program p:first-child {
-        padding-top: 20px;
+        padding-top: v.$spacer-middle;
     }
 
     &__program p:nth-child(even) {
-        padding-bottom: 20px;
+        padding-bottom: v.$spacer-middle;
     }
 
     &__program p:nth-child(even)::after {
@@ -51,6 +51,6 @@
     }
 
     &__program p:nth-child(odd) {
-        padding-bottom: 10px;
+        padding-bottom: v.$spacer-small;
     }
 }

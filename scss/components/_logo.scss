@@ -1,11 +1,8 @@
 .header {
 
-    &--picture-left {
-        left: 100px;
-    }
 
     &--picture-right {
-        right: 100px;
+        display: none;
     }
 
     @keyframes mrk {
@@ -49,9 +46,14 @@
     }
 
     &--picture-left, &--picture-right {
-        height: 50%;
+        height: 20%;
         position: absolute;
         bottom: 0;
-        display: none;
     }
+
+    &--picture-left {
+        left: 60vw;
+        top: 10px;
+    }
+
 }

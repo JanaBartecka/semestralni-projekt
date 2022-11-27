@@ -18,6 +18,15 @@
 
 
     {% include 'partials/contact.njk' %}
-    
+    <script>
+// Modal window
+document.querySelector("#popup-open-btn").addEventListener("click",function(){
+  document.querySelector(".popup").classList.add("active");
+});
+document.querySelector(".popup .popup__btn-close").addEventListener("click",function(){
+  document.querySelector(".popup").classList.remove("active");
+});
+
+    </script>
 </body>
 </html>

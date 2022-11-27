@@ -1,15 +1,27 @@
 <h2>Program na tento týden</h2>
 <div class="regular-event">
-    <a href="/" class="regular-event--hyperlink"><div class="regular-event__card">
+    <div class="regular-event__card" id="myBtn">
         <div class="regular-event__day"><h3>Pondělí</h3></div>
         <div class="regular-event__program">
             <p>9:00 - 12:00</p>
             <p>Volná Herna</p>
             <p>15:00 - 15:45</p>
             <p>Hrátky s Angličtinou</p>
+            {% include 'partials/btn-moreinfo.njk' %}
         </div>
     </div>
-</a>
+
+    <!-- The Modal -->
+<div class="popup">
+    <div class="content">
+        <div class="popup__btn-close">&times;</div>
+        <h1>test popup</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio laborum iste consequuntur fuga quod tenetur iure, est nobis numquam eum minima voluptatibus eveniet magni sequi nulla quos provident et velit!
+        Repudiandae dolorum eum impedit quas? Sint praesentium aut maiores laboriosam enim, reprehenderit illum, saepe ratione aperiam illo aspernatur quas qui possimus molestiae reiciendis! Cumque, architecto exercitationem laudantium quidem molestias vero.
+        Est ducimus cumque cupiditate? Aut, praesentium nostrum itaque dolor est illo cupiditate nulla assumenda iure impedit eum architecto ea dignissimos asperiores ipsa laudantium perferendis, eaque sequi, nihil eos quo minima?</p>
+    </div>
+</div>
+
 
     <div class="regular-event__card">
         <div class="regular-event__day"><h3></h3>Úterý</h3></div>

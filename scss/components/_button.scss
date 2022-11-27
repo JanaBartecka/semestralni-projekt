@@ -1,0 +1,7 @@
+@use '../abstracts/variables' as v;
+
+.button {
+    padding: v.$spacer-middle;
+    background-color: v.$buttonColor;
+}
+

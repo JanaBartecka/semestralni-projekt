@@ -1,24 +1,31 @@
 @use '../abstracts/variables' as v;
 
-.carousel {
+.hero {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: space-between;
+    height: 300px;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: stretch;
+    // justify-content: flex-end;
     padding: v.$spacer-middle;
 
-    &--picture-1 {
-        background-image: url(/images/carousel-1.png);
-        background-size: cover;
-    }
+    // &__picture-1 {
+    //     background-image: url(/images/carousel-1.png);
+    //     background-size: cover;
+    //     background-position: bottom center;
+    // }
+
+    // &__picture-2 {
+    //     background-image: url(/images/carousel-2.png);
+    //     background-size: cover;
+    //     background-position: bottom center;
+    // }
     
     &__event-name {
         font-size: 1.2rem;
         color:v.$carouselFontColor;
-        // background-color: $primaryColor;
-        margin-right: auto;
-        text-align: left;
+        // margin-right: auto;
+        // text-align: left;
     }
     
     &__event-date {

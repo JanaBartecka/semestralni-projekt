@@ -2,7 +2,7 @@
 
 .menu {
     padding-top: v.$spacer-big;
-    max-width: 56rem;
+    // max-width: v.$minwidth-computer;
     z-index: 2;
 
     &__list {
@@ -50,13 +50,13 @@
         display: block;
     }
 
-    @media  screen and (max-width:v.$minwidth-mobil) {
+    @media  screen and (max-width:v.$minwidth-computer) {
         &__checkbox:checked ~ &__list {
             display:block;
         }
     }
 
-    @media  screen and (min-width:v.$minwidth-mobil) {
+    @media  screen and (min-width:v.$minwidth-computer) {
         &__toggler {
             display:none;
         }
@@ -69,5 +69,8 @@
             border-bottom: 0;
             border-right: 1px solid white;
         }
+
+        // margin-left: auto;
+        // margin-right: auto;
     }
 }

@@ -15,7 +15,7 @@
         border: 1px solid black;
         border-top-right-radius: v.$radius;
         border-bottom-left-radius: v.$radius;
-        
+        padding-bottom: v.$spacer-middle;
     }
 
     &__day {
@@ -30,10 +30,10 @@
     }
 
     &__program p:nth-child(even) {
-        padding-bottom: v.$spacer-middle;
+        padding-bottom: v.$spacer-small;
     }
 
-    &__program p:nth-child(even)::after {
+    &__program p:nth-child(2n+3)::before {
         background-color: v.$primaryColor; 
         border: 1px dashed black;
         bottom: 0;
@@ -42,11 +42,15 @@
         height: 1px;
         transform: translate(10%,0);
         width: 80%;
-        margin-top: v.$spacer-small;
+        margin-bottom: v.$spacer-small;
     }
 
     &__program p:nth-child(odd) {
         padding-bottom: v.$spacer-small;
+    }
+
+    &__program p:last-child {
+        padding-bottom: v.$spacer-middle;
     }
 }
 
@@ -57,7 +61,7 @@
     width: 100%;
     height: 0%;
     transform: translateY(-50%);
-    background: rgb(87, 16, 16);
+    background: v.$buttonColor;
     overflow: hidden;
     z-index: 3;
 }

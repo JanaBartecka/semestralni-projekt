@@ -1,37 +1,60 @@
 <h2>Program na tento týden</h2>
 <div class="regular-event">
-    <div class="regular-event__card" id="myBtn">
+    <div class="regular-event__card">
         <div class="regular-event__day"><h3>Pondělí</h3></div>
         <div class="regular-event__program">
             <p>9:00 - 12:00</p>
             <p>Volná Herna</p>
             <p>15:00 - 15:45</p>
             <p>Hrátky s Angličtinou</p>
-            {% include 'partials/btn-moreinfo.njk' %}
+            <button class="button" id="popup-open-btn1">Více informací</button>
         </div>
     </div>
 
     <!-- The Modal -->
-<div class="popup">
+<div class="popup popup1">
     <div class="content">
-        <div class="popup__btn-close">&times;</div>
-        <h1>test popup</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio laborum iste consequuntur fuga quod tenetur iure, est nobis numquam eum minima voluptatibus eveniet magni sequi nulla quos provident et velit!
-        Repudiandae dolorum eum impedit quas? Sint praesentium aut maiores laboriosam enim, reprehenderit illum, saepe ratione aperiam illo aspernatur quas qui possimus molestiae reiciendis! Cumque, architecto exercitationem laudantium quidem molestias vero.
-        Est ducimus cumque cupiditate? Aut, praesentium nostrum itaque dolor est illo cupiditate nulla assumenda iure impedit eum architecto ea dignissimos asperiores ipsa laudantium perferendis, eaque sequi, nihil eos quo minima?</p>
+        <div class="popup__btn-close popup__btn-close1">&times;</div>
+        <h1>Volná Herna</h1>
+        <p>Pondělí 9-12, Úterý 16-18, Čtvrtek 9-12 a 16-18, Pátek 9-12</p>
+        <p>nějaký text</p>
+        <h1>Hrátky s Angličtinou</h1>
+        <p>Pondělí 15-15:45</p>
+        <p>Kroužek angličtiny je určen pro děti cca od 3 do 6 let. Seznámení s cizím jazykem probíhá pod vedením Mgr. Barbory Janečkové hravou formou písniček, básniček 
+            a pohybových aktivit. Hlavním cílem kroužku je přirozené osvojování angličtiny za pomoci hry. Cena: 50 Kč. Kapacita: 7 dětí. Přihlášení přes rezervační systém (odkaz na FB, webu).
+            </p>
     </div>
 </div>
 
+<!-- //////////////////////////////utery//////////////////////////////// -->
 
     <div class="regular-event__card">
-        <div class="regular-event__day"><h3></h3>Úterý</h3></div>
+        <div class="regular-event__day"><h3>Úterý</h3></div>
         <div class="regular-event__program">
             <p>9:00 - 10:00</p>
             <p>Cvičení maminek s miminky</p>
             <p>16:00 - 18:00</p>
             <p>Volná Herna</p>
+            <button class="button" id="popup-open-btn2">Více informací</button>
+            <!-- {% include 'partials/btn-moreinfo.njk' %} -->
         </div>
     </div>
+
+        <!-- The Modal -->
+<div class="popup popup2">
+    <div class="content">
+        <div class="popup__btn-close popup__btn-close2">&times;</div>
+        <h1>Cvičení maminek s miminky</h1>
+        <p>Úterý 9-10</p>
+        <p>Společné cvičení s maminkou přirozeně prohlubuje vazbu mezi rodičem a dítětem. Také miminku přináší nové podněty a stimuly, které příznivě působí na jeho psychomotorický vývoj. Cena: 50 Kč. Přihlášení přes rezervační systém.  </p>
+        {% include 'partials/btn-apply.njk' %}
+        <h1>Volná Herna</h1>
+        <p>Pondělí 9-12, Úterý 16-18, Čtvrtek 9-12 a 16-18, Pátek 9-12</p>
+        <p>nejaky text</p>
+    </div>
+</div>
+
+<!-- //////////////////////////////streda//////////////////////////////// -->
 
     <div class="regular-event__card">
         <div class="regular-event__day"><h3>Středa</h3></div>
@@ -42,8 +65,29 @@
             <p>Setkávání Se Zvířátky (v areálu Nový Svět)</p>
             <p>15:00 - 16:00</p>
             <p>Rytmíček</p>
+            <button class="button" id="popup-open-btn3">Více informací</button>
         </div>
     </div>
+
+            <!-- The Modal -->
+<div class="popup popup3">
+    <div class="content">
+        <div class="popup__btn-close popup__btn-close3">&times;</div>
+        <h1>Klub Žirafky Ve Školce</h1>
+        <p>Středa 9-10</p>
+        <p>Hlídání dětí, které funguje jako školka nanečisto, má za cíl sloužit rodičům pro vyřízení nezbytných záležitostí. Zábavný program, hry, písničky, říkanky, výtvarné, tvořivé 
+            a pohybové činnosti pod vedením dvou laskavých učitelek z mateřské školy. Cena: 100 – 150 Kč dle délky hlídání. Kapacita: 10 dětí. Přihlášení přes rezervační systém.
+        </p>
+        {% include 'partials/btn-apply.njk' %}
+        <!-- {% include 'partials/btn-apply.njk' %} -->
+        <h1>Rytmíček</h1>
+        <p>Středa 15-16</p>
+        <p>Pohybový kroužek pro děti (cca 2 – 4 roky) s doprovodem. Cvičení formou hry a zábavy, kladný vztah k pohybu, nové zážitky a kamarádi pod vedením zkušené lektorky. Kapacita: 7 dětí + rodiče. Cena: 50 Kč. Přihlášení přes rezervační systém.</p>
+        {% include 'partials/btn-apply.njk' %}
+    </div>
+</div>
+
+<!-- ///////////////////////////////ctvrtek/////////////////////////////// -->
 
     <div class="regular-event__card">
         <div class="regular-event__day"><h3>Čtvrtek</h3></div>
@@ -52,15 +96,39 @@
             <p>Volná Herna</p>
             <p>16:00 - 18:00</p>
             <p>Volná Herna</p>
+            <button class="button" id="popup-open-btn4">Více informací</button>
         </div>
     </div>
+
+            <!-- The Modal -->
+<div class="popup popup4">
+    <div class="content">
+        <div class="popup__btn-close popup__btn-close4">&times;</div>
+        <h1>Volná Herna</h1>
+        <p>Pondělí 9-12, Úterý 16-18, Čtvrtek 9-12 a 16-18, Pátek 9-12</p>
+        <p>nejaky text</p>
+    </div>
+</div>
+
+<!-- ///////////////////////////////patek/////////////////////////////// -->
 
     <div class="regular-event__card">
         <div class="regular-event__day"><h3>Pátek</h3></div>
         <div class="regular-event__program">
             <p>9:00 - 12:00</p>
             <p>Volná Herna</p>
+            <button class="button" id="popup-open-btn5">Více informací</button>
         </div>
     </div>
+
+            <!-- The Modal -->
+<div class="popup popup5">
+    <div class="content">
+        <div class="popup__btn-close popup__btn-close5">&times;</div>
+        <h1>Volná Herna</h1>
+        <p>Pondělí 9-12, Úterý 16-18, Čtvrtek 9-12 a 16-18, Pátek 9-12</p>
+        <p>nejaky text</p>
+    </div>
+</div>
 
 </div>

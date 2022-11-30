@@ -1,7 +1,11 @@
 @use '../abstracts/variables' as v;
 
 .button {
-    padding: v.$spacer-middle;
+    padding: v.$spacer-small;
     background-color: v.$buttonColor;
+    border-radius: v.$radius;
+    color: white;
+    // font-size: 1.5rem;
+    // font-weight: 400;
 }
 

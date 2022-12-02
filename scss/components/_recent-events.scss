@@ -1,20 +1,28 @@
 @use '../abstracts/variables' as v;
 
 .recent-event {
-
+    padding-top: v.$spacer-big;
     &__card {
         max-width: calc(100vw - 2*v.$spacer-small);
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr 1fr;
         column-gap: v.$spacer-big;
         margin-left: auto;
         margin-right: auto;
-        text-align: center;
+        text-align: left;
         padding: v.$spacer-middle;
         background-color: v.$primaryColor;
-        border: 1px solid black;
         border-top-right-radius: v.$radius;
         border-bottom-left-radius: v.$radius;
+    }
+
+    &__title {
+        text-align: left;
+        padding-bottom: v.$spacer-middle;
+    }
+
+    &__text {
+        line-height: 2;
     }
 
     &--hyperlink {

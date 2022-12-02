@@ -31,18 +31,22 @@ h1 {
 }
 
 h2::after {
-    background-color:  #407BFF;
+    background-color: transparent;
     bottom: 0;
     content: '';
     display: block;
-    height: 2px;
-    transform: translate(50%,0);
-    width: 50px;
+    // height: 2px;
+    padding-top: v.$spacer-small;
+    border-bottom: 6px dotted v.$primaryColor;
+    transform: translate(35vw,0);
+    width: 30vw;
 }
 
 h2 {
     font-weight: 600;
     font-size: 2rem;
+    padding-top: v.$spacer-big;
+    padding-bottom: v.$spacer-big;
 }
 
 h3 {

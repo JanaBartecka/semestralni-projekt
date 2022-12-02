@@ -1,6 +1,6 @@
+@use '../abstracts/variables' as v;
+
 .header {
-
-
     &--picture-right {
         display: none;
     }
@@ -46,14 +46,19 @@
     }
 
     &--picture-left, &--picture-right {
-        height: 20%;
+        height: 8rem;
         position: absolute;
         bottom: 0;
     }
 
     &--picture-left {
         left: 60vw;
-        top: 10px;
+        top: 1rem;
     }
 
+    @media  screen and (min-width:v.$minwidth-computer) { 
+        &--picture-left {
+            left: 90vw;
+        }
+    }
 }

@@ -1,15 +1,15 @@
 @use '../abstracts/variables' as v;
 
 .aboutus {
+
     &__card {
         max-width: calc(100vw - 2*v.$spacer-small);
-        padding: v.$spacer-middle;
         background-color: v.$primaryColor;
-        border: 1px solid black;
         border-top-right-radius: v.$radius;
         border-bottom-left-radius: v.$radius;
         margin-left: auto;
         margin-right: auto;
+        padding: v.$spacer-middle;
     }
 
     &--hyperlink {

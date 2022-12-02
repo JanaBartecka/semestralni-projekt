@@ -1,15 +1,8 @@
+@use '../abstracts/variables' as v;
+
 .header {
     width: 100%;
-    // height: 1000px;
     position: relative;
-    padding-bottom: 50px;
-
-    &--grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 130px 300px;
-    }
-
-
+    padding-bottom: v.$spacer-big;
 }
 

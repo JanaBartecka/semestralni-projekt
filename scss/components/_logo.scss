@@ -52,13 +52,13 @@
     }
 
     &--picture-left {
-        left: 60vw;
+        left: 40vw;
         top: 1rem;
     }
 
     @media  screen and (min-width:v.$minwidth-computer) { 
         &--picture-left {
-            left: 90vw;
+            left: 10vw;
         }
     }
 }

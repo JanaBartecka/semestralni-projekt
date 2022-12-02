@@ -1,11 +1,23 @@
 @use '../abstracts/variables' as v;
 
 .button {
-    padding: v.$spacer-small v.$spacer-middle;
-    background-color: v.$buttonColor;
+    padding: v.$spacer-small 0;
+    border: none;
     border-radius: v.$radius;
+    background-color: v.$buttonColor;
+    cursor: pointer;
+
+    &:hover {
+        background-color: v.$secondaryColor;
+    }
+}
+
+.button__link {
+    padding: v.$spacer-small v.$spacer-big;
     color: white;
     font-size: 1rem;
     font-weight: 500;
+    text-decoration: none;
+
 }
 

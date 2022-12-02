@@ -56,12 +56,22 @@ h3 {
 }
 
 .button {
-  padding: 0.5rem 1.5rem;
-  background-color: #63B4D1;
+  padding: 0.5rem 0;
+  border: none;
   border-radius: 15px;
+  background-color: #63B4D1;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #324376;
+}
+
+.button__link {
+  padding: 0.5rem 2rem;
   color: white;
   font-size: 1rem;
   font-weight: 500;
+  text-decoration: none;
 }
 
 .body--background {
@@ -76,7 +86,6 @@ h3 {
 .header {
   width: 100%;
   position: relative;
-  padding-bottom: 2rem;
 }
 
 .menu {
@@ -113,7 +122,7 @@ h3 {
 .menu__toggler {
   cursor: pointer;
   text-align: left;
-  padding-left: 15vw;
+  padding-left: 85vw;
 }
 .menu__toggler img {
   height: 4rem;
@@ -287,12 +296,12 @@ h3 {
   bottom: 0;
 }
 .header--picture-left {
-  left: 60vw;
+  left: 40vw;
   top: 1rem;
 }
 @media screen and (min-width: 63rem) {
   .header--picture-left {
-    left: 90vw;
+    left: 10vw;
   }
 }
 
@@ -333,17 +342,16 @@ h3 {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, auto);
   row-gap: 1.5rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  grid-template-areas: "monday-grid" "tuesday-grid" "wednesday-grid" "thursday-grid" "friday-grid";
 }
 .regular-event__card {
   background-color: #FFCC00;
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1.5rem;
 }
 .regular-event__day {
   background-color: #324376;
@@ -351,17 +359,13 @@ h3 {
   border-top-right-radius: 15px;
   color: white;
 }
-.regular-event__program p:first-child {
-  padding-top: 1.5rem;
-}
-.regular-event__program p:nth-child(even) {
-  padding-bottom: 0.5rem;
+.regular-event__program p:nth-child(n) {
+  padding: 0.5rem;
 }
 .regular-event__program p:nth-child(odd) {
-  padding: 0.5rem;
   background-color: #E6B800;
 }
-.regular-event__program p:last-child {
+.regular-event__program p:last-of-type {
   padding-bottom: 1.5rem;
 }
 .regular-event__card--monday {
@@ -381,7 +385,6 @@ h3 {
 }
 @media screen and (min-width: 40rem) {
   .regular-event {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     row-gap: 1rem;
@@ -394,7 +397,6 @@ h3 {
 @media screen and (min-width: 63rem) {
   .regular-event {
     max-width: 55rem;
-    display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
     row-gap: 1rem;
@@ -412,7 +414,7 @@ h3 {
   width: 100%;
   height: 0%;
   transform: translateY(-50%);
-  background: #63B4D1;
+  background: #E6B800;
   overflow: hidden;
   z-index: 3;
 }
@@ -479,32 +481,39 @@ h3 {
   }
 }
 .popup__event-name {
-  padding-bottom: 1.5rem;
-  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+  padding-top: 4rem;
 }
 .popup__event-time {
-  color: #E6B800;
-  font-weight: 500;
+  font-weight: 300;
   padding-bottom: 0.5rem;
+  font-style: italic;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 0.9rem;
 }
 .popup__event-text {
   text-align: left;
   padding-bottom: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .recent-event {
-  padding-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 .recent-event__card {
   max-width: calc(100vw - 1rem);
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr;
   -moz-column-gap: 2rem;
        column-gap: 2rem;
-  margin-left: auto;
-  margin-right: auto;
   text-align: left;
   padding: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #FFCC00;
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -523,6 +532,11 @@ h3 {
 .recent-event__image {
   width: 100%;
 }
+@media screen and (min-width: 63rem) {
+  .recent-event {
+    max-width: 55rem;
+  }
+}
 
 .separator {
   width: 100%;
@@ -530,64 +544,84 @@ h3 {
   background-image: url(/images/stopy.svg);
   background-repeat: repeat-x;
   background-size: contain;
-  margin: 2rem;
+  margin-top: 2rem;
   transform: translateX(-2rem);
 }
 
+.aboutus {
+  margin-left: auto;
+  margin-right: auto;
+}
 .aboutus__card {
   max-width: calc(100vw - 1rem);
   background-color: #FFCC00;
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
+  padding: 1.5rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 1.5rem;
 }
 .aboutus--hyperlink {
   text-decoration: none;
   color: black;
+}
+@media screen and (min-width: 63rem) {
+  .aboutus {
+    max-width: 55rem;
+  }
 }
 
 .sponsors {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
-  border: 1px solid black;
   max-width: calc(100vw - 1rem);
   align-items: center;
   justify-items: center;
-  max-width: calc(100vw - 1rem);
   margin-left: auto;
   margin-right: auto;
 }
 .sponsors__img {
   width: 100%;
-  margin: auto;
 }
 .sponsors__item {
   padding: 1.5rem;
 }
-.sponsors div + div {
-  border-left: 1px solid black;
+.sponsors__item ~ .sponsors__item {
   margin: auto;
+}
+@media screen and (min-width: 63rem) {
+  .sponsors {
+    max-width: 55rem;
+  }
 }
 
 .footer__contact {
+  max-width: calc(100vw - 1rem);
   background-color: #FFCC00;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   border-top-right-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
-  margin: 0 auto 25vw auto;
+  margin: 0 auto 28vw auto;
   padding: 1.5rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  max-width: 500px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 1.5rem;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
 }
 .footer__title {
   display: block;
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
+  font-style: oblique;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+}
+.footer__map {
+  grid-row: 3;
+  grid-column: 1/-1;
+  width: 100%;
 }
 .footer__copyright {
   padding: 1.5rem;
@@ -597,4 +631,20 @@ h3 {
   font-weight: 300;
   color: white;
   transform: translateY(50px);
+}
+@media screen and (min-width: 40rem) {
+  .footer__contact {
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(4, auto);
+  }
+  .footer__map {
+    grid-row: 1/-1;
+    grid-column: 2;
+  }
+}
+@media screen and (min-width: 63rem) {
+  .footer__contact {
+    max-width: 55rem;
+  }
 }/*# sourceMappingURL=style.css.map */

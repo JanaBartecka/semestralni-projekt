@@ -6,18 +6,21 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5,auto);
     row-gap: v.$spacer-middle;
-    padding-top: v.$spacer-big;
-    padding-bottom: v.$spacer-big;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    grid-template-areas:
+    "monday-grid"
+    "tuesday-grid"
+    "wednesday-grid" 
+    "thursday-grid"
+    "friday-grid";
 
     &__card {
         background-color: v.$primaryColor;
-        // border: 1px solid black;
         border-top-right-radius: v.$radius;
         border-bottom-left-radius: v.$radius;
-        padding-bottom: v.$spacer-small;
+        padding-bottom: v.$spacer-middle;
     }
 
     &__day {
@@ -27,33 +30,15 @@
         color: white;
     }
 
-    &__program p:first-child {
-        padding-top: v.$spacer-middle;
+    &__program p:nth-child(n) {
+        padding: v.$spacer-small;      
     }
 
-    &__program p:nth-child(even) {
-        padding-bottom: v.$spacer-small;
-        
-    }
-
-    // &__program p:nth-child(2n+3)::before {
-    //     background-color: v.$primaryColor; 
-    //     border: 1px dashed black;
-    //     bottom: 0;
-    //     content: '';
-    //     display: block;
-    //     height: 1px;
-    //     transform: translate(10%,0);
-    //     width: 80%;
-    //     margin-bottom: v.$spacer-small;
-    // }
-
-    &__program p:nth-child(odd) {
-        padding: v.$spacer-small;
+    &__program p:nth-child(odd) {    
         background-color: v.$primaryColor-similar;
     }
 
-    &__program p:last-child {
+    &__program p:last-of-type {
         padding-bottom: v.$spacer-middle;
     }
 
@@ -74,7 +59,6 @@
     }
 
     @media screen and (min-width:v.$minwidth-tablet) {
-        display:grid;
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: auto;
         row-gap: 1rem;
@@ -88,7 +72,6 @@
 
     @media screen and (min-width:v.$minwidth-computer) {
         max-width: v.$maxwidth;
-        display:grid;
         grid-template-columns: repeat(6,1fr);
         grid-template-rows: auto;
         row-gap: 1rem;
@@ -108,7 +91,7 @@
     width: 100%;
     height: 0%;
     transform: translateY(-50%);
-    background: v.$buttonColor;
+    background: v.$primaryColor-similar;
     overflow: hidden;
     z-index: 3;
 
@@ -165,19 +148,24 @@
     }
 
     &__event-name {
-        padding-bottom: v.$spacer-middle;
-        padding-top: v.$spacer-middle;
+        padding-bottom: v.$spacer-small;
+        padding-top: 4rem;
     }
 
     &__event-time {
-        color: v.$primaryColor-similar;
-        font-weight: 500;
+        font-weight: 300;
         padding-bottom: v.$spacer-small;
+        font-style: italic;
+        padding-left: v.$spacer-middle;
+        padding-right: v.$spacer-middle;
+        font-size: 0.9rem;
     }
 
     &__event-text {
         text-align: left;
         padding-bottom: v.$spacer-big;
+        padding-left: v.$spacer-middle;
+        padding-right: v.$spacer-middle;
     }
 }
 

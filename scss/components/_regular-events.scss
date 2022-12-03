@@ -92,7 +92,7 @@
     height: 0%;
     transform: translateY(-50%);
     background: v.$primaryColor-similar;
-    overflow: hidden;
+    overflow: auto;
     z-index: 3;
 
     & .content {

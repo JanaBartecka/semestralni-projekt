@@ -32,13 +32,13 @@
     }
 
     &__copyright {
-        padding: v.$spacer-middle;
+        padding: 1rem;
         background-color: grey;
         text-align: center;
-        font-size: 14px;
+        font-size: 0.9rem;
         font-weight: 300;
         color: white;
-        transform: translateY(50px);
+        transform: translateY(3rem);
     }
 
     @media screen and (min-width:v.$minwidth-tablet) {

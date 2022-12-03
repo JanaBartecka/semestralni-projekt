@@ -146,7 +146,7 @@ h3 {
     display: flex;
     border-bottom-left-radius: 15px;
     border-top-right-radius: 15px;
-    max-width: 55rem;
+    max-width: 60rem;
     margin-left: auto;
     margin-right: auto;
   }
@@ -399,7 +399,7 @@ h3 {
 }
 @media screen and (min-width: 63rem) {
   .regular-event {
-    max-width: 55rem;
+    max-width: 60rem;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
     row-gap: 1rem;
@@ -418,7 +418,7 @@ h3 {
   height: 0%;
   transform: translateY(-50%);
   background: #E6B800;
-  overflow: hidden;
+  overflow: auto;
   z-index: 3;
 }
 .popup .content {
@@ -429,7 +429,7 @@ h3 {
 }
 @media screen and (min-width: 63rem) {
   .popup .content {
-    max-width: 55rem;
+    max-width: 60rem;
     margin-left: auto;
     margin-right: auto;
   }
@@ -511,6 +511,9 @@ h3 {
   row-gap: 1.5rem;
   max-width: calc(100vw - 1rem);
 }
+.recent-event--akce {
+  padding-top: 2rem;
+}
 .recent-event__card {
   max-width: calc(100vw - 1rem);
   display: grid;
@@ -554,7 +557,7 @@ h3 {
 }
 @media screen and (min-width: 63rem) {
   .recent-event {
-    max-width: 55rem;
+    max-width: 60rem;
   }
 }
 
@@ -587,7 +590,7 @@ h3 {
 }
 @media screen and (min-width: 63rem) {
   .aboutus {
-    max-width: 55rem;
+    max-width: 60rem;
   }
 }
 
@@ -612,7 +615,7 @@ h3 {
 }
 @media screen and (min-width: 63rem) {
   .sponsors {
-    max-width: 55rem;
+    max-width: 60rem;
   }
 }
 
@@ -644,13 +647,13 @@ h3 {
   width: 100%;
 }
 .footer__copyright {
-  padding: 1.5rem;
+  padding: 1rem;
   background-color: grey;
   text-align: center;
-  font-size: 14px;
+  font-size: 0.9rem;
   font-weight: 300;
   color: white;
-  transform: translateY(50px);
+  transform: translateY(3rem);
 }
 @media screen and (min-width: 40rem) {
   .footer__contact {
@@ -665,6 +668,6 @@ h3 {
 }
 @media screen and (min-width: 63rem) {
   .footer__contact {
-    max-width: 55rem;
+    max-width: 60rem;
   }
 }/*# sourceMappingURL=style.css.map */

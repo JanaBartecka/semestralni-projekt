@@ -8,6 +8,10 @@
         height: 25rem;
     }
 
+    &__slide--link {
+        text-decoration: none;
+    }
+
     &__picture-1 {
         background-image: url(/images/carousel-1.png);
         background-size: cover;

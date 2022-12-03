@@ -312,6 +312,9 @@ h3 {
 .glide__slides {
   height: 25rem;
 }
+.glide__slide--link {
+  text-decoration: none;
+}
 .glide__picture-1 {
   background-image: url(/images/carousel-1.png);
   background-size: cover;
@@ -502,6 +505,11 @@ h3 {
 .recent-event {
   margin-left: auto;
   margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  row-gap: 1.5rem;
+  max-width: calc(100vw - 1rem);
 }
 .recent-event__card {
   max-width: calc(100vw - 1rem);
@@ -531,6 +539,18 @@ h3 {
 }
 .recent-event__image {
   width: 100%;
+}
+.recent-event__leaflet {
+  align-self: center;
+}
+@media screen and (min-width: 40rem) {
+  .recent-event {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 1.5rem;
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
+  }
 }
 @media screen and (min-width: 63rem) {
   .recent-event {

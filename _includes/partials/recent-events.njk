@@ -1,17 +1,34 @@
 <h2>Aktuální akce</h2>
+
 <div class="recent-event">
-        <div class="recent-event__card">
-            <div class="recent-event__description">
-                <h3 class="recent-event__title">Mikulášská besídka</h3>
-                <p class="recent-event__text">
-                    <em>Kdy:</em> 5.12.2022 od 16:00 <br>
-                    <em>Kde:</em> v TS Attitude Slovany <br>
-                    <em>Vstupné:</em> 100Kč <br>
-                    Nutná registrace <br>
-                </p>
-                {% include 'partials/btn-apply.njk' %}
-            </div>
-            <div class="recent-event__leaflet"><img src="/images/mikulasska-min.png" class="recent-event__image" alt="">
-            </div>
+
+    <div class="recent-event__card" id="akce1">
+        <div class="recent-event__description">
+            <h3 class="recent-event__title">Vánoční rodinné focení</h3>
+            <p class="recent-event__text">
+                <em>Kdy:</em> 1.12.2022 od 9:00 <br>
+                <em>Kde:</em> v ateliéru OK foto Samková <br>
+                <em>Cena:</em> 500Kč / 3 fotografie <br>
+            </p>
         </div>
+        <div class="recent-event__leaflet">
+            <a data-fslightbox href="/images/vanocni-foceni-max.png"><img src="/images/vanocni-foceni-min.jpg" class="recent-event__image" alt=""></a>
+        </div>
+    </div>
+
+    <div class="recent-event__card" id="akce2">
+        <div class="recent-event__description">
+            <h3 class="recent-event__title">Mikulášská besídka</h3>
+            <p class="recent-event__text">
+                <em>Kdy:</em> 5.12.2022 od 16:00 <br>
+                <em>Kde:</em> v TS Attitude Slovany <br>
+                <em>Vstupné:</em> 100Kč <br>
+                Nutná registrace <br>
+            </p>
+            {% include 'partials/btn-apply.njk' %}
+        </div>
+        <div class="recent-event__leaflet">
+            <a data-fslightbox href="/images/mikulasska-max.png"><img src="/images/mikulasska-min.png" class="recent-event__image" alt=""></a>
+            </div>
+    </div>
 </div>

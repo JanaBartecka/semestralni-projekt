@@ -1,0 +1,36 @@
+@use '../abstracts/variables' as v;
+
+.fotogalerie {
+    max-width: calc(100vw - 2*v.$spacer-small);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,500px);
+    row-gap: v.$spacer-middle;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__hernicka {
+        background-image: url(/images/fotogalerie/hernicka/hlavni-hernicka.jpg);
+        background-size: contain;
+    }
+
+    &__akce {
+        background-image: url(/images/fotogalerie/akce/hlavni-akce.jpg);
+        background-size: cover;
+        text-align: center;
+    }
+
+    &__program {
+        background-image: url(/images/fotogalerie/pravidelny-program/hlavni-pravidelny-program.jpg);
+        background-size: cover;
+        text-align: center;
+    }
+
+    &__text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 4rem;
+        font-weight: 600;
+    }
+}

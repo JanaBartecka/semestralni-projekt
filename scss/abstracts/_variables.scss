@@ -1,21 +1,16 @@
-// :root {
+$primaryColor:#FFCC00;
+$primaryColor-similar:#E6B800;
+$secondaryColor:#324376;
+$tertiaryColor:white;
+$buttonColor:#63B4D1;
+$carouselFontColor:black;
 
-    $primaryColor:#FFCC00;
-    $primaryColor-similar:#E6B800;
-    $secondaryColor:#324376;
-    $tertiaryColor:white;
-    $buttonColor:#63B4D1;
-    $carouselFontColor:black;
-    // F5E6E8, f1edee
+$spacer:1rem;
+$spacer-small:0.5rem;
+$spacer-middle:1.5rem;
+$spacer-big:2rem;
+$radius:15px;
 
-    $spacer:1rem;
-    $spacer-small:0.5rem;
-    $spacer-middle:1.5rem;
-    $spacer-big:2rem;
-
-    $radius:15px;
-
-    $minwidth-tablet:40rem;
-    $minwidth-computer:63rem;
-    $maxwidth:60rem;
-// }
+$minwidth-tablet:40rem;
+$minwidth-computer:63rem;
+$maxwidth:60rem;

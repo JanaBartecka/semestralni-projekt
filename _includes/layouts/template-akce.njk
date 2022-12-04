@@ -10,11 +10,14 @@
     <link rel="stylesheet" href="/css/glide.theme.min.css">
     <title>{{ title }}</title>
 </head>
+
 <body class="body--background ">
 
     {% include 'partials/header.njk' %}
 
     <main>
+
+      <h2>Akce</h2>
 
       <div class="recent-event recent-event--akce">
 
@@ -42,54 +45,6 @@
 
 
     {% include 'partials/contact.njk' %}
-    <script>
-      // Modal window START
-      document.querySelector("#popup-open-btn1").addEventListener("click",function(){
-      document.querySelector(".popup1").classList.add("active");
-        });
-      document.querySelector(".popup1 .popup__btn-close1").addEventListener("click",function(){
-      document.querySelector(".popup1").classList.remove("active");
-        });
-      // Modal window END
-
-      // Modal window START
-      document.querySelector("#popup-open-btn2").addEventListener("click",function(){
-      document.querySelector(".popup2").classList.add("active");
-        });
-      document.querySelector(".popup2 .popup__btn-close2").addEventListener("click",function(){
-      document.querySelector(".popup2").classList.remove("active");
-        });
-      // Modal window END
-
-      // Modal window START
-      document.querySelector("#popup-open-btn3").addEventListener("click",function(){
-      document.querySelector(".popup3").classList.add("active");
-        });
-      document.querySelector(".popup3 .popup__btn-close3").addEventListener("click",function(){
-      document.querySelector(".popup3").classList.remove("active");
-        });
-      // Modal window END
-
-      // Modal window START
-      document.querySelector("#popup-open-btn4").addEventListener("click",function(){
-      document.querySelector(".popup4").classList.add("active");
-        });
-      document.querySelector(".popup4 .popup__btn-close4").addEventListener("click",function(){
-      document.querySelector(".popup4").classList.remove("active");
-        });
-      // Modal window END
-
-      // Modal window START
-      document.querySelector("#popup-open-btn5").addEventListener("click",function(){
-      document.querySelector(".popup5").classList.add("active");
-        });
-      document.querySelector(".popup5 .popup__btn-close5").addEventListener("click",function(){
-      document.querySelector(".popup5").classList.remove("active");
-        });
-      // Modal window END
-
-
-    </script>
 
     <!-- // carousel -->
     <script src="/js/glide.min.js"></script>
@@ -104,7 +59,7 @@
     </script>
 
     <!-- //lightbox -->
-  <script src="/js/fslightbox.min.js"></script>
+  <!-- <script src="/js/fslightbox.min.js"></script> -->
 
 </body>
 </html>

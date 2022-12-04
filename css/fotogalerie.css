@@ -1,0 +1,30 @@
+.fotogalerie {
+  max-width: calc(100vw - 1rem);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 500px);
+  row-gap: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fotogalerie__hernicka {
+  background-image: url(/images/fotogalerie/hernicka/hlavni-hernicka.jpg);
+  background-size: contain;
+}
+.fotogalerie__akce {
+  background-image: url(/images/fotogalerie/akce/hlavni-akce.jpg);
+  background-size: cover;
+  text-align: center;
+}
+.fotogalerie__program {
+  background-image: url(/images/fotogalerie/pravidelny-program/hlavni-pravidelny-program.jpg);
+  background-size: cover;
+  text-align: center;
+}
+.fotogalerie__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: 600;
+}/*# sourceMappingURL=fotogalerie.css.map */

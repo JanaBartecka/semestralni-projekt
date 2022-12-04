@@ -10,10 +10,6 @@
     row-gap: v.$spacer-middle;
     max-width: calc(100vw - 2*v.$spacer-small);
 
-    &--akce {
-        padding-top: v.$spacer-big;
-    }
-
     &__card {
         max-width: calc(100vw - 2*v.$spacer-small);
         display: grid;

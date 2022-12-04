@@ -112,7 +112,7 @@ h3 {
   font-weight: 500;
 }
 .menu__link:hover {
-  background-color: #63B4D1;
+  background-color: #324376;
   color: #FFCC00;
 }
 .menu__checkbox {
@@ -511,9 +511,6 @@ h3 {
   row-gap: 1.5rem;
   max-width: calc(100vw - 1rem);
 }
-.recent-event--akce {
-  padding-top: 2rem;
-}
 .recent-event__card {
   max-width: calc(100vw - 1rem);
   display: grid;
@@ -592,6 +589,79 @@ h3 {
   .aboutus {
     max-width: 60rem;
   }
+}
+
+.pravidelny-program {
+  max-width: calc(100vw - 1rem);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  row-gap: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.pravidelny-program__card {
+  background-color: #FFCC00;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.pravidelny-program__akce {
+  background-color: #324376;
+  padding: 1.5rem;
+  border-top-right-radius: 15px;
+  color: white;
+}
+.pravidelny-program__popis {
+  padding: 1.5rem;
+}
+.pravidelny-program__casy {
+  background-color: #E6B800;
+  text-align: center;
+  font-weight: 300;
+  padding: 0.5rem;
+}
+.pravidelny-program__text {
+  text-align: left;
+  padding-bottom: 1.5rem;
+}
+@media screen and (min-width: 63rem) {
+  .pravidelny-program {
+    max-width: 60rem;
+  }
+}
+
+.fotogalerie {
+  max-width: calc(100vw - 1rem);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 500px);
+  row-gap: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fotogalerie__hernicka {
+  background-image: url(/images/fotogalerie/hernicka/hlavni-hernicka.jpg);
+  background-size: cover;
+}
+.fotogalerie__akce {
+  background-image: url(/images/fotogalerie/akce/hlavni-akce.jpg);
+  background-size: cover;
+  text-align: center;
+  padding: auto;
+}
+.fotogalerie__program {
+  background-image: url(/images/fotogalerie/pravidelny-program/hlavni-pravidelny-program.jpg);
+  background-size: cover;
+  text-align: center;
+  padding: auto;
+}
+.fotogalerie__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: 600;
 }
 
 .sponsors {

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/glide.core.min.css">
+    <link rel="stylesheet" href="/css/glide.theme.min.css">
+    <title>{{ title }}</title>
+</head>
+
+<body class="body--background ">
+
+    {% include 'partials/header.njk' %}
+
+    <main>
+
+      {{ content | safe }}
+
+    </main> 
+
+
+    {% include 'partials/contact.njk' %}
+
+    <!-- // carousel -->
+    <script src="/js/glide.min.js"></script>
+
+    <script>
+      new Glide('.glide', {
+        autoplay: 5000,
+        hoverpause: false,
+        perView: 1,
+        type: 'carousel'
+      }).mount()
+    </script>
+
+    <!-- //lightbox -->
+  <!-- <script src="/js/fslightbox.min.js"></script> -->
+
+</body>
+</html>

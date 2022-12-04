@@ -1,0 +1,45 @@
+@use '../abstracts/variables' as v;
+
+.pravidelny-program {
+    max-width: calc(100vw - 2*v.$spacer-small);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: v.$spacer-middle;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    &__card {
+        background-color: v.$primaryColor;
+        border-top-right-radius: v.$radius;
+        border-bottom-left-radius: v.$radius;
+    }
+
+    &__akce {
+        background-color: v.$secondaryColor;
+        padding: v.$spacer-middle;
+        border-top-right-radius: v.$radius;
+        color: white;
+    }
+
+    &__popis {
+        padding: v.$spacer-middle;
+    }
+
+    &__casy {
+        background-color: v.$primaryColor-similar;
+        text-align: center;
+        font-weight: 300;
+        padding: v.$spacer-small;
+    }
+
+    &__text {
+        text-align: left;
+        padding-bottom: v.$spacer-middle;
+    }
+
+    @media screen and (min-width:v.$minwidth-computer) {
+        max-width: v.$maxwidth;
+    }
+}

@@ -4,7 +4,7 @@
     max-width: calc(100vw - 2*v.$spacer-small);
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3,auto);
+    grid-template-rows: repeat(3,minmax(200px,1fr));
     row-gap: v.$spacer-middle;
     margin-left: auto;
     margin-right: auto;
@@ -15,6 +15,10 @@
 
     &__grid {
         display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: auto;
+        column-gap: v.$spacer-small;
+        row-gap: v.$spacer-small;
     }
 
     &__grid img {
@@ -28,20 +32,20 @@
 
     &__hernicka {
         background-image: url(/images/fotogalerie/hernicka/hlavni-hernicka.jpg);
-        background-size: contain;
+        background-size: cover;
         grid-area: hernicka;
     }
 
     &__akce {
         background-image: url(/images/fotogalerie/akce/hlavni-akce.jpg);
-        background-size: contain;
+        background-size: cover;
         text-align: center;
         grid-area: akce;
     }
 
     &__program {
         background-image: url(/images/fotogalerie/pravidelny-program/hlavni-pravidelny-program.jpg);
-        background-size: contain;
+        background-size: cover;
         text-align: center;
         grid-area: program;
     }

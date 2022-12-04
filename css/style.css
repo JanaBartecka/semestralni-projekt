@@ -642,30 +642,44 @@ h3 {
   max-width: calc(100vw - 1rem);
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: repeat(3, minmax(200px, 1fr));
   row-gap: 1.5rem;
   margin-left: auto;
   margin-right: auto;
   grid-template-areas: "hernicka" "akce" "program";
 }
+.fotogalerie__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+  row-gap: 0.5rem;
+}
+.fotogalerie__grid img {
+  width: 100%;
+}
+.fotogalerie__skupina {
+  padding: 1.5rem;
+}
 .fotogalerie__hernicka {
   background-image: url(/images/fotogalerie/hernicka/hlavni-hernicka.jpg);
-  background-size: contain;
+  background-size: cover;
   grid-area: hernicka;
 }
 .fotogalerie__akce {
   background-image: url(/images/fotogalerie/akce/hlavni-akce.jpg);
-  background-size: contain;
+  background-size: cover;
   text-align: center;
   grid-area: akce;
 }
 .fotogalerie__program {
   background-image: url(/images/fotogalerie/pravidelny-program/hlavni-pravidelny-program.jpg);
-  background-size: contain;
+  background-size: cover;
   text-align: center;
   grid-area: program;
 }
-.fotogalerie__text {
+.fotogalerie__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -673,6 +687,8 @@ h3 {
   font-weight: 600;
   color: #FFCC00;
   text-decoration: none;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 @media screen and (min-width: 40rem) {
   .fotogalerie {
@@ -691,6 +707,9 @@ h3 {
     -moz-column-gap: 1.5rem;
          column-gap: 1.5rem;
     grid-template-areas: "hernicka akce program";
+  }
+  .fotogalerie__link:hover {
+    transform: scale(1.1);
   }
 }
 

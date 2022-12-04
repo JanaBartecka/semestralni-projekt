@@ -29,9 +29,12 @@
 
     &__casy {
         background-color: v.$primaryColor-similar;
+        border-top-right-radius: v.$radius;
+        border-bottom-left-radius: v.$radius;
         text-align: center;
         font-weight: 300;
         padding: v.$spacer-small;
+        display: inline-block;
     }
 
     &__text {

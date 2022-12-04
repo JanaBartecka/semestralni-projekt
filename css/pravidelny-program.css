@@ -24,9 +24,12 @@
 }
 .pravidelny-program__casy {
   background-color: #E6B800;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
   text-align: center;
   font-weight: 300;
   padding: 0.5rem;
+  display: inline-block;
 }
 .pravidelny-program__text {
   text-align: left;

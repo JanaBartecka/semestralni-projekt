@@ -18,6 +18,11 @@
         border-bottom: 1px solid white;
     }
 
+    &__item--active &__link {
+        background-color: v.$secondaryColor;
+        color: v.$primaryColor;
+    }
+
     &__link {
         display: block;
         text-decoration: none;

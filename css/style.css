@@ -104,6 +104,10 @@ h3 {
 .menu__item {
   border-bottom: 1px solid white;
 }
+.menu__item--active .menu__link {
+  background-color: #324376;
+  color: #FFCC00;
+}
 .menu__link {
   display: block;
   text-decoration: none;
@@ -617,9 +621,12 @@ h3 {
 }
 .pravidelny-program__casy {
   background-color: #E6B800;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
   text-align: center;
   font-weight: 300;
   padding: 0.5rem;
+  display: inline-block;
 }
 .pravidelny-program__text {
   text-align: left;
@@ -635,26 +642,28 @@ h3 {
   max-width: calc(100vw - 1rem);
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 500px);
+  grid-template-rows: repeat(3, auto);
   row-gap: 1.5rem;
   margin-left: auto;
   margin-right: auto;
+  grid-template-areas: "hernicka" "akce" "program";
 }
 .fotogalerie__hernicka {
   background-image: url(/images/fotogalerie/hernicka/hlavni-hernicka.jpg);
-  background-size: cover;
+  background-size: contain;
+  grid-area: hernicka;
 }
 .fotogalerie__akce {
   background-image: url(/images/fotogalerie/akce/hlavni-akce.jpg);
-  background-size: cover;
+  background-size: contain;
   text-align: center;
-  padding: auto;
+  grid-area: akce;
 }
 .fotogalerie__program {
   background-image: url(/images/fotogalerie/pravidelny-program/hlavni-pravidelny-program.jpg);
-  background-size: cover;
+  background-size: contain;
   text-align: center;
-  padding: auto;
+  grid-area: program;
 }
 .fotogalerie__text {
   display: flex;
@@ -662,6 +671,27 @@ h3 {
   justify-content: center;
   font-size: 4rem;
   font-weight: 600;
+  color: #FFCC00;
+  text-decoration: none;
+}
+@media screen and (min-width: 40rem) {
+  .fotogalerie {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
+    grid-template-areas: "hernicka hernicka akce akce" ".        program   program   .";
+  }
+}
+@media screen and (min-width: 63rem) {
+  .fotogalerie {
+    max-width: 60rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
+    grid-template-areas: "hernicka akce program";
+  }
 }
 
 .sponsors {

@@ -44,7 +44,7 @@
     &__toggler {
         cursor: pointer;
         text-align: left;
-        padding-left: 85vw;
+        padding-left: 75vw;
     }
 
     &__toggler img {
@@ -88,11 +88,24 @@
         }
 
         &__item:last-child {
-            border-bottom: 0;
-            border-right: 1px solid white;
-            border-start-end-radius: inherit;
+            border: 0;
         }
 
+        &__item:last-child :hover {
+            border-top-right-radius: v.$radius;
+        }
+
+        &__item:first-child :hover {
+            border-bottom-left-radius: v.$radius;
+        }
+
+        &__item--active:first-child &__link {
+            border-bottom-left-radius: v.$radius;
+        }
+
+        &__item--active:last-child &__link {
+            border-bottom-left-radius: v.$radius;
+        }
 
     }
 }

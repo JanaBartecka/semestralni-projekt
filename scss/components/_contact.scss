@@ -32,6 +32,8 @@
     }
 
     &__copyright {
+        display: block;
+        text-decoration: none;
         padding: 1rem;
         background-color: grey;
         text-align: center;

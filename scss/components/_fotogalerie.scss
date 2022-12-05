@@ -54,12 +54,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 4rem;
+        font-size: 3.5rem;
         font-weight: 600;
-        color: v.$primaryColor;
+        color: white;
         text-decoration: none;
         border-top-right-radius: v.$radius;
         border-bottom-left-radius: v.$radius;
+        padding: v.$spacer-middle;
     }
 
     @media screen and (min-width:v.$minwidth-tablet) {
@@ -82,6 +83,7 @@
 
         &__link:hover {
             transform: scale(1.1);
+            transition: transform 0.5s;
         }
     }
 }

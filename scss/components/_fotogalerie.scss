@@ -14,15 +14,31 @@
     "program";
 
     &__grid {
+        max-width: calc(100vw - 2*v.$spacer-small);
+        margin-left: auto;
+        margin-right: auto;
         display: grid;
-        grid-template-columns: repeat(5,1fr);
-        grid-template-rows: auto;
-        column-gap: v.$spacer-small;
-        row-gap: v.$spacer-small;
+        grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+        grid-auto-rows: 1fr;
+        gap: v.$spacer-small;
+        grid-auto-flow: dense;
     }
 
     &__grid img {
         width: 100%;
+        height: 100%;
+        vertical-align: middle;
+        display: inline-block;
+        object-fit: cover;
+        border-radius: v.$spacer-small;
+    }
+
+    &__grid--wide {
+        grid-column: span 2;
+    }
+
+    &__grid--tall {
+        grid-row: span 2;
     }
 
     &__skupina {

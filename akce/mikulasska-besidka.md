@@ -13,5 +13,4 @@ tags: akce
 
 Nutná registrace
 
-
 {% include 'partials/btn-apply.njk' %}

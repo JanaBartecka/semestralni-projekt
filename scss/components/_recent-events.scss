@@ -11,12 +11,6 @@
     max-width: calc(100vw - 2*v.$spacer-small);
 
     &__card {
-        max-width: calc(100vw - 2*v.$spacer-small);
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: 1fr;
-        column-gap: v.$spacer-big;
-        text-align: left;
         padding: v.$spacer-middle;
         margin-left: auto;
         margin-right: auto;
@@ -25,8 +19,16 @@
         border-bottom-left-radius: v.$radius;
     }
 
-    &__title {
+    &__description {
+        // display: grid;
+        // grid-template-columns: auto auto;
+        // grid-template-rows: 1fr;
+        // column-gap: v.$spacer-big;
         text-align: left;
+    }
+
+    &__title {
+        text-align: center;
         padding-bottom: v.$spacer-middle;
     }
 
@@ -54,5 +56,11 @@
 
     @media screen and (min-width:v.$minwidth-computer) {
         max-width: v.$maxwidth;
+        &__description {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            column-gap: v.$spacer-middle;
+        }
     }
 }

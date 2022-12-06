@@ -3,7 +3,7 @@
 .menu {
     padding-top: v.$spacer-big;
     padding-bottom: v.$spacer-middle;
-    z-index: 3;
+    
 
     &__list {
         margin: 0;
@@ -12,6 +12,7 @@
         background-color: v.$primaryColor;
         padding: 0;
         display: none;
+        z-index: 3;
     }
 
     &__item {
@@ -51,16 +52,16 @@
         height: 4rem;
     }
 
-
     &__checkbox:checked ~ &__list {
         display: block;
+        position: absolute;
     }
 
-    @media  screen and (max-width:v.$minwidth-computer) {
-        &__checkbox:checked ~ &__list {
-            display:block;
-        }
-    }
+    // @media  screen and (max-width:v.$minwidth-computer) {
+    //     &__checkbox:checked ~ &__list {
+    //         display:block;
+    //     }
+    // }
 
     @media  screen and (min-width:v.$minwidth-computer) {   
         display: flex;

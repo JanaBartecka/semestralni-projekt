@@ -20,7 +20,6 @@
         background-color: v.$primaryColor;
         border-top-right-radius: v.$radius;
         border-bottom-left-radius: v.$radius;
-        padding-bottom: v.$spacer-middle;
     }
 
     &__day {
@@ -36,10 +35,6 @@
 
     &__program p:nth-child(odd) {    
         background-color: v.$primaryColor-similar;
-    }
-
-    &__program p:last-of-type {
-        padding-bottom: v.$spacer-middle;
     }
 
     &__card--monday {

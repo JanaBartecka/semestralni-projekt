@@ -6,7 +6,7 @@
     border-radius: v.$radius;
     background-color: v.$buttonColor;
     cursor: pointer;
-    margin: 1rem 0;
+    margin: 1rem;
 
     &:hover {
         background-color: v.$secondaryColor;

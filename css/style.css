@@ -62,7 +62,7 @@ h3 {
   border-radius: 15px;
   background-color: #63B4D1;
   cursor: pointer;
-  margin: 1rem 0;
+  margin: 1rem;
 }
 .button:hover {
   background-color: #324376;
@@ -93,6 +93,7 @@ h3 {
 .menu {
   padding-top: 2rem;
   padding-bottom: 1.5rem;
+  z-index: 3;
 }
 .menu__list {
   margin: 0;
@@ -101,7 +102,7 @@ h3 {
   background-color: #FFCC00;
   padding: 0;
   display: none;
-  z-index: 3;
+  width: 100%;
 }
 .menu__item {
   border-bottom: 1px solid white;
@@ -151,6 +152,7 @@ h3 {
     max-width: 60rem;
     margin-left: auto;
     margin-right: auto;
+    width: auto;
   }
   .menu__checkbox:checked ~ .menu__list {
     display: flex;
@@ -313,7 +315,7 @@ h3 {
 }
 @media screen and (min-width: 63rem) {
   .header--picture-left {
-    left: 10vw;
+    left: 5vw;
   }
 }
 
@@ -366,7 +368,6 @@ h3 {
   background-color: #FFCC00;
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
-  padding-bottom: 1.5rem;
 }
 .regular-event__day {
   background-color: #324376;
@@ -379,9 +380,6 @@ h3 {
 }
 .regular-event__program p:nth-child(odd) {
   background-color: #E6B800;
-}
-.regular-event__program p:last-of-type {
-  padding-bottom: 1.5rem;
 }
 .regular-event__card--monday {
   grid-area: monday-grid;
@@ -519,14 +517,12 @@ h3 {
   margin-right: auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: 1fr;
   row-gap: 1.5rem;
   max-width: calc(100vw - 1rem);
 }
 .recent-event__card {
   padding: 1.5rem;
-  margin-left: auto;
-  margin-right: auto;
   background-color: #FFCC00;
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -547,6 +543,8 @@ h3 {
 }
 .recent-event__image {
   width: 100%;
+  border-top-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
 }
 .recent-event__leaflet {
   align-self: center;
@@ -563,6 +561,8 @@ h3 {
 @media screen and (min-width: 63rem) {
   .recent-event {
     max-width: 60rem;
+    align-items: start;
+    justify-items: stretch;
   }
   .recent-event__description {
     display: grid;
@@ -706,6 +706,7 @@ h3 {
 }
 .fotogalerie__link {
   display: flex;
+  text-align: center;
   align-items: center;
   justify-content: center;
   font-size: 3.5rem;
@@ -805,6 +806,10 @@ h3 {
   grid-row: 3;
   grid-column: 1/-1;
   width: 100%;
+}
+.footer__map iframe {
+  border-top-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
 }
 .footer__copyright {
   display: block;

@@ -103,6 +103,7 @@ h3 {
   padding: 0;
   display: none;
   width: 100%;
+  z-index: 3;
 }
 .menu__item {
   border-bottom: 1px solid white;

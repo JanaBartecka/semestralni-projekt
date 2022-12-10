@@ -516,13 +516,16 @@ h3 {
 .recent-event {
   margin-left: auto;
   margin-right: auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  row-gap: 1.5rem;
   max-width: calc(100vw - 1rem);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 calc(40% - 1.5rem);
+  gap: 1.5rem;
 }
 .recent-event__card {
+  width: 100%;
   padding: 1.5rem;
   background-color: #FFCC00;
   border-top-right-radius: 15px;
@@ -551,19 +554,13 @@ h3 {
   align-self: center;
 }
 @media screen and (min-width: 40rem) {
-  .recent-event {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    row-gap: 1.5rem;
-    -moz-column-gap: 1.5rem;
-         column-gap: 1.5rem;
+  .recent-event__card {
+    width: calc(40% - 1.5rem);
   }
 }
 @media screen and (min-width: 63rem) {
   .recent-event {
     max-width: 60rem;
-    align-items: start;
-    justify-items: stretch;
   }
   .recent-event__description {
     display: grid;
@@ -750,27 +747,27 @@ h3 {
 }
 
 .sponsors {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  grid-auto-rows: 1fr;
   max-width: calc(100vw - 1rem);
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .sponsors__img {
-  width: 100%;
+  width: 150px;
   height: 100%;
   vertical-align: middle;
-  display: inline-block;
-  -o-object-fit: cover;
-     object-fit: cover;
+}
+.sponsors__hyperlink {
+  width: 100%;
+  height: 100%;
 }
 .sponsors__item {
   padding: 1.5rem;
+  flex: 0 0 calc(16% - 20px);
 }
 .sponsors__item ~ .sponsors__item {
   margin: auto;

@@ -11,6 +11,10 @@ module.exports = function(eleventyConfig) {
   // Zkopírovat js/ to _site/js/
   eleventyConfig.addPassthroughCopy("js");
 
+  eleventyConfig.addFilter("limit", function (arr, limit) {
+    return arr.slice(0, limit);
+  });  
+
   return {
     // možné formáty šablon
     templateFormats: ["njk", "html", "md", "liquid"],

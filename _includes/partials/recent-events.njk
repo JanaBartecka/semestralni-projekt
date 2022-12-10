@@ -1,8 +1,26 @@
 <h2>Aktuální akce</h2>
 
-<div class="recent-event">
 
-    <div class="recent-event__card" id="akce1">
+<div class="recent-event">
+    {% for akce in collections.akce | limit(2) %}  
+      <div class="recent-event__card">
+          <h3 class="recent-event__title">{{ akce.data.title }}</h3>
+          <div class="recent-event__description">
+              <div class="recent-event__text">
+                  <em>Kdy:</em> {{ akce.data.kdy }} <br>
+                  <em>Kde:</em> {{ akce.data.kde }} <br>
+                  {{ akce.data.content | safe }}
+              </div>
+            
+              <div class="recent-event__leaflet">
+                <a data-fslightbox href="/images/{{ akce.data.fotomax }}"><img src="/images/{{ akce.data.fotomin }}" class="recent-event__image" alt="{{ akce.data.alt }}"></a>
+              </div>
+          </div>
+        </div>      
+    {% endfor %}
+
+
+    <!-- <div class="recent-event__card" id="akce1">
         <h3 class="recent-event__title">Vánoční rodinné focení</h3>
         <div class="recent-event__description">
             <div class="recent-event__text">
@@ -32,5 +50,5 @@
                 <a data-fslightbox href="/images/mikulasska-max.png"><img src="/images/mikulasska-min.png" class="recent-event__image" alt=""></a>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>

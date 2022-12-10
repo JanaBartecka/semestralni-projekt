@@ -9,8 +9,6 @@ alt: Mikulášská besídka
 tags: akce
 ---
 
-*Vstupné:* 100Kč
+*Vstupné:* 100Kč/dítě (zahrnuje vstup a mikulášskou nadílku)
 
-Nutná registrace
-
-{% include 'partials/btn-apply.njk' %}
+Registrace **osobně** v MC Žirafa (v době konání volné herny)

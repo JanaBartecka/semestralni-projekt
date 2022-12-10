@@ -11,6 +11,9 @@ module.exports = function(eleventyConfig) {
   // Zkopírovat js/ to _site/js/
   eleventyConfig.addPassthroughCopy("js");
 
+  // Zkopírovat icons/ to _site/icons/
+  eleventyConfig.addPassthroughCopy("icons");
+
   eleventyConfig.addFilter("limit", function (arr, limit) {
     return arr.slice(0, limit);
   });  

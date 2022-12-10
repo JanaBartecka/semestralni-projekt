@@ -179,9 +179,6 @@ h3 {
   }
 }
 
-.header--picture-right {
-  display: none;
-}
 @-webkit-keyframes mrk {
   0% {
     transform: scaleY(1);
@@ -196,6 +193,7 @@ h3 {
     transform: scaleY(1);
   }
 }
+
 @keyframes mrk {
   0% {
     transform: scaleY(1);
@@ -305,7 +303,7 @@ h3 {
           animation: toceniocivpravo 4s infinite both ease;
   transform-origin: 440px 281.77px;
 }
-.header--picture-left, .header--picture-right {
+.header--picture-left {
   height: 8rem;
   position: absolute;
   bottom: 0;

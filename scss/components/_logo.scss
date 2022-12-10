@@ -1,9 +1,6 @@
 @use '../abstracts/variables' as v;
 
 .header {
-    &--picture-right {
-        display: none;
-    }
 
     @keyframes mrk {
         0% {transform: scaleY(1)}
@@ -45,7 +42,7 @@
         transform-origin: 440px 281.77px;
     }
 
-    &--picture-left, &--picture-right {
+    &--picture-left {
         height: 8rem;
         position: absolute;
         bottom: 0;

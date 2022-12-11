@@ -1,8 +1,8 @@
 .body--background {
     height: 100%;
     background-image: url(/images/obloha1.svg),url(/images/Kilimanjaro_my1.svg);
-    background-repeat: repeat-x, no-repeat;
+    background-repeat: no-repeat, no-repeat;
     background-color: white;
     background-position: left top, bottom;
-    background-size: contain, contain;
+    background-size: 100%, 100%;
 }

@@ -12,8 +12,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    flex: 1 1 calc(40% - v.$spacer-middle);
+    align-content: stretch;
+    flex: 1 1 calc(50% - v.$spacer-middle);
     gap: v.$spacer-middle;
 
     &__card {
@@ -56,7 +56,7 @@
         // row-gap: v.$spacer-middle;
         // column-gap: v.$spacer-middle;
         &__card {
-            width: calc(40% - v.$spacer-middle);
+            width: calc(50% - v.$spacer-middle);
         }
     }
 

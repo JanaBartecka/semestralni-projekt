@@ -3,8 +3,8 @@ layout: /layouts/template-akce.njk
 title: Mikulášská besídka
 kdy: 5.12.2022 od 16:00
 kde: v ateliéru OK foto Samková
-fotomin: /akce/mikulasska-min.png
-fotomax: /akce/mikulasska-max.png
+fotomin: akce/mikulasska-min.jpg
+fotomax: akce/mikulasska-max.png
 alt: Mikulášská besídka
 tags: akce
 ---

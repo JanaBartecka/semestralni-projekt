@@ -20,6 +20,7 @@
         background-color: v.$primaryColor;
         border-top-right-radius: v.$radius;
         border-bottom-left-radius: v.$radius;
+        padding-bottom: v.$spacer-middle;
     }
 
     &__day {
@@ -78,6 +79,11 @@
     }
 }
 
+.noevent {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
 
 .popup {
     position: fixed;

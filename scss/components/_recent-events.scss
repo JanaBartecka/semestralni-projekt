@@ -4,10 +4,6 @@
 
     margin-left: auto;
     margin-right: auto;
-    // display: grid;
-    // grid-template-columns: 1fr;
-    // grid-template-rows: 1fr;
-    // row-gap: v.$spacer-middle;
     max-width: calc(100vw - 2*v.$spacer-small);
     display: flex;
     flex-wrap: wrap;
@@ -50,11 +46,7 @@
         align-self: center;
     }
 
-    @media screen and (min-width:v.$minwidth-tablet) {
-        // grid-template-columns: 1fr 1fr;
-        // grid-template-rows: auto;
-        // row-gap: v.$spacer-middle;
-        // column-gap: v.$spacer-middle;
+    @media screen and (min-width:v.$minwidth-tablet-akce) {
         &__card {
             width: calc(50% - v.$spacer-middle);
         }
@@ -62,8 +54,6 @@
 
     @media screen and (min-width:v.$minwidth-computer) {
         max-width: v.$maxwidth;
-        // align-items: start;
-        // justify-items: stretch;
 
         &__description {
             display: grid;

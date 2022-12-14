@@ -55,7 +55,7 @@
 
     @media  screen and (min-width:v.$minwidth-computer) { 
         &--picture-left {
-            left: 5vw;
+            left: calc((100% - v.$minwidth-computer)/2);
         }
     }
 }

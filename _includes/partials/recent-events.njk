@@ -1,8 +1,8 @@
 <h2>Aktuální akce</h2>
 
 
-<div class="recent-event">
-    {% for akce in collections.akce | limit(2) %}  
+<div class="recent-event" id="akce">
+    {% for akce in collections.akce | limit(0) %}  
       <div class="recent-event__card">
           <h3 class="recent-event__title">{{ akce.data.title }}</h3>
           <div class="recent-event__description">
@@ -19,36 +19,8 @@
         </div>      
     {% endfor %}
 
-
-    <!-- <div class="recent-event__card" id="akce1">
-        <h3 class="recent-event__title">Vánoční rodinné focení</h3>
-        <div class="recent-event__description">
-            <div class="recent-event__text">
-                <em>Kdy:</em> 1.12.2022 od 9:00 <br>
-                <em>Kde:</em> v ateliéru OK foto Samková <br>
-                <em>Cena:</em> 500Kč / 3 fotografie <br>
-            </div>
-        
-            <div class="recent-event__leaflet">
-                <a data-fslightbox href="/images/vanocni-foceni-max.png"><img src="/images/vanocni-foceni-min.jpg" class="recent-event__image" alt=""></a>
-            </div>
-        </div>
-    </div>
-
-    <div class="recent-event__card" id="akce2">
-        <h3 class="recent-event__title">Mikulášská besídka</h3>
-        <div class="recent-event__description">
-            <div class="recent-event__text">
-                <em>Kdy:</em> 5.12.2022 od 16:00 <br>
-                <em>Kde:</em> v TS Attitude Slovany <br>
-                <em>Vstupné:</em> 100Kč <br>
-                Nutná registrace <br>
-                {% include 'partials/btn-apply.njk' %}
-            </div>       
-        
-            <div class="recent-event__leaflet">
-                <a data-fslightbox href="/images/mikulasska-max.png"><img src="/images/mikulasska-min.png" class="recent-event__image" alt=""></a>
-            </div>
-        </div>
-    </div> -->
+    <!-- neni vypsana zadna akce -->
+    <div class="recent-event__card">
+        <h3 class="recent-event__title">Momentálně není vypsaná žádná akce</h3>
+      </div>  
 </div>

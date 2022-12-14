@@ -13,6 +13,14 @@
         padding: v.$spacer-middle;
         margin-left: auto;
         margin-right: auto;
+
+        &--uvod {
+            text-align: center;
+        }
+    }
+
+    &__description {
+        padding-bottom: v.$spacer-middle;
     }
 
     &--hyperlink {

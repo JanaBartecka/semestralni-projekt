@@ -19,15 +19,19 @@
     }
 
     &__picture-2 {
-        background-image: url(/images/carousel-2.png);
+        background-image: url(/images/carousel-2.svg);
         background-size: cover;
         background-position: bottom right;
+        color: white;
     }
     
     &__event-name {
         font-size: 3.5rem;
         color:v.$carouselFontColor;
-        padding:  v.$spacer-small v.$spacer-middle ;
+        padding:  v.$spacer-small v.$spacer-middle;
+        &--2 {
+            padding: 0;
+        }
     }
     
     &__event-date {
@@ -35,6 +39,18 @@
         font-size: 2rem;
         font-weight: 600;
         text-align: center;
+        padding-left: v.$spacer-small;
+        padding-right: v.$spacer-small;
+
+        &--2 {
+            color:#FF3F00;
+            font-size: 1.7rem;
+            background-color: rgb(40,56,78);
+        }
+
+        &--1 {
+            font-size: 1.7rem;
+        }
     }
 
     &__arrow {
@@ -42,5 +58,8 @@
     }
     
     @media  screen and (min-width:v.$minwidth-computer) { 
+        max-width: v.$maxwidth-carousel;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

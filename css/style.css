@@ -62,7 +62,6 @@ h3 {
   border-radius: 15px;
   background-color: #63B4D1;
   cursor: pointer;
-  margin: 1rem;
 }
 .button:hover {
   background-color: #324376;
@@ -314,7 +313,7 @@ h3 {
 }
 @media screen and (min-width: 63rem) {
   .header--picture-left {
-    left: 5vw;
+    left: calc((100% - 63rem) / 2);
   }
 }
 
@@ -334,24 +333,46 @@ h3 {
   background-position: bottom right;
 }
 .glide__picture-2 {
-  background-image: url(/images/carousel-2.png);
+  background-image: url(/images/carousel-2.svg);
   background-size: cover;
   background-position: bottom right;
+  color: white;
 }
 .glide__event-name {
   font-size: 3.5rem;
   color: black;
   padding: 0.5rem 1.5rem;
 }
+.glide__event-name--2 {
+  padding: 0;
+}
 .glide__event-date {
   color: black;
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.glide__event-date--2 {
+  color: #FF3F00;
+  font-size: 1.7rem;
+  background-color: rgb(40, 56, 78);
+}
+.glide__event-date--1 {
+  font-size: 1.7rem;
 }
 .glide__arrow {
   color: black;
 }
+@media screen and (min-width: 63rem) {
+  .glide {
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .regular-event {
   max-width: calc(100vw - 1rem);
   display: grid;
@@ -367,6 +388,7 @@ h3 {
   background-color: #FFCC00;
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
+  padding-bottom: 1.5rem;
 }
 .regular-event__day {
   background-color: #324376;
@@ -417,6 +439,12 @@ h3 {
     align-items: stretch;
     grid-template-areas: "monday-grid    monday-grid     tuesday-grid    tuesday-grid wednesday-grid wednesday-grid  " ".              thursday-grid   thursday-grid   friday-grid  friday-grid    .           ";
   }
+}
+
+.noevent {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .popup {
@@ -551,7 +579,7 @@ h3 {
 .recent-event__leaflet {
   align-self: center;
 }
-@media screen and (min-width: 37rem) {
+@media screen and (min-width: 30rem) {
   .recent-event__card {
     width: calc(50% - 1.5rem);
   }
@@ -591,6 +619,12 @@ h3 {
   padding: 1.5rem;
   margin-left: auto;
   margin-right: auto;
+}
+.aboutus__card--uvod {
+  text-align: center;
+}
+.aboutus__description {
+  padding-bottom: 1.5rem;
 }
 .aboutus--hyperlink {
   text-decoration: none;

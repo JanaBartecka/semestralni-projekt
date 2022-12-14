@@ -9,6 +9,9 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    border-top-right-radius: v.$radius;
+    border-bottom-left-radius: v.$radius;
 
     &__img {
         width: 150px;

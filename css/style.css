@@ -358,6 +358,7 @@ h3 {
   color: #FF3F00;
   font-size: 1.7rem;
   background-color: rgb(40, 56, 78);
+  padding-top: 1.5rem;
 }
 .glide__event-date--1 {
   font-size: 1.7rem;
@@ -809,6 +810,9 @@ h3 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  background-color: white;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 .sponsors__img {
   width: 150px;

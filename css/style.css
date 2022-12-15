@@ -275,7 +275,7 @@ h3 {
     border-bottom-left-radius: 15px;
   }
   .menu__item--active:last-child .menu__link {
-    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
   }
 }
 

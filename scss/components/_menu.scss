@@ -108,7 +108,7 @@
         }
 
         &__item--active:last-child &__link {
-            border-bottom-left-radius: v.$radius;
+            border-top-right-radius: v.$radius;
         }
 
     }

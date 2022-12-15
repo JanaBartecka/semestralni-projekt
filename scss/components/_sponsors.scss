@@ -14,9 +14,13 @@
     border-bottom-left-radius: v.$radius;
 
     &__img {
-        width: 150px;
+        max-width: 70px;
         height: 100%;
         vertical-align: middle;
+
+        @media screen and (min-width:v.$minwidth-tablet) {
+            max-width: 150px;
+        }
     }
 
     &__hyperlink {

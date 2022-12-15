@@ -5,3 +5,79 @@
     position: relative;
 }
 
+
+.snowflake {
+    position: absolute;
+
+    @keyframes vlocka-pada {
+        0% {transform: translateY(0)}
+        25% {transform: translateY(50px) translateX(25px)}
+        50% {transform: translateY(100px) translateX(-25px)}
+        75% {transform: translateY(150px) translateX(25px)}
+        100% {transform: translateY(200px) translateX(-25px)}
+    }
+    
+    &--1 {
+        top: -40px;
+        left: 10vw;
+        width: 40px;
+        animation: vlocka-pada 10s infinite both linear;
+    }
+
+    &--2 {
+        top: -40px;
+        left: 20vw;
+        width: 30px;
+        animation: vlocka-pada 10s infinite 1s both linear;
+        }
+
+    &--3 {
+        top: -40px;
+        left: 30vw;
+        width: 20px;
+        animation: vlocka-pada 10s infinite 5s both linear;
+        }
+
+    &--4 {
+        top: -40px;
+        left: 40vw;
+        width: 40px;
+        animation: vlocka-pada 10s infinite 3s both linear;
+        }
+
+    &--5 {
+        top: -40px;
+        left: 50vw;
+        width: 30px;
+        animation: vlocka-pada 10s infinite 9s both linear;
+        }
+
+    &--6 {
+        top: -40px;
+        left: 60vw;
+        width: 20px;
+        animation: vlocka-pada 10s infinite 1s both linear;
+        }
+
+    &--7 {
+        top: -40px;
+        left: 70vw;
+        width: 40px;
+        animation: vlocka-pada 10s infinite 6s both linear;
+        }
+
+    &--8 {
+        top: -40px;
+        left: 80vw;
+        width: 10px;
+        animation: vlocka-pada 10s infinite 4s both linear;
+        }
+
+    &--9 {
+        top: -40px;
+        left: 90vw;
+        width: 30px;
+        animation: vlocka-pada 10s infinite 8s both linear;
+        }
+
+}

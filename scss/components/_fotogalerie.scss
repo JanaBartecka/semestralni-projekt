@@ -55,8 +55,10 @@
         margin-right: auto;
         max-width: calc(100vw - 2*v.$spacer-small);
         padding-top: v.$spacer-middle;
+
         & video {
             height: 100%;
+            border-radius: v.$spacer-small;
         }
 
         &--nadpis {

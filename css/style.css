@@ -853,6 +853,7 @@ h3 {
 }
 .fotogalerie__video video {
   height: 100%;
+  border-radius: 0.5rem;
 }
 .fotogalerie__video--nadpis {
   padding-top: 1.5rem;

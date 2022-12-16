@@ -845,6 +845,23 @@ h3 {
 .fotogalerie__skupina {
   padding: 1.5rem;
 }
+.fotogalerie__video {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(100vw - 1rem);
+  padding-top: 1.5rem;
+}
+.fotogalerie__video video {
+  height: 100%;
+}
+.fotogalerie__video--nadpis {
+  padding-top: 1.5rem;
+}
+@media screen and (min-width: 37rem) {
+  .fotogalerie__video {
+    max-width: 37rem;
+  }
+}
 .fotogalerie__hernicka {
   background-image: url(/images/fotogalerie/hernicka/hlavni-hernicka.jpg);
   background-size: cover;

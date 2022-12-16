@@ -46,11 +46,27 @@
         grid-column: span 2;
     }
 
-
     &__skupina {
         padding: v.$spacer-middle;
     }
 
+    &__video {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: calc(100vw - 2*v.$spacer-small);
+        padding-top: v.$spacer-middle;
+        & video {
+            height: 100%;
+        }
+
+        &--nadpis {
+            padding-top: v.$spacer-middle;
+        }
+
+        @media screen and (min-width:v.$minwidth-tablet) {
+            max-width: 37rem;
+        }
+    }
 
     &__hernicka {
         background-image: url(/images/fotogalerie/hernicka/hlavni-hernicka.jpg);

@@ -4,6 +4,8 @@
 
     margin-left: auto;
     margin-right: auto;
+    display: grid;
+    row-gap: v.$spacer-middle;
 
     &__card {
         max-width: calc(100vw - 2*v.$spacer-small);
@@ -13,19 +15,30 @@
         padding: v.$spacer-middle;
         margin-left: auto;
         margin-right: auto;
+        text-align: justify;
 
         &--uvod {
             text-align: center;
         }
     }
 
-    &__description {
-        padding-bottom: v.$spacer-middle;
+    &__button {
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    &--hyperlink {
-        text-decoration: none;
-        color: black;
+    &__description {
+        padding-bottom: v.$spacer-middle;
+        text-align: justify;
+    }
+
+    &__banner-givt {
+        max-width: 100%;
+        padding-top: v.$spacer-middle;
+    }
+
+    &__ordered-list-item + &__ordered-list-item {
+        padding-top: v.$spacer-small;
     }
 
     @media screen and (min-width:v.$minwidth-computer) {

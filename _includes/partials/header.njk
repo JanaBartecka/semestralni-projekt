@@ -8,7 +8,9 @@
     <img class="snowflake snowflake--7" src="/images/snowflake.svg" alt="Vločka">
     <img class="snowflake snowflake--8" src="/images/snowflake.svg" alt="Vločka">
     <img class="snowflake snowflake--9" src="/images/snowflake.svg" alt="Vločka">
-    {% include 'partials/menu.njk' %}
+    <div class="header__flex-logo-menu">
+        <div>{% include 'partials/logo.njk' %}</div>
+        <div>{% include 'partials/menu.njk' %}</div>
+    </div>
     {% include 'partials/carousel.njk' %}
-    {% include 'partials/logo.njk' %}
 </header>

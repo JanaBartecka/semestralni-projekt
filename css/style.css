@@ -54,6 +54,8 @@ h2 {
 h3 {
   font-weight: 500;
   font-size: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .button {
@@ -87,6 +89,13 @@ h3 {
 .header {
   width: 100%;
   position: relative;
+}
+.header__flex-logo-menu {
+  display: flex;
+  justify-content: space-between;
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .snowflake {
@@ -230,7 +239,7 @@ h3 {
 .menu__toggler {
   cursor: pointer;
   text-align: left;
-  padding-left: 75vw;
+  padding-right: 10vw;
 }
 .menu__toggler img {
   height: 4rem;
@@ -238,6 +247,8 @@ h3 {
 .menu__checkbox:checked ~ .menu__list {
   display: block;
   position: absolute;
+  width: 100vw;
+  right: 0;
 }
 @media screen and (min-width: 63rem) {
   .menu {
@@ -409,12 +420,12 @@ h3 {
   bottom: 0;
 }
 .header--picture-left {
-  left: 20vw;
+  left: 10vw;
   top: 1rem;
 }
 @media screen and (min-width: 63rem) {
   .header--picture-left {
-    left: calc((100% - 63rem) / 2);
+    left: calc((100% - 60rem) / 2);
   }
 }
 
@@ -436,7 +447,7 @@ h3 {
 .glide__picture-2 {
   background-image: url(/images/carousel-2.svg);
   background-size: cover;
-  background-position: bottom right;
+  background-position: bottom center;
   color: white;
 }
 .glide__event-name {
@@ -494,7 +505,6 @@ h3 {
 }
 .regular-event__day {
   background-color: #324376;
-  padding: 1.5rem;
   border-top-right-radius: 15px;
   color: white;
 }
@@ -712,6 +722,8 @@ h3 {
 .aboutus {
   margin-left: auto;
   margin-right: auto;
+  display: grid;
+  row-gap: 1.5rem;
 }
 .aboutus__card {
   max-width: calc(100vw - 1rem);
@@ -721,16 +733,25 @@ h3 {
   padding: 1.5rem;
   margin-left: auto;
   margin-right: auto;
+  text-align: justify;
 }
 .aboutus__card--uvod {
   text-align: center;
 }
+.aboutus__button {
+  margin-left: auto;
+  margin-right: auto;
+}
 .aboutus__description {
   padding-bottom: 1.5rem;
+  text-align: justify;
 }
-.aboutus--hyperlink {
-  text-decoration: none;
-  color: black;
+.aboutus__banner-givt {
+  max-width: 100%;
+  padding-top: 1.5rem;
+}
+.aboutus__ordered-list-item + .aboutus__ordered-list-item {
+  padding-top: 0.5rem;
 }
 @media screen and (min-width: 63rem) {
   .aboutus {
@@ -777,7 +798,6 @@ h3 {
 }
 .pravidelny-program__akce {
   background-color: #324376;
-  padding: 1.5rem;
   border-top-right-radius: 15px;
   color: white;
 }

@@ -3,6 +3,14 @@
 .header {
     width: 100%;
     position: relative;
+
+    &__flex-logo-menu {
+        display: flex;
+        justify-content: space-between;
+        max-width: v.$maxwidth;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 

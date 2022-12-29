@@ -436,6 +436,10 @@ h3 {
 .glide__slides {
   height: 25rem;
 }
+.glide__track {
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
 .glide__slide--link {
   text-decoration: none;
 }
@@ -746,7 +750,7 @@ h3 {
   padding-bottom: 1.5rem;
   text-align: justify;
 }
-.aboutus__banner-givt {
+.aboutus__banner-givt img {
   max-width: 100%;
   padding-top: 1.5rem;
 }

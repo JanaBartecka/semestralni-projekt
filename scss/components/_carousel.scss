@@ -8,6 +8,11 @@
         height: 25rem;
     }
 
+    &__track {
+        border-top-right-radius: v.$radius;
+        border-bottom-left-radius: v.$radius;
+    }
+
     &__slide--link {
         text-decoration: none;
     }

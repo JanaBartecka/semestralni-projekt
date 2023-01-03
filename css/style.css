@@ -58,6 +58,16 @@ h3 {
   padding-bottom: 1.5rem;
 }
 
+p::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection {
+  background-color: yellow;
+  color: rgb(20, 10, 2);
+}
+
+p::selection, h1::selection, h2::selection, h3::selection {
+  background-color: yellow;
+  color: rgb(20, 10, 2);
+}
+
 .button {
   padding: 0.5rem 0;
   border: none;
@@ -444,23 +454,35 @@ h3 {
   text-decoration: none;
 }
 .glide__picture-1 {
-  background-image: url(/images/carousel-1.png);
+  background-image: url(/images/carousel-1.svg);
   background-size: cover;
-  background-position: bottom right;
+  background-position: bottom left;
 }
 .glide__picture-2 {
-  background-image: url(/images/carousel-2.svg);
+  background-image: url(/images/carousel-2.png);
+  background-size: cover;
+  background-position: bottom center;
+  color: white;
+}
+.glide__picture-3 {
+  background-image: url(/images/carousel-3.png);
   background-size: cover;
   background-position: bottom center;
   color: white;
 }
 .glide__event-name {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   color: black;
-  padding: 0.5rem 1.5rem;
+  padding: 2rem 1.5rem 0 1.5rem;
+}
+.glide__event-name--1 {
+  font-size: 2.5rem;
+  color: #34131a;
+  background-color: #D8C0A1;
+  padding: auto;
 }
 .glide__event-name--2 {
-  padding: 0;
+  font-size: 2.5rem;
 }
 .glide__event-date {
   color: black;
@@ -471,9 +493,8 @@ h3 {
   padding-right: 0.5rem;
 }
 .glide__event-date--2 {
-  color: #FF3F00;
+  color: black;
   font-size: 1.7rem;
-  background-color: rgb(40, 56, 78);
   padding-top: 1.5rem;
 }
 .glide__event-date--1 {
@@ -555,12 +576,6 @@ h3 {
     align-items: stretch;
     grid-template-areas: "monday-grid    monday-grid     tuesday-grid    tuesday-grid wednesday-grid wednesday-grid  " ".              thursday-grid   thursday-grid   friday-grid  friday-grid    .           ";
   }
-}
-
-.noevent {
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: 600;
 }
 
 .popup {
@@ -728,6 +743,10 @@ h3 {
   margin-right: auto;
   display: grid;
   row-gap: 1.5rem;
+}
+.aboutus__link {
+  font-weight: 700;
+  text-decoration: none;
 }
 .aboutus__card {
   max-width: calc(100vw - 1rem);

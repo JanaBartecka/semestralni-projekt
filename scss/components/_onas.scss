@@ -7,6 +7,32 @@
     display: grid;
     row-gap: v.$spacer-middle;
 
+    &__link {
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    // &__link:link {
+    //     color: v.$primaryColor;
+    // }
+
+    // &__link:visited {
+    //     color: violet;
+    // }
+
+    // &__link:focus {
+    //     color: v.$secondaryColor;
+    //     background-color: pink;
+    // }
+
+    // &__link:hover {
+    //     color: v.$secondaryColor;
+    // }
+
+    // &__link:active {
+    //     color: red;
+    // }
+
     &__card {
         max-width: calc(100vw - 2*v.$spacer-small);
         background-color: v.$primaryColor;
@@ -20,6 +46,7 @@
         &--uvod {
             text-align: center;
         }
+
     }
 
     &__button {

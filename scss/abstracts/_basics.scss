@@ -55,3 +55,12 @@ h3 {
     padding-top: v.$spacer-middle;
     padding-bottom: v.$spacer-middle;
 }
+
+p::selection,h1::selection, h2::selection,h3::selection {
+    background-color: yellow;
+    color: rgb(20, 10, 2);
+  }
+
+// a:focus {
+//     background-color: aqua;
+// }   

@@ -470,6 +470,12 @@ p::selection, h1::selection, h2::selection, h3::selection {
   background-position: bottom center;
   color: white;
 }
+.glide__picture-4 {
+  background-image: url(/images/foto.svg);
+  background-size: cover;
+  background-position: bottom left;
+  color: white;
+}
 .glide__event-name {
   font-size: 2.5rem;
   color: black;
@@ -483,6 +489,14 @@ p::selection, h1::selection, h2::selection, h3::selection {
 }
 .glide__event-name--2 {
   font-size: 2.5rem;
+}
+.glide__event-name--4 {
+  font-size: 2rem;
+}
+@media screen and (min-width: 63rem) {
+  .glide__event-name--4 {
+    font-size: 2.5rem;
+  }
 }
 .glide__event-date {
   color: black;
@@ -499,6 +513,14 @@ p::selection, h1::selection, h2::selection, h3::selection {
 }
 .glide__event-date--1 {
   font-size: 1.7rem;
+}
+.glide__event-date--4 {
+  font-size: 1.4rem;
+}
+@media screen and (min-width: 63rem) {
+  .glide__event-date--4 {
+    font-size: 2rem;
+  }
 }
 .glide__arrow {
   color: black;

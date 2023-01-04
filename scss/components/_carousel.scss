@@ -71,11 +71,11 @@
     
     &__event-date {
         color: v.$carouselFontColor;
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-weight: 600;
         text-align: center;
-        padding-left: v.$spacer-small;
-        padding-right: v.$spacer-small;
+        padding-left: 4rem;
+        padding-right: 4rem;
 
         &--2 {
             color:black;

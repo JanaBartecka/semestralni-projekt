@@ -2,7 +2,7 @@
 
 
 <div class="recent-event" id="akce">
-    {% for akce in collections.akce | reverse | limit(2) %}  
+    {% for akce in collections.akce | reverse | limit(3) %}  
       <div class="recent-event__card">
           <h3 class="recent-event__title">{{ akce.data.title }}</h3>
           <div class="recent-event__description">

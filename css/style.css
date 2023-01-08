@@ -484,7 +484,7 @@ p::selection, h1::selection, h2::selection, h3::selection {
 .glide__event-name--1 {
   font-size: 1.8rem;
   color: #34131a;
-  background-color: #D8C0A1;
+  background-color: rgba(216, 192, 161, 0.8);
   padding: auto;
 }
 @media screen and (min-width: 63rem) {

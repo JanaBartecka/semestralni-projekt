@@ -22,8 +22,8 @@
     }
 
     &__item--active &__link {
-        background-color: v.$secondaryColor;
-        color: v.$primaryColor;
+        background-color: v.$buttonColor;
+        color: white;
     }
 
     &__link {
@@ -35,8 +35,8 @@
     }
 
     &__link:hover {
-        background-color: v.$secondaryColor;
-        color: v.$primaryColor;
+        background-color: v.$tertiaryColor;
+        color: #212121;
     }
 
     &__checkbox {

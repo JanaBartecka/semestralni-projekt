@@ -9,16 +9,32 @@
 
     &__link {
         font-weight: 700;
-        text-decoration: none;
+        // text-decoration: none;
+
+        &:after {
+            content: '';
+            display: inline-block;
+            background-image: url(/images/newtab.svg);
+            background-position: cover;
+            background-repeat: no-repeat;
+            width: 0.9em;
+            height: 0.9em;
+            margin-left: 0.5em;
+        }
     }
 
-    // &__link:link {
-    //     color: v.$primaryColor;
-    // }
+    &__link:link {
+        color: v.$buttonColor;
+    }
 
-    // &__link:visited {
-    //     color: violet;
-    // }
+    &__link:visited {
+        color: #212121;
+    }
+
+    &__link:hover {
+        color: v.$tertiaryColor;
+    }
+
 
     // &__link:focus {
     //     color: v.$secondaryColor;
@@ -32,6 +48,10 @@
     // &__link:active {
     //     color: red;
     // }
+
+    &__title {
+        padding-top: 0;
+    }
 
     &__card {
         max-width: calc(100vw - 2*v.$spacer-small);
@@ -47,6 +67,10 @@
             text-align: center;
         }
 
+        & p:last-child {
+            padding-bottom: 0;
+        }
+
     }
 
     &__button {
@@ -57,6 +81,10 @@
     &__description {
         padding-bottom: v.$spacer-middle;
         text-align: justify;
+    }
+
+    &__banner-givt {
+        text-align: center;
     }
 
     &__banner-givt img {
@@ -95,7 +123,7 @@
 
     }
 
-    &__deswcription {
+    &__description {
         padding: 30px;
         text-align: center;
     }

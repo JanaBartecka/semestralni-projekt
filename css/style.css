@@ -72,11 +72,12 @@ p::selection, h1::selection, h2::selection, h3::selection {
   padding: 0.5rem 0;
   border: none;
   border-radius: 15px;
-  background-color: #63B4D1;
+  background-color: #205C6A;
   cursor: pointer;
 }
 .button:hover {
-  background-color: #324376;
+  background-color: #95b2b8;
+  color: #212121;
 }
 
 .button__link {
@@ -85,6 +86,9 @@ p::selection, h1::selection, h2::selection, h3::selection {
   font-size: 1rem;
   font-weight: 500;
   text-decoration: none;
+}
+.button__link:hover {
+  color: #212121;
 }
 
 .body--background {
@@ -228,8 +232,8 @@ p::selection, h1::selection, h2::selection, h3::selection {
   border-bottom: 1px solid white;
 }
 .menu__item--active .menu__link {
-  background-color: #324376;
-  color: #FFCC00;
+  background-color: #205C6A;
+  color: white;
 }
 .menu__link {
   display: block;
@@ -239,8 +243,8 @@ p::selection, h1::selection, h2::selection, h3::selection {
   font-weight: 500;
 }
 .menu__link:hover {
-  background-color: #324376;
-  color: #FFCC00;
+  background-color: #95b2b8;
+  color: #212121;
 }
 .menu__checkbox {
   position: absolute;
@@ -556,7 +560,7 @@ p::selection, h1::selection, h2::selection, h3::selection {
   padding-bottom: 1.5rem;
 }
 .regular-event__day {
-  background-color: #324376;
+  background-color: #8d695c;
   border-top-right-radius: 15px;
   color: white;
 }
@@ -721,6 +725,7 @@ p::selection, h1::selection, h2::selection, h3::selection {
 .recent-event__title {
   text-align: center;
   padding-bottom: 1.5rem;
+  padding-top: 0;
 }
 .recent-event__text {
   line-height: 2;
@@ -773,7 +778,28 @@ p::selection, h1::selection, h2::selection, h3::selection {
 }
 .aboutus__link {
   font-weight: 700;
-  text-decoration: none;
+}
+.aboutus__link:after {
+  content: "";
+  display: inline-block;
+  background-image: url(/images/newtab.svg);
+  background-position: cover;
+  background-repeat: no-repeat;
+  width: 0.9em;
+  height: 0.9em;
+  margin-left: 0.5em;
+}
+.aboutus__link:link {
+  color: #205C6A;
+}
+.aboutus__link:visited {
+  color: #212121;
+}
+.aboutus__link:hover {
+  color: #95b2b8;
+}
+.aboutus__title {
+  padding-top: 0;
 }
 .aboutus__card {
   max-width: calc(100vw - 1rem);
@@ -788,6 +814,9 @@ p::selection, h1::selection, h2::selection, h3::selection {
 .aboutus__card--uvod {
   text-align: center;
 }
+.aboutus__card p:last-child {
+  padding-bottom: 0;
+}
 .aboutus__button {
   margin-left: auto;
   margin-right: auto;
@@ -795,6 +824,9 @@ p::selection, h1::selection, h2::selection, h3::selection {
 .aboutus__description {
   padding-bottom: 1.5rem;
   text-align: justify;
+}
+.aboutus__banner-givt {
+  text-align: center;
 }
 .aboutus__banner-givt img {
   max-width: 100%;
@@ -826,7 +858,7 @@ p::selection, h1::selection, h2::selection, h3::selection {
   border: 2px solid blue;
   border-radius: 50%;
 }
-.ourteam__deswcription {
+.ourteam__description {
   padding: 30px;
   text-align: center;
 }
@@ -847,7 +879,7 @@ p::selection, h1::selection, h2::selection, h3::selection {
   border-bottom-left-radius: 15px;
 }
 .pravidelny-program__akce {
-  background-color: #324376;
+  background-color: #8d695c;
   border-top-right-radius: 15px;
   color: white;
 }
@@ -1069,12 +1101,31 @@ p::selection, h1::selection, h2::selection, h3::selection {
   display: block;
   text-decoration: none;
   padding: 1rem;
-  background-color: grey;
+  background-color: #707070;
   text-align: center;
   font-size: 0.9rem;
   font-weight: 300;
   color: white;
   transform: translateY(3rem);
+}
+.footer__link:link {
+  color: #205C6A;
+}
+.footer__link:visited {
+  color: #212121;
+}
+.footer__link:hover {
+  color: #95b2b8;
+}
+.footer__link:after {
+  content: "";
+  display: inline-block;
+  background-image: url(/images/newtab.svg);
+  background-position: cover;
+  background-repeat: no-repeat;
+  width: 0.9em;
+  height: 0.9em;
+  margin-left: 0.5em;
 }
 @media screen and (min-width: 37rem) {
   .footer__contact {

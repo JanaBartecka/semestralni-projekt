@@ -8,11 +8,6 @@
         height: 25rem;
     }
 
-    &__track {
-        border-top-right-radius: v.$radius;
-        border-bottom-left-radius: v.$radius;
-    }
-
     &__slide--link {
         text-decoration: none;
     }
@@ -102,10 +97,19 @@
     &__arrow {
         color: black;
     }
+
+    &__track {
+        @media  screen and (min-width:v.$maxwidth-carousel) {
+            border-top-right-radius: v.$radius;
+            border-bottom-left-radius: v.$radius;
+        }
+    }
     
     @media  screen and (min-width:v.$minwidth-computer) { 
         max-width: v.$maxwidth-carousel;
         margin-left: auto;
         margin-right: auto;
+
+
     }
 }

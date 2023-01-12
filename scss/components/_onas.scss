@@ -4,14 +4,13 @@
 
     margin-left: auto;
     margin-right: auto;
-    display: grid;
     row-gap: v.$spacer-middle;
 
     &__link {
         font-weight: 700;
         // text-decoration: none;
 
-        &:after {
+        &--external:after {
             content: '';
             display: inline-block;
             background-image: url(/images/newtab.svg);
@@ -49,10 +48,6 @@
     //     color: red;
     // }
 
-    &__title {
-        padding-top: 0;
-    }
-
     &__card {
         max-width: calc(100vw - 2*v.$spacer-small);
         background-color: v.$primaryColor;
@@ -61,7 +56,7 @@
         padding: v.$spacer-middle;
         margin-left: auto;
         margin-right: auto;
-        text-align: justify;
+        text-align: left;
 
         &--uvod {
             text-align: center;
@@ -102,16 +97,38 @@
 }
 
 .ourteam {
+    max-width: calc(100vw - 2*v.$spacer-small);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,auto);
+    row-gap: v.$spacer-middle;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+
     &__person {
         max-width: 300px;
         background-color: v.$primaryColor;
-        border: 1px solid black;
         box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        border-top-right-radius: v.$radius;
+        border-bottom-left-radius: v.$radius;
+        position: relative;
+        padding-top: 35px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__name {
+        margin-top: 0;
     }
 
     &__foto {
         height: 100px;
         padding: 10px;
+        position: absolute;
+        left: 25%;
+        top: -70px;
+        margin: 0;
     }
 
     &__img {

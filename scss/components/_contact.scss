@@ -1,22 +1,20 @@
 @use '../abstracts/variables' as v;
 
-.footer {
+.contact {
 
-    &__contact {
-        max-width: calc(100vw - 2*v.$spacer-small);
-        background-color: v.$primaryColor;
-        margin-left: v.$spacer-small;
-        margin-right: v.$spacer-small;
-        border-top-right-radius: v.$spacer-middle;
-        border-bottom-left-radius: v.$spacer-middle;
-        margin: 0 auto 15vw auto;
-        padding: v.$spacer-middle;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3,auto);
-        row-gap: v.$spacer-middle;
-        column-gap: v.$spacer-small;
-    }
+    max-width: calc(100vw - 2*v.$spacer-small);
+    background-color: v.$primaryColor;
+    margin-left: v.$spacer-small;
+    margin-right: v.$spacer-small;
+    border-top-right-radius: v.$spacer-middle;
+    border-bottom-left-radius: v.$spacer-middle;
+    margin: 0 auto 15vw auto;
+    padding: v.$spacer-middle;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,auto);
+    row-gap: v.$spacer-middle;
+    column-gap: v.$spacer-small;
 
     &__title {
         display: block;
@@ -35,18 +33,6 @@
             border-bottom-left-radius: v.$spacer-middle;
         }
 
-    }
-
-    &__copyright {
-        display: block;
-        text-decoration: none;
-        padding: 1rem;
-        background-color: #707070;
-        text-align: center;
-        font-size: 0.9rem;
-        font-weight: 300;
-        color: white;
-        transform: translateY(3rem);
     }
 
     &__link:link {
@@ -73,11 +59,9 @@
     }
 
     @media screen and (min-width:v.$minwidth-tablet) {
-        &__contact {
-            grid-auto-flow: column;
-            grid-template-columns: 1fr 2fr;
-            grid-template-rows: repeat(4,auto);
-        }
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: repeat(4,auto);
 
         &__map {
             grid-row: 1/-1;
@@ -86,8 +70,6 @@
     }
 
     @media screen and (min-width:v.$minwidth-computer) {
-        &__contact {
-            max-width: v.$maxwidth;
-        }
+        max-width: v.$maxwidth;
     }
 }

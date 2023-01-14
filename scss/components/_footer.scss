@@ -1,0 +1,13 @@
+.footer {
+    &__copyright {
+        display: block;
+        text-decoration: none;
+        padding: 1rem;
+        background-color: #707070;
+        text-align: center;
+        font-size: 0.9rem;
+        font-weight: 300;
+        color: white;
+        transform: translateY(3rem);
+    }
+}

@@ -32,12 +32,14 @@
 
     {% include 'partials/header.njk' %}
 
-    <main>
+    <main id="main">
         {{ content | safe }}
     </main> 
 
 
     {% include 'partials/contact.njk' %}
+    {% include 'partials/footer.njk' %}
+    
     <script>
       // Modal window START
       document.querySelector("#popup-open-btn1").addEventListener("click",function(){

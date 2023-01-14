@@ -98,50 +98,67 @@
 
 .ourteam {
     max-width: calc(100vw - 2*v.$spacer-small);
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5,auto);
-    row-gap: v.$spacer-middle;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    flex: 1 1 calc(50% - v.$spacer-middle);
+    row-gap: 90px;
+    column-gap: v.$spacer-middle;
+    margin: 50px auto 40vw auto;
 
     &__person {
-        max-width: 300px;
+        width: 100%;
         background-color: v.$primaryColor;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        box-shadow: 1 1px 3px rgba(0,0,0,0.1);
         border-top-right-radius: v.$radius;
         border-bottom-left-radius: v.$radius;
         position: relative;
-        padding-top: 35px;
+        padding-top: 40px;
         margin-left: auto;
         margin-right: auto;
     }
 
     &__name {
         margin-top: 0;
+        margin-bottom: v.$spacer-small;
     }
 
     &__foto {
         height: 100px;
         padding: 10px;
         position: absolute;
-        left: 25%;
+        left: calc( 50% - 120px/2 );
         top: -70px;
         margin: 0;
+        
     }
 
     &__img {
         display: block;
         width: 120px;
         margin: 0 auto;
-        border: 2px solid blue;
+        border: 1px solid black;
         border-radius: 50%;
+        box-shadow: 0 -5px 10px rgb(197, 197, 197);
 
+        &--realfoto {
+            border: 0;
+        }
     }
 
     &__description {
         padding: 30px;
         text-align: center;
+    }
+
+    @media screen and (min-width:v.$minwidth-tablet) {
+        &__person {
+            width: calc(50% - v.$spacer-middle);
+        }
+    }
+
+    @media screen and (min-width:v.$minwidth-computer) {
+        max-width: v.$maxwidth;
     }
 }

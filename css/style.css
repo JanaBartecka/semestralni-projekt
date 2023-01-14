@@ -72,7 +72,7 @@ p::selection, h1::selection, h2::selection, h3::selection {
   padding: 0.5rem 2rem;
   border: none;
   border-radius: 15px;
-  background-color: #205C6A;
+  background-color: rgb(32, 92, 106);
   color: white;
   font-size: 1rem;
   font-weight: 500;
@@ -86,7 +86,7 @@ p::selection, h1::selection, h2::selection, h3::selection {
   font-weight: 500;
   text-decoration: none;
   border-radius: 15px;
-  background-color: #205C6A;
+  background-color: rgb(32, 92, 106);
 }
 .button__link:hover {
   background-color: #95b2b8;
@@ -109,7 +109,7 @@ p::selection, h1::selection, h2::selection, h3::selection {
 .header__flex-logo-menu {
   display: flex;
   justify-content: space-between;
-  max-width: 60rem;
+  max-width: 70rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -234,7 +234,7 @@ p::selection, h1::selection, h2::selection, h3::selection {
   border-bottom: 1px solid white;
 }
 .menu__item--active .menu__link {
-  background-color: #205C6A;
+  background-color: rgb(32, 92, 106);
   color: white;
 }
 .menu__link {
@@ -265,6 +265,7 @@ p::selection, h1::selection, h2::selection, h3::selection {
   position: absolute;
   width: 100vw;
   right: 0;
+  transition: width 0.2s;
 }
 @media screen and (min-width: 63rem) {
   .menu {
@@ -277,13 +278,16 @@ p::selection, h1::selection, h2::selection, h3::selection {
     display: flex;
     border-bottom-left-radius: 15px;
     border-top-right-radius: 15px;
-    max-width: 60rem;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
     margin-left: auto;
     margin-right: auto;
     width: auto;
   }
   .menu__checkbox:checked ~ .menu__list {
     display: flex;
+    position: absolute;
   }
   .menu__item {
     border-bottom: 0;
@@ -441,7 +445,7 @@ p::selection, h1::selection, h2::selection, h3::selection {
 }
 @media screen and (min-width: 63rem) {
   .header--picture-left {
-    left: calc((100% - 60rem) / 2);
+    left: calc((100% - 70rem) / 2);
   }
 }
 
@@ -602,7 +606,7 @@ p::selection, h1::selection, h2::selection, h3::selection {
 }
 @media screen and (min-width: 63rem) {
   .regular-event {
-    max-width: 60rem;
+    max-width: 70rem;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
     row-gap: 1rem;
@@ -632,7 +636,7 @@ p::selection, h1::selection, h2::selection, h3::selection {
 }
 @media screen and (min-width: 63rem) {
   .popup .content {
-    max-width: 60rem;
+    max-width: 70rem;
     margin-left: auto;
     margin-right: auto;
   }
@@ -715,6 +719,10 @@ p::selection, h1::selection, h2::selection, h3::selection {
   align-content: stretch;
   flex: 1 1 calc(50% - 1.5rem);
   gap: 1.5rem;
+  margin-bottom: 20vw;
+}
+.recent-event--uvod {
+  margin-bottom: 0;
 }
 .recent-event__card {
   width: 100%;
@@ -753,7 +761,7 @@ p::selection, h1::selection, h2::selection, h3::selection {
 }
 @media screen and (min-width: 63rem) {
   .recent-event {
-    max-width: 60rem;
+    max-width: 70rem;
   }
   .recent-event__description {
     display: grid;
@@ -793,7 +801,7 @@ p::selection, h1::selection, h2::selection, h3::selection {
   margin-left: 0.5em;
 }
 .aboutus__link:link {
-  color: #205C6A;
+  color: rgb(32, 92, 106);
 }
 .aboutus__link:visited {
   color: #212121;
@@ -837,39 +845,42 @@ p::selection, h1::selection, h2::selection, h3::selection {
 }
 @media screen and (min-width: 63rem) {
   .aboutus {
-    max-width: 60rem;
+    max-width: 70rem;
   }
 }
 
 .ourteam {
   max-width: calc(100vw - 1rem);
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, auto);
-  row-gap: 1.5rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  flex: 1 1 calc(50% - 1.5rem);
+  row-gap: 90px;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+  margin: 50px auto 40vw auto;
 }
 .ourteam__person {
-  max-width: 300px;
+  width: 100%;
   background-color: #FFCC00;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 1 1px 3px rgba(0, 0, 0, 0.1);
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
   position: relative;
-  padding-top: 35px;
+  padding-top: 40px;
   margin-left: auto;
   margin-right: auto;
 }
 .ourteam__name {
   margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 .ourteam__foto {
   height: 100px;
   padding: 10px;
   position: absolute;
-  left: 25%;
+  left: calc(50% - 60px);
   top: -70px;
   margin: 0;
 }
@@ -877,12 +888,26 @@ p::selection, h1::selection, h2::selection, h3::selection {
   display: block;
   width: 120px;
   margin: 0 auto;
-  border: 2px solid blue;
+  border: 1px solid black;
   border-radius: 50%;
+  box-shadow: 0 -5px 10px rgb(197, 197, 197);
+}
+.ourteam__img--realfoto {
+  border: 0;
 }
 .ourteam__description {
   padding: 30px;
   text-align: center;
+}
+@media screen and (min-width: 37rem) {
+  .ourteam__person {
+    width: calc(50% - 1.5rem);
+  }
+}
+@media screen and (min-width: 63rem) {
+  .ourteam {
+    max-width: 70rem;
+  }
 }
 
 .pravidelny-program {
@@ -894,6 +919,7 @@ p::selection, h1::selection, h2::selection, h3::selection {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  margin-bottom: 25vw;
 }
 .pravidelny-program__card {
   background-color: #FFCC00;
@@ -923,7 +949,7 @@ p::selection, h1::selection, h2::selection, h3::selection {
 }
 @media screen and (min-width: 63rem) {
   .pravidelny-program {
-    max-width: 60rem;
+    max-width: 70rem;
   }
 }
 
@@ -935,6 +961,7 @@ p::selection, h1::selection, h2::selection, h3::selection {
   row-gap: 1.5rem;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50vw;
   grid-template-areas: "hernicka" "akce" "program";
 }
 .fotogalerie__grid {
@@ -946,6 +973,9 @@ p::selection, h1::selection, h2::selection, h3::selection {
   grid-auto-rows: minmax(100px, 200px);
   gap: 1rem;
   grid-auto-flow: dense;
+}
+.fotogalerie__grid:last-child {
+  margin-bottom: 50vw;
 }
 .fotogalerie__grid img {
   width: 100%;
@@ -1028,7 +1058,7 @@ p::selection, h1::selection, h2::selection, h3::selection {
 }
 @media screen and (min-width: 63rem) {
   .fotogalerie {
-    max-width: 60rem;
+    max-width: 70rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     -moz-column-gap: 1.5rem;
@@ -1040,7 +1070,7 @@ p::selection, h1::selection, h2::selection, h3::selection {
     transition: transform 0.5s;
   }
   .fotogalerie__grid {
-    max-width: 60rem;
+    max-width: 70rem;
   }
   .fotogalerie__grid img:hover {
     transform: scale(1.05);
@@ -1084,11 +1114,11 @@ p::selection, h1::selection, h2::selection, h3::selection {
 }
 @media screen and (min-width: 63rem) {
   .sponsors {
-    max-width: 60rem;
+    max-width: 70rem;
   }
 }
 
-.footer__contact {
+.contact {
   max-width: calc(100vw - 1rem);
   background-color: #FFCC00;
   margin-left: 0.5rem;
@@ -1104,42 +1134,31 @@ p::selection, h1::selection, h2::selection, h3::selection {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
 }
-.footer__title {
+.contact__title {
   display: block;
   font-style: oblique;
   font-weight: 600;
   padding-bottom: 0.5rem;
 }
-.footer__map {
+.contact__map {
   grid-row: 3;
   grid-column: 1/-1;
   width: 100%;
 }
-.footer__map iframe {
+.contact__map iframe {
   border-top-right-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
 }
-.footer__copyright {
-  display: block;
-  text-decoration: none;
-  padding: 1rem;
-  background-color: #707070;
-  text-align: center;
-  font-size: 0.9rem;
-  font-weight: 300;
-  color: white;
-  transform: translateY(3rem);
+.contact__link:link {
+  color: rgb(32, 92, 106);
 }
-.footer__link:link {
-  color: #205C6A;
-}
-.footer__link:visited {
+.contact__link:visited {
   color: #212121;
 }
-.footer__link:hover {
+.contact__link:hover {
   color: #95b2b8;
 }
-.footer__link:after {
+.contact__link:after {
   content: "";
   display: inline-block;
   background-image: url(/images/newtab.svg);
@@ -1150,18 +1169,30 @@ p::selection, h1::selection, h2::selection, h3::selection {
   margin-left: 0.5em;
 }
 @media screen and (min-width: 37rem) {
-  .footer__contact {
+  .contact {
     grid-auto-flow: column;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(4, auto);
   }
-  .footer__map {
+  .contact__map {
     grid-row: 1/-1;
     grid-column: 2;
   }
 }
 @media screen and (min-width: 63rem) {
-  .footer__contact {
-    max-width: 60rem;
+  .contact {
+    max-width: 70rem;
   }
+}
+
+.footer__copyright {
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+  background-color: #707070;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: white;
+  transform: translateY(3rem);
 }/*# sourceMappingURL=style.css.map */

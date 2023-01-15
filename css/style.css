@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box;
 }
@@ -58,25 +59,59 @@ h3 {
   padding-bottom: 1.5rem;
 }
 
-p::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection {
+*::-moz-selection {
   background-color: yellow;
   color: rgb(20, 10, 2);
 }
 
-p::selection, h1::selection, h2::selection, h3::selection {
+*::selection {
   background-color: yellow;
   color: rgb(20, 10, 2);
+}
+
+a:focus-visible {
+  outline: 5px dashed #B309A6;
+}
+
+/* skok na hlavní oblast*/
+#skiptocontent a {
+  padding: 0.5rem;
+  padding-top: 1rem;
+  position: absolute;
+  top: -3rem;
+  left: 0px;
+  color: white;
+  border-bottom-right-radius: 15px;
+  background: #86057C;
+  transition: top 1s ease-out;
+  z-index: 100;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#skiptocontent a:focus {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  outline-color: transparent;
+  transition: top 0.1s ease-in;
 }
 
 .button {
   padding: 0.5rem 2rem;
   border: none;
   border-radius: 15px;
-  background-color: rgb(32, 92, 106);
+  background-color: #205c6a;
   color: white;
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
+  display: inline-block;
+}
+.button:hover {
+  background-color: #95b2b8;
+  color: #212121;
+  transition: all 0.3s;
 }
 
 .button__link {
@@ -86,11 +121,17 @@ p::selection, h1::selection, h2::selection, h3::selection {
   font-weight: 500;
   text-decoration: none;
   border-radius: 15px;
-  background-color: rgb(32, 92, 106);
+  background-color: #205c6a;
+  display: inline-block;
 }
 .button__link:hover {
   background-color: #95b2b8;
   color: #212121;
+  transition: all 0.3s;
+}
+
+button:focus-visible {
+  outline: 5px dashed #B309A6;
 }
 
 .body--background {
@@ -234,7 +275,7 @@ p::selection, h1::selection, h2::selection, h3::selection {
   border-bottom: 1px solid white;
 }
 .menu__item--active .menu__link {
-  background-color: rgb(32, 92, 106);
+  background-color: #205c6a;
   color: white;
 }
 .menu__link {
@@ -247,6 +288,7 @@ p::selection, h1::selection, h2::selection, h3::selection {
 .menu__link:hover {
   background-color: #95b2b8;
   color: #212121;
+  transition: all 0.3s;
 }
 .menu__checkbox {
   position: absolute;
@@ -753,6 +795,12 @@ p::selection, h1::selection, h2::selection, h3::selection {
 }
 .recent-event__leaflet {
   align-self: center;
+  margin-top: 1.5rem;
+}
+@media screen and (min-width: 63rem) {
+  .recent-event__leaflet {
+    margin-top: 0;
+  }
 }
 @media screen and (min-width: 30rem) {
   .recent-event__card {
@@ -801,7 +849,7 @@ p::selection, h1::selection, h2::selection, h3::selection {
   margin-left: 0.5em;
 }
 .aboutus__link:link {
-  color: rgb(32, 92, 106);
+  color: #205c6a;
 }
 .aboutus__link:visited {
   color: #212121;
@@ -897,7 +945,6 @@ p::selection, h1::selection, h2::selection, h3::selection {
 }
 .ourteam__description {
   padding: 30px;
-  text-align: center;
 }
 @media screen and (min-width: 37rem) {
   .ourteam__person {
@@ -1150,7 +1197,7 @@ p::selection, h1::selection, h2::selection, h3::selection {
   border-bottom-left-radius: 1.5rem;
 }
 .contact__link:link {
-  color: rgb(32, 92, 106);
+  color: #205c6a;
 }
 .contact__link:visited {
   color: #212121;

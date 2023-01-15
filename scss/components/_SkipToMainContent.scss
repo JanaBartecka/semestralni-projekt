@@ -1,16 +1,21 @@
+@use '../abstracts/variables' as v;
+
 /* skok na hlavní oblast*/
 #skiptocontent a {
-    padding: 6px;
+    padding: 0.5rem;
+    padding-top: 1rem;
     position: absolute;
-    top: -40px;
+    top: -3rem;
     left: 0px;
     color: white;
-    border-right: 1px solid white;
-    border-bottom: 1px solid white;
-    border-bottom-right-radius: 8px;
-    background: #9c2700;
+    // border-right: 1px solid white;
+    // border-bottom: 1px solid white;
+    border-bottom-right-radius: v.$radius;
+    background: #86057C;
     transition: top 1s ease-out;
     z-index: 100;
+    font-size: 1.2rem;
+    font-weight: 600;
   }
   
   #skiptocontent a:focus {

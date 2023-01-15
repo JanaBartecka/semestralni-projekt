@@ -56,11 +56,13 @@ h3 {
     padding-bottom: v.$spacer-middle;
 }
 
-p::selection,h1::selection, h2::selection,h3::selection {
+*::selection {
     background-color: yellow;
     color: rgb(20, 10, 2);
   }
 
-// a:focus {
-//     background-color: aqua;
-// }   
+
+a:focus-visible {
+    outline: 5px dashed #B309A6;
+}   
+

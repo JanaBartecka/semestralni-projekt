@@ -50,6 +50,11 @@
     }
     &__leaflet {
         align-self: center;
+        margin-top: v.$spacer-middle;
+
+        @media screen and (min-width:v.$minwidth-computer) {
+            margin-top: 0;
+        }
     }
 
     @media screen and (min-width:v.$minwidth-tablet-akce) {

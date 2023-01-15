@@ -9,6 +9,13 @@
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
+    display: inline-block;
+
+    &:hover {
+        background-color: v.$tertiaryColor;
+        color: #212121;
+        transition: all 0.3s;
+    }
 }
 
 .button__link {
@@ -19,10 +26,16 @@
     text-decoration: none;
     border-radius: v.$radius;
     background-color: v.$buttonColor;
+    display: inline-block;
 
     &:hover {
         background-color: v.$tertiaryColor;
         color: #212121;
+        transition: all 0.3s;
     }
 }
+
+button:focus-visible {
+    outline: 5px dashed #B309A6;
+}   
 

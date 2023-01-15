@@ -32,36 +32,36 @@
 
 <body class="body--background">
 
-    {% include 'partials/header.njk' %}
+  {% include 'partials/skipToMainContent.njk' %}
+  {% include 'partials/header.njk' %}
 
-    <main id="main">
+  <main id="main">
 
-      <h2>Akce</h2>
+    <h2>Akce</h2>
 
-      <div class="recent-event">
-
-        {% for akce in collections.akce | reverse %}  
-        
-            <div class="recent-event__card">
-              <h3 class="recent-event__title">{{ akce.data.title }}</h3>
-              <div class="recent-event__description">
-                  <div class="recent-event__text">
-                      <em>Kdy:</em> {{ akce.data.kdy }} <br>
-                      <em>Kde:</em> {{ akce.data.kde }} <br>
-                      {{ akce.data.content | safe }}
-                  </div>
-              
-                  <div class="recent-event__leaflet">
-                    <a data-fslightbox href="/images/{{ akce.data.fotomax }}"><img src="/images/{{ akce.data.fotomin }}" class="recent-event__image" alt="{{ akce.data.alt }}"></a>
-                  </div>
-              </div>
+    <div class="recent-event">
+      {% for akce in collections.akce | reverse %}  
+      
+          <div class="recent-event__card">
+            <h3 class="recent-event__title">{{ akce.data.title }}</h3>
+            <div class="recent-event__description">
+                <div class="recent-event__text">
+                    <em>Kdy:</em> {{ akce.data.kdy }} <br>
+                    <em>Kde:</em> {{ akce.data.kde }} <br>
+                    {{ akce.data.content | safe }}
+                </div>
+            
+                <div class="recent-event__leaflet">
+                  <a data-fslightbox href="/images/{{ akce.data.fotomax }}"><img src="/images/{{ akce.data.fotomin }}" class="recent-event__image" alt="{{ akce.data.alt }}"></a>
+                </div>
             </div>
-        
-        {% endfor %}
-        
-        </div>
+          </div>
+      
+      {% endfor %}
+      
+    </div>
 
-    </main> 
+  </main> 
 
     {% include 'partials/footer.njk' %}
 

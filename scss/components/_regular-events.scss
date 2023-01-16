@@ -94,12 +94,13 @@
     z-index: 3;
 
     & .content {
-        padding: auto 20px;
         width: 100%;
         max-width: 0 auto;
         opacity: 0;
         margin-bottom: v.$spacer-big;
-
+        padding-left: v.$spacer-middle;
+        padding-right: v.$spacer-middle;
+        
         @media screen and (min-width:v.$minwidth-computer) {
             max-width: v.$maxwidth;
             margin-left: auto;
@@ -159,9 +160,11 @@
         font-style: italic;
         font-size: 0.9rem;
         text-align: center;
+
     }
 
     &__event-text {
+
     }
 }
 

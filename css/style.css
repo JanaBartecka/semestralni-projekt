@@ -679,11 +679,12 @@ button:focus-visible {
   z-index: 3;
 }
 .popup .content {
-  padding: auto 20px;
   width: 100%;
   max-width: 0 auto;
   opacity: 0;
   margin-bottom: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 @media screen and (min-width: 63rem) {
   .popup .content {
@@ -919,6 +920,7 @@ button:focus-visible {
 .ourteam__name {
   margin-top: 0;
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 .ourteam__foto {
   height: 100px;

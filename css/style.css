@@ -17,10 +17,15 @@ body {
 
 p {
   margin: 0;
+  padding: 0;
   font-size: 1rem;
   font-weight: 400;
-  padding-bottom: 0.5rem;
   line-height: 1.5;
+  text-align: left;
+}
+
+p + p {
+  padding-top: 0.5rem;
 }
 
 h1, h2, h3 {
@@ -31,6 +36,7 @@ h1, h2, h3 {
 h1 {
   font-weight: 600;
   font-size: 3rem;
+  padding-top: 2rem;
 }
 
 h2::after {
@@ -49,14 +55,12 @@ h2 {
   font-weight: 600;
   font-size: 2rem;
   padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 h3 {
   font-weight: 500;
   font-size: 1.5rem;
   padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
 *::-moz-selection {
@@ -70,7 +74,7 @@ h3 {
 }
 
 a:focus-visible {
-  outline: 5px dashed #B309A6;
+  outline: 6px dotted #B309A6;
 }
 
 /* skok na hlavní oblast*/
@@ -99,6 +103,7 @@ a:focus-visible {
 
 .button {
   padding: 0.5rem 2rem;
+  margin-top: 1rem;
   border: none;
   border-radius: 15px;
   background-color: #205c6a;
@@ -116,6 +121,7 @@ a:focus-visible {
 
 .button__link {
   padding: 0.5rem 2rem;
+  margin-top: 1rem;
   color: white;
   font-size: 1rem;
   font-weight: 500;
@@ -131,7 +137,7 @@ a:focus-visible {
 }
 
 button:focus-visible {
-  outline: 5px dashed #B309A6;
+  outline: 6px dotted #B309A6;
 }
 
 .body--background {
@@ -307,7 +313,6 @@ button:focus-visible {
   position: absolute;
   width: 100vw;
   right: 0;
-  transition: width 0.2s;
 }
 @media screen and (min-width: 63rem) {
   .menu {
@@ -598,8 +603,7 @@ button:focus-visible {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, auto);
   row-gap: 1.5rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 1.5rem auto 0 auto;
   text-align: center;
   grid-template-areas: "monday-grid" "tuesday-grid" "wednesday-grid" "thursday-grid" "friday-grid";
 }
@@ -613,6 +617,10 @@ button:focus-visible {
   background-color: #8d695c;
   border-top-right-radius: 15px;
   color: white;
+  padding-bottom: 1.5rem;
+}
+.regular-event__program p {
+  text-align: center;
 }
 .regular-event__program p:nth-child(n) {
   padding: 0.5rem;
@@ -675,6 +683,7 @@ button:focus-visible {
   width: 100%;
   max-width: 0 auto;
   opacity: 0;
+  margin-bottom: 2rem;
 }
 @media screen and (min-width: 63rem) {
   .popup .content {
@@ -732,28 +741,18 @@ button:focus-visible {
     height: 100%;
   }
 }
-.popup__event-name {
-  padding-bottom: 0.5rem;
+.popup__event-name:first-of-type {
   padding-top: 4rem;
 }
 .popup__event-time {
   font-weight: 300;
-  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
   font-style: italic;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
   font-size: 0.9rem;
+  text-align: center;
 }
-.popup__event-text {
-  text-align: left;
-  padding-bottom: 2rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
 .recent-event {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 1.5rem auto 40vw auto;
   max-width: calc(100vw - 1rem);
   display: flex;
   flex-wrap: wrap;
@@ -761,7 +760,6 @@ button:focus-visible {
   align-content: stretch;
   flex: 1 1 calc(50% - 1.5rem);
   gap: 1.5rem;
-  margin-bottom: 20vw;
 }
 .recent-event--uvod {
   margin-bottom: 0;
@@ -831,8 +829,7 @@ button:focus-visible {
 }
 
 .aboutus {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 1.5rem auto 0 auto;
   row-gap: 1.5rem;
 }
 .aboutus__link {
@@ -863,8 +860,7 @@ button:focus-visible {
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
   padding: 1.5rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 1.5rem auto 0 auto;
   text-align: left;
 }
 .aboutus__card--uvod {
@@ -899,6 +895,7 @@ button:focus-visible {
 
 .ourteam {
   max-width: calc(100vw - 1rem);
+  margin: 80px auto 40vw auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -907,7 +904,6 @@ button:focus-visible {
   row-gap: 90px;
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
-  margin: 50px auto 40vw auto;
 }
 .ourteam__person {
   width: 100%;
@@ -963,10 +959,8 @@ button:focus-visible {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   row-gap: 1.5rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 1.5rem auto 40vw auto;
   text-align: center;
-  margin-bottom: 25vw;
 }
 .pravidelny-program__card {
   background-color: #FFCC00;
@@ -977,6 +971,7 @@ button:focus-visible {
   background-color: #8d695c;
   border-top-right-radius: 15px;
   color: white;
+  padding-bottom: 1.5rem;
 }
 .pravidelny-program__popis {
   padding: 1.5rem;
@@ -990,10 +985,6 @@ button:focus-visible {
   padding: 0.5rem;
   display: inline-block;
 }
-.pravidelny-program__text {
-  text-align: left;
-  padding-bottom: 1.5rem;
-}
 @media screen and (min-width: 63rem) {
   .pravidelny-program {
     max-width: 70rem;
@@ -1006,9 +997,7 @@ button:focus-visible {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, minmax(200px, 1fr));
   row-gap: 1.5rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50vw;
+  margin: 1.5rem auto 40vw auto;
   grid-template-areas: "hernicka" "akce" "program";
 }
 .fotogalerie__grid {
@@ -1127,9 +1116,8 @@ button:focus-visible {
 
 .sponsors {
   max-width: calc(100vw - 1rem);
+  margin: 1.5rem auto 0 auto;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1168,11 +1156,9 @@ button:focus-visible {
 .contact {
   max-width: calc(100vw - 1rem);
   background-color: #FFCC00;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
   border-top-right-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
-  margin: 0 auto 15vw auto;
+  margin: 1.5rem auto 40vw auto;
   padding: 1.5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;

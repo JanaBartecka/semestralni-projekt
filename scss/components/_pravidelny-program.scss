@@ -6,10 +6,8 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     row-gap: v.$spacer-middle;
-    margin-left: auto;
-    margin-right: auto;
+    margin: v.$spacer-middle auto 40vw auto;
     text-align: center;
-    margin-bottom: 25vw;
 
     &__card {
         background-color: v.$primaryColor;
@@ -21,6 +19,7 @@
         background-color: v.$secondaryColor;
         border-top-right-radius: v.$radius;
         color: white;
+        padding-bottom: v.$spacer-middle;
     }
 
     &__popis {
@@ -35,11 +34,6 @@
         font-weight: 300;
         padding: v.$spacer-small;
         display: inline-block;
-    }
-
-    &__text {
-        text-align: left;
-        padding-bottom: v.$spacer-middle;
     }
 
     @media screen and (min-width:v.$minwidth-computer) {

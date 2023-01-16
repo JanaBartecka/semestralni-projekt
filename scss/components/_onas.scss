@@ -1,14 +1,11 @@
 @use '../abstracts/variables' as v;
 
 .aboutus {
-
-    margin-left: auto;
-    margin-right: auto;
+    margin: v.$spacer-middle auto 0 auto;
     row-gap: v.$spacer-middle;
 
     &__link {
         font-weight: 700;
-        // text-decoration: none;
 
         &--external:after {
             content: '';
@@ -54,8 +51,7 @@
         border-top-right-radius: v.$radius;
         border-bottom-left-radius: v.$radius;
         padding: v.$spacer-middle;
-        margin-left: auto;
-        margin-right: auto;
+        margin: v.$spacer-middle auto 0 auto;
         text-align: left;
 
         &--uvod {
@@ -98,6 +94,7 @@
 
 .ourteam {
     max-width: calc(100vw - 2*v.$spacer-small);
+    margin: 80px auto 40vw auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -105,7 +102,6 @@
     flex: 1 1 calc(50% - v.$spacer-middle);
     row-gap: 90px;
     column-gap: v.$spacer-middle;
-    margin: 50px auto 40vw auto;
 
     &__person {
         width: 100%;

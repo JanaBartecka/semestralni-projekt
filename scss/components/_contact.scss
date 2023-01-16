@@ -4,11 +4,10 @@
 
     max-width: calc(100vw - 2*v.$spacer-small);
     background-color: v.$primaryColor;
-    margin-left: v.$spacer-small;
-    margin-right: v.$spacer-small;
     border-top-right-radius: v.$spacer-middle;
     border-bottom-left-radius: v.$spacer-middle;
-    margin: 0 auto 15vw auto;
+    // @include v.$cardStyle
+    margin: v.$spacer-middle auto 40vw auto;
     padding: v.$spacer-middle;
     display: grid;
     grid-template-columns: 1fr 1fr;

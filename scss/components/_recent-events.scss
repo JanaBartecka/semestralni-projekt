@@ -1,9 +1,7 @@
 @use '../abstracts/variables' as v;
 
 .recent-event {
-
-    margin-left: auto;
-    margin-right: auto;
+    margin: v.$spacer-middle auto 40vw auto;
     max-width: calc(100vw - 2*v.$spacer-small);
     display: flex;
     flex-wrap: wrap;
@@ -11,7 +9,6 @@
     align-content: stretch;
     flex: 1 1 calc(50% - v.$spacer-middle);
     gap: v.$spacer-middle;
-    margin-bottom: 20vw;
 
     &--uvod {
         margin-bottom: 0;

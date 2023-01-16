@@ -6,8 +6,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5,auto);
     row-gap: v.$spacer-middle;
-    margin-left: auto;
-    margin-right: auto;
+    margin: v.$spacer-middle auto 0 auto;
     text-align: center;
     grid-template-areas:
     "monday-grid"
@@ -27,6 +26,11 @@
         background-color: v.$secondaryColor;
         border-top-right-radius: v.$radius;
         color: white;
+        padding-bottom: v.$spacer-middle;
+    }
+
+    &__program  p {
+        text-align: center;      
     }
 
     &__program p:nth-child(n) {
@@ -94,6 +98,7 @@
         width: 100%;
         max-width: 0 auto;
         opacity: 0;
+        margin-bottom: v.$spacer-big;
 
         @media screen and (min-width:v.$minwidth-computer) {
             max-width: v.$maxwidth;
@@ -142,24 +147,21 @@
     }
 
     &__event-name {
-        padding-bottom: v.$spacer-small;
-        padding-top: 4rem;
+
+        &:first-of-type {
+            padding-top: 4rem;  
+        }
     }
 
     &__event-time {
         font-weight: 300;
-        padding-bottom: v.$spacer-small;
+        padding-top: v.$spacer-small;
         font-style: italic;
-        padding-left: v.$spacer-middle;
-        padding-right: v.$spacer-middle;
         font-size: 0.9rem;
+        text-align: center;
     }
 
     &__event-text {
-        text-align: left;
-        padding-bottom: v.$spacer-big;
-        padding-left: v.$spacer-middle;
-        padding-right: v.$spacer-middle;
     }
 }
 

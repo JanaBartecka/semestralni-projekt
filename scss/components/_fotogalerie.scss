@@ -6,9 +6,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3,minmax(200px,1fr));
     row-gap: v.$spacer-middle;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50vw;
+    margin: v.$spacer-middle auto 40vw auto;
     grid-template-areas:
     "hernicka"
     "akce"

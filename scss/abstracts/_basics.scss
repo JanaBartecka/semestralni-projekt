@@ -14,10 +14,15 @@ body {
 
 p {
   margin: 0;
+  padding: 0;
   font-size: 1rem; 
   font-weight: 400; 
-  padding-bottom: v.$spacer-small;
   line-height: 1.5;
+  text-align: left;
+}
+
+p + p {
+    padding-top: v.$spacer-small;
 }
 
 h1,h2,h3 {
@@ -28,6 +33,7 @@ h1,h2,h3 {
 h1 {
     font-weight: 600;
     font-size: 3rem;
+    padding-top: v.$spacer-big;
 }
 
 h2::after {
@@ -46,14 +52,12 @@ h2 {
     font-weight: 600;
     font-size: 2rem;
     padding-top: v.$spacer-big;
-    padding-bottom: v.$spacer-big;
 }
 
 h3 {
     font-weight: 500;
     font-size: 1.5rem;
     padding-top: v.$spacer-middle;
-    padding-bottom: v.$spacer-middle;
 }
 
 *::selection {
@@ -61,8 +65,7 @@ h3 {
     color: rgb(20, 10, 2);
   }
 
-
 a:focus-visible {
-    outline: 5px dashed #B309A6;
+    outline: 6px dotted #B309A6;
 }   
 

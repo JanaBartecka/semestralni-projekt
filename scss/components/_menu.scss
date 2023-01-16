@@ -4,7 +4,6 @@
     padding-top: v.$spacer-big;
     padding-bottom: v.$spacer-middle;
     z-index: 3;
-    
 
     &__list {
         margin: 0;
@@ -60,7 +59,7 @@
         position: absolute;
         width: 100vw;
         right: 0;
-        transition: width 0.2s;
+
     }
 
     // @media  screen and (max-width:v.$minwidth-computer) {

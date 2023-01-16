@@ -2,6 +2,7 @@
 
 .button {
     padding: v.$spacer-small v.$spacer-big;
+    margin-top: v.$spacer;
     border: none;
     border-radius: v.$radius;
     background-color: v.$buttonColor;
@@ -20,6 +21,7 @@
 
 .button__link {
     padding: v.$spacer-small v.$spacer-big;
+    margin-top: v.$spacer;
     color: white;
     font-size: 1rem;
     font-weight: 500;
@@ -36,6 +38,6 @@
 }
 
 button:focus-visible {
-    outline: 5px dashed #B309A6;
+    outline: 6px dotted #B309A6;
 }   
 

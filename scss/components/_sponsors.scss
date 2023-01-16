@@ -2,9 +2,8 @@
 
 .sponsors {
     max-width: calc(100vw - 2*v.$spacer-small);
+    margin: v.$spacer-middle auto 0 auto;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

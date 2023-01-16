@@ -1,7 +1,7 @@
 ---
 layout: /layouts/template-akce.njk
 title: Kdy je dítě zralé na školku, školu?
-kdy: Čtvrtek 19.1. 10:00-13:00
+kdy: Čtvrtek 19.1. 10:00-11:30
 kde: v MC Žirafa
 fotomin: akce/20230119_bartonova-priprava-skolka-min.jpg
 fotomax: akce/20230119_bartonova-priprava-skolka-max.png

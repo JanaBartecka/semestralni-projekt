@@ -506,7 +506,7 @@ button:focus-visible {
 .glide__slide--link {
   text-decoration: none;
 }
-.glide__picture-1 {
+.glide__picture-nemoc {
   background-image: url(/images/nemoc.svg);
   background-size: cover;
   background-position: bottom left;
@@ -532,16 +532,21 @@ button:focus-visible {
 .glide__event-name {
   font-size: 2.5rem;
   color: black;
-  padding: 2rem 1.5rem 0 1.5rem;
+  padding: 2rem 0.5rem 0 0.5rem;
 }
-.glide__event-name--1 {
+@media screen and (min-width: 37rem) {
+  .glide__event-name {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+.glide__event-name--nemoc {
   font-size: 1.8rem;
   color: #34131a;
   background-color: rgba(216, 192, 161, 0.8);
-  padding: auto;
 }
 @media screen and (min-width: 63rem) {
-  .glide__event-name--1 {
+  .glide__event-name--nemoc {
     font-size: 2.4rem;
   }
 }
@@ -559,18 +564,24 @@ button:focus-visible {
 .glide__event-date {
   color: black;
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+@media screen and (min-width: 37rem) {
+  .glide__event-date {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+.glide__event-date--nemoc {
+  font-size: 1.7rem;
 }
 .glide__event-date--2 {
   color: black;
   font-size: 1.7rem;
   padding-top: 1.5rem;
-}
-.glide__event-date--1 {
-  font-size: 1.7rem;
 }
 .glide__event-date--4 {
   font-size: 1.4rem;
@@ -681,7 +692,7 @@ button:focus-visible {
 .popup .content {
   width: 100%;
   max-width: 0 auto;
-  opacity: 0;
+  display: none;
   margin-bottom: 2rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -711,7 +722,7 @@ button:focus-visible {
           animation: popupAnimation 1500ms ease-in-out forwards;
 }
 .popup.active .content {
-  opacity: 1;
+  display: block;
   transition: all 100ms ease-in-out 1300ms;
 }
 @-webkit-keyframes popupAnimation {
@@ -752,6 +763,7 @@ button:focus-visible {
   font-size: 0.9rem;
   text-align: center;
 }
+
 .recent-event {
   margin: 1.5rem auto 40vw auto;
   max-width: calc(100vw - 1rem);

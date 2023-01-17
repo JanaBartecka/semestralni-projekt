@@ -59,8 +59,13 @@
         position: absolute;
         width: 100vw;
         right: 0;
-
     }
+
+    // &:focus-visible {
+    //     outline: 6px dotted #B309A6;
+    //     outline: auto;
+    //     outline-offset: 4px;
+    // }
 
     // @media  screen and (max-width:v.$minwidth-computer) {
     //     &__checkbox:checked ~ &__list {

@@ -96,7 +96,8 @@
     & .content {
         width: 100%;
         max-width: 0 auto;
-        opacity: 0;
+        // opacity: 0;
+        display: none;
         margin-bottom: v.$spacer-big;
         padding-left: v.$spacer-middle;
         padding-right: v.$spacer-middle;
@@ -127,7 +128,8 @@
     }
 
     &.active .content {
-        opacity: 1;
+        // opacity: 1;
+        display: block;
         transition: all 100ms ease-in-out 1300ms;
     }
 
@@ -163,9 +165,6 @@
 
     }
 
-    &__event-text {
-
-    }
 }
 
 

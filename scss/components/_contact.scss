@@ -6,7 +6,7 @@
     background-color: v.$primaryColor;
     border-top-right-radius: v.$spacer-middle;
     border-bottom-left-radius: v.$spacer-middle;
-    // @include v.$cardStyle
+    // @include v.cardStyle;
     margin: v.$spacer-middle auto 40vw auto;
     padding: v.$spacer-middle;
     display: grid;

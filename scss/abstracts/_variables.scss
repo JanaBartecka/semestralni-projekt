@@ -20,8 +20,8 @@ $maxwidth:70rem;
 $maxwidth-carousel:80rem;
 $minwidth-tablet-akce:30rem;
 
-@mixin cardStyle {
-    border-top-right-radius: v.$radius;
-    border-bottom-left-radius: v.$radius;
-    background-color: v.$primaryColor;
-}
+// @mixin cardStyle {
+//     border-top-right-radius: 50px;
+//     border-bottom-left-radius: 50px;
+//     background-color: pink;
+// }

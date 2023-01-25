@@ -18,6 +18,12 @@
         background-position: bottom left;
     }
 
+        &__picture-dilnicky {
+        background-image: url(/images/krmitko.svg);
+        background-size: cover;
+        background-position: bottom left;
+    }
+
     &__picture-2 {
         background-image: url(/images/carousel-2.png);
         background-size: cover;
@@ -86,6 +92,14 @@
 
         &--nemoc {
             font-size: 1.7rem;
+        }
+
+        &--dilnicky {
+            padding-top: 90px;
+
+            @media  screen and (min-width:v.$minwidth-tablet) { 
+                padding-top: 0;
+        }
         }
 
         &--2 {

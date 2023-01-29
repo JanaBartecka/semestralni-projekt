@@ -1,0 +1,15 @@
+@use '../abstracts/variables' as v;
+
+.banner-prihlaseni {
+    // max-width: calc(100vw - 2*v.$spacer-small);
+    max-width: max-content;
+    margin: v.$spacer-middle auto 0 auto;
+    background-color: v.$primaryColor;
+    border-top-right-radius: v.$radius;
+    border-bottom-left-radius: v.$radius;
+    padding: v.$spacer-middle;
+
+    &__text {
+        text-align: center;
+    }
+}

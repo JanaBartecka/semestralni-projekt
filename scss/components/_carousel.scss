@@ -18,10 +18,28 @@
         background-position: bottom left;
     }
 
-        &__picture-dilnicky {
+    &__picture-dilnicky {
         background-image: url(/images/krmitko.svg);
         background-size: cover;
         background-position: bottom left;
+    }
+
+    &__picture-cviceni {
+        background-image: url(/images/carousel-cviceni.png);
+        background-size: cover;
+        background-position: bottom left;
+    }
+
+    &__picture-rytmicek {
+        background-image: url(/images/carousel-rytmicek.png);
+        background-size: cover;
+        background-position: bottom right;
+    }
+
+    &__picture-skolicka {
+        background-image: url(/images/carousel-skolicka.png);
+        background-size: cover;
+        background-position: bottom right;
     }
 
     &__picture-2 {
@@ -59,6 +77,30 @@
             font-size: 1.8rem;
             color: #34131a;
             background-color: rgba(216, 192, 161,0.8);
+            @media  screen and (min-width:v.$minwidth-computer) { 
+                font-size: 2.4rem;
+            }
+        }
+
+        &--cviceni {
+            font-size: 1.8rem;
+            padding-top: 150px;
+            @media  screen and (min-width:v.$minwidth-computer) { 
+                font-size: 2.4rem;
+            }
+        }
+
+        &--rytmicek {
+            font-size: 1.8rem;
+            padding-top: 110px;
+            @media  screen and (min-width:v.$minwidth-computer) { 
+                font-size: 2.4rem;
+            }
+        }
+
+        &--skolicka {
+            font-size: 1.8rem;
+            padding-top: 80px;
             @media  screen and (min-width:v.$minwidth-computer) { 
                 font-size: 2.4rem;
             }

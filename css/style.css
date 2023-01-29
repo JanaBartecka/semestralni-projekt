@@ -77,6 +77,20 @@ a:focus-visible {
   outline: 6px dotted #B309A6;
 }
 
+.banner-prihlaseni {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin: 1.5rem auto 0 auto;
+  background-color: #FFCC00;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 1.5rem;
+}
+.banner-prihlaseni__text {
+  text-align: center;
+}
+
 /* skok na hlavní oblast*/
 #skiptocontent a {
   padding: 0.5rem;
@@ -516,6 +530,21 @@ button:focus-visible {
   background-size: cover;
   background-position: bottom left;
 }
+.glide__picture-cviceni {
+  background-image: url(/images/carousel-cviceni.png);
+  background-size: cover;
+  background-position: bottom left;
+}
+.glide__picture-rytmicek {
+  background-image: url(/images/carousel-rytmicek.png);
+  background-size: cover;
+  background-position: bottom right;
+}
+.glide__picture-skolicka {
+  background-image: url(/images/carousel-skolicka.png);
+  background-size: cover;
+  background-position: bottom right;
+}
 .glide__picture-2 {
   background-image: url(/images/carousel-2.png);
   background-size: cover;
@@ -552,6 +581,33 @@ button:focus-visible {
 }
 @media screen and (min-width: 63rem) {
   .glide__event-name--nemoc {
+    font-size: 2.4rem;
+  }
+}
+.glide__event-name--cviceni {
+  font-size: 1.8rem;
+  padding-top: 150px;
+}
+@media screen and (min-width: 63rem) {
+  .glide__event-name--cviceni {
+    font-size: 2.4rem;
+  }
+}
+.glide__event-name--rytmicek {
+  font-size: 1.8rem;
+  padding-top: 110px;
+}
+@media screen and (min-width: 63rem) {
+  .glide__event-name--rytmicek {
+    font-size: 2.4rem;
+  }
+}
+.glide__event-name--skolicka {
+  font-size: 1.8rem;
+  padding-top: 80px;
+}
+@media screen and (min-width: 63rem) {
+  .glide__event-name--skolicka {
     font-size: 2.4rem;
   }
 }

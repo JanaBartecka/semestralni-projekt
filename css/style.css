@@ -773,7 +773,7 @@ button:focus-visible {
     margin-right: auto;
   }
 }
-.popup .content .popup__btn-close {
+.popup__btn-close {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -784,7 +784,8 @@ button:focus-visible {
   color: black;
   font-size: 40px;
   cursor: pointer;
-  border-radius: 50%;
+  background-color: #E6B800;
+  border: none;
 }
 .popup.active {
   -webkit-animation: popupAnimation 1500ms ease-in-out forwards;

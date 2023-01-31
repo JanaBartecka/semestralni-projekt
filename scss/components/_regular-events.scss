@@ -109,7 +109,7 @@
         }
     }
 
-    & .content &__btn-close {
+    &__btn-close {
         position: absolute;
         top: 20px;
         right: 20px;
@@ -120,7 +120,9 @@
         color: black;
         font-size: 40px;
         cursor: pointer;
-        border-radius: 50%;
+        // border-radius: 50%;
+        background-color: v.$primaryColor-similar;
+        border: none;
     }
 
     &.active {

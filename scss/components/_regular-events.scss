@@ -16,6 +16,7 @@
     "friday-grid";
 
     &__card {
+        // background-color: var(--test);
         background-color: v.$primaryColor;
         border-top-right-radius: v.$radius;
         border-bottom-left-radius: v.$radius;
@@ -25,7 +26,7 @@
     &__day {
         background-color: v.$secondaryColor;
         border-top-right-radius: v.$radius;
-        color: white;
+        color: v.$lightColor;
         padding-bottom: v.$spacer-middle;
     }
 
@@ -117,7 +118,7 @@
         height: 40px;
         text-align: center;
         line-height: 40px;
-        color: black;
+        color: v.$textColor;
         font-size: 40px;
         cursor: pointer;
         // border-radius: 50%;

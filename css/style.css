@@ -102,7 +102,7 @@ a:focus-visible {
   left: 0px;
   color: white;
   border-bottom-right-radius: 15px;
-  background: #86057C;
+  background: #B309A6;
   transition: top 1s ease-out;
   z-index: 100;
   font-size: 1.2rem;
@@ -131,7 +131,7 @@ a:focus-visible {
 }
 .button:hover {
   background-color: #95b2b8;
-  color: #212121;
+  color: black;
   transition: all 0.3s;
 }
 
@@ -148,7 +148,7 @@ a:focus-visible {
 }
 .button__link:hover {
   background-color: #95b2b8;
-  color: #212121;
+  color: black;
   transition: all 0.3s;
 }
 
@@ -548,7 +548,7 @@ button:focus-visible {
   background-position: bottom right;
 }
 .glide__picture-2 {
-  background-image: url(/images/carousel-2.png);
+  background-image: url(/images/carousel-nova-anglictina.svg);
   background-size: cover;
   background-position: bottom center;
   color: white;
@@ -1020,7 +1020,8 @@ button:focus-visible {
   margin: 0 auto;
   border: 1px solid black;
   border-radius: 50%;
-  box-shadow: 0 -5px 10px rgb(197, 197, 197);
+  box-shadow: 0 -5px 10px #707070;
+  background-color: white;
 }
 .ourteam__img--realfoto {
   border: 0;
@@ -1272,7 +1273,7 @@ button:focus-visible {
   color: #205c6a;
 }
 .contact__link:visited {
-  color: #212121;
+  color: black;
 }
 .contact__link:hover {
   color: #95b2b8;

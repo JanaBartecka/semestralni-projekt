@@ -43,24 +43,24 @@
     }
 
     &__picture-2 {
-        background-image: url(/images/carousel-2.png);
+        background-image: url(/images/carousel-nova-anglictina.svg);
         background-size: cover;
         background-position: bottom center;
-        color: white;
+        color: v.$lightColor;
     }
 
     &__picture-3 {
         background-image: url(/images/carousel-3.png);
         background-size: cover;
         background-position: bottom center;
-        color: white;
+        color: v.$lightColor;
     }
 
     &__picture-4 {
         background-image: url(/images/lucerna.svg);
         background-size: cover;
         background-position: bottom left;
-        color: white;
+        color: v.$lightColor;
     }
     
     &__event-name {
@@ -145,7 +145,7 @@
         }
 
         &--2 {
-            color:black;
+            color:v.$textColor;
             font-size: 1.7rem;
             padding-top: v.$spacer-middle;
         }
@@ -160,7 +160,7 @@
     }
 
     &__arrow {
-        color: black;
+        color: v.$textColor;
     }
 
     &__track {

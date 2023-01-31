@@ -127,17 +127,17 @@
         position: absolute;
         left: calc( 50% - 120px/2 );
         top: -70px;
-        margin: 0;
-        
+        margin: 0;       
     }
 
     &__img {
         display: block;
         width: 120px;
         margin: 0 auto;
-        border: 1px solid black;
+        border: 1px solid v.$textColor;
         border-radius: 50%;
-        box-shadow: 0 -5px 10px rgb(197, 197, 197);
+        box-shadow: 0 -5px 10px v.$greyColor;
+        background-color: white; 
 
         &--realfoto {
             border: 0;

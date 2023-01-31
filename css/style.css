@@ -89,6 +89,8 @@ a:focus-visible {
 }
 .banner-prihlaseni__text {
   text-align: center;
+  font-size: 1.5rem;
+  padding-top: 0;
 }
 
 /* skok na hlavní oblast*/

@@ -527,6 +527,11 @@ button:focus-visible {
   background-size: cover;
   background-position: bottom left;
 }
+.glide__picture-uzavreni {
+  background-image: url(/images/CAROUSEL-UYAVRENI.svg);
+  background-size: cover;
+  background-position: bottom center;
+}
 .glide__picture-dilnicky {
   background-image: url(/images/krmitko.svg);
   background-size: cover;
@@ -583,6 +588,14 @@ button:focus-visible {
 }
 @media screen and (min-width: 63rem) {
   .glide__event-name--nemoc {
+    font-size: 2.4rem;
+  }
+}
+.glide__event-name--uzavreni {
+  font-size: 1.8rem;
+}
+@media screen and (min-width: 63rem) {
+  .glide__event-name--uzavreni {
     font-size: 2.4rem;
   }
 }

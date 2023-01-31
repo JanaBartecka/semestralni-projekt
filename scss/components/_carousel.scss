@@ -18,6 +18,12 @@
         background-position: bottom left;
     }
 
+    &__picture-uzavreni {
+        background-image: url(/images/CAROUSEL-UYAVRENI.svg);
+        background-size: cover;
+        background-position: bottom center;
+    }
+
     &__picture-dilnicky {
         background-image: url(/images/krmitko.svg);
         background-size: cover;
@@ -77,6 +83,13 @@
             font-size: 1.8rem;
             color: #34131a;
             background-color: rgba(216, 192, 161,0.8);
+            @media  screen and (min-width:v.$minwidth-computer) { 
+                font-size: 2.4rem;
+            }
+        }
+
+        &--uzavreni {
+            font-size: 1.8rem;
             @media  screen and (min-width:v.$minwidth-computer) { 
                 font-size: 2.4rem;
             }

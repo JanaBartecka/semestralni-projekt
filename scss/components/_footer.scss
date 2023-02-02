@@ -5,11 +5,11 @@
         display: block;
         text-decoration: none;
         padding: 1rem;
-        background-color: v.$greyColor;
+        background-color: var(--greyColor);
         text-align: center;
         font-size: 0.9rem;
         font-weight: 300;
-        color: v.$lightColor;
+        color: var(--lightColor);
         transform: translateY(3rem);
     }
 }

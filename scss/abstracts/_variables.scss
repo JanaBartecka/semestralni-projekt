@@ -1,23 +1,37 @@
-// :root {
-    // --test:#FFCC00;
-    // @media (prefers-color-scheme: dark){
-        // --test:#816a0e;
-        // }
-// }
+:root {
+    --primaryColor:#FFCC00;
+    --primaryColor-similar:#E6B800;
+    --secondaryColor:#8d695c;
+    --tertiaryColor:#95b2b8;
+    --buttonColor:#205c6a;
+    --carouselFontColor:black;
+    --textColor:black;
+    --lightColor:white;
+    --focusColor:#B309A6;
+    --greyColor: #707070;
+    --shadowColor:#c5c5c5;
+    --backgroundColor:white;
 
-$primaryColor:#FFCC00;
-$primaryColor-similar:#E6B800;
-// $secondaryColor:#6b4b3e;
-$secondaryColor:#8d695c;
-$tertiaryColor:#95b2b8;
-// $buttonColor:#63B4D1;
-$buttonColor:#205c6a;
-$carouselFontColor:black;
-$textColor:black;
-$lightColor:white;
-$focusColor:#B309A6;
-$greyColor: #707070;
-$shadowColor:#c5c5c5;
+}
+
+@media (prefers-color-scheme: dark){
+    :root {
+        --primaryColor:#1c474a;
+        --primaryColor-similar:#3b787d;
+        --secondaryColor:#905E14;
+        --tertiaryColor:#6DA7D9;
+        --buttonColor:#8B93A7;
+        --carouselFontColor:black;
+        --textColor:#FFCC00;
+        --lightColor:black;
+        --focusColor:#B309A6;
+        --greyColor: #707070;
+        --shadowColor:#515151;
+        --backgroundColor:rgb(105, 105, 105);
+
+        --darkBrightness:0.8;
+    }
+}
 
 $spacer:1rem;
 $spacer-small:0.5rem;
@@ -39,21 +53,5 @@ $minwidth-tablet-akce:30rem;
 // }
 
 
-// @media (prefers-color-scheme: dark) {
-    // :root {
-    // $primaryColor:#816a0e;
-    // $primaryColor-similar:#E6B800;
 
-    // $secondaryColor:#8d695c;
-    // $tertiaryColor:#95b2b8;
 
-    // $buttonColor:#205c6a;
-    // $carouselFontColor:black;
-    // $textColor:white;
-    // $lightColor:black;
-    // $focusColor:#B309A6;
-    // $greyColor: #707070;
-    // $shadowColor:#c5c5c5;
-// }
-// }
-// 

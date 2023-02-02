@@ -9,7 +9,7 @@
         margin: 0;
         list-style: none;
         font-size: 1.2rem;
-        background-color: v.$primaryColor;
+        background-color: var(--primaryColor);
         padding: 0;
         display: none;       
         width: 100%;
@@ -17,12 +17,12 @@
     }
 
     &__item {
-        border-bottom: 1px solid v.$lightColor;
+        border-bottom: 1px solid var(--lightColor);
     }
 
     &__item--active &__link {
-        background-color: v.$buttonColor;
-        color: v.$lightColor;
+        background-color: var(--buttonColor);
+        color: var(--lightColor);
     }
 
     &__link {
@@ -34,7 +34,7 @@
     }
 
     &__link:hover {
-        background-color: v.$tertiaryColor;
+        background-color: var(--tertiaryColor);
         color: #212121;
         transition: all 0.3s;
     }
@@ -97,7 +97,7 @@
 
         &__item {
             border-bottom: 0;
-            border-right: 1px solid v.$lightColor;
+            border-right: 1px solid var(--lightColor);
         }
 
         &__item:last-child {

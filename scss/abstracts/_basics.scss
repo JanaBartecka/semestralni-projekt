@@ -19,6 +19,7 @@ p {
   font-weight: 400; 
   line-height: 1.5;
   text-align: left;
+  color: var(--textColor);
 }
 
 p + p {
@@ -28,6 +29,7 @@ p + p {
 h1,h2,h3 {
     margin: 0;
     text-align: center;
+    color: var(--textColor);
 }
 
 h1 {
@@ -41,7 +43,7 @@ h2::after {
     content: '';
     display: block;
     padding-top: v.$spacer-small;
-    border-bottom: 5px dotted v.$primaryColor;
+    border-bottom: 5px dotted var(--primaryColor);
     width: 10vw;
     text-align: center;
     margin-left: auto;
@@ -68,4 +70,11 @@ h3 {
 a:focus-visible {
     outline: 6px dotted #B309A6;
 }   
+
+[src$=".png"], [src$=".jpg"],[src$=".jpeg"],[src$=".svg"],svg,
+.fotogalerie__link {
+    filter:brightness(var(--darkBrightness)); 
+}
+
+
 

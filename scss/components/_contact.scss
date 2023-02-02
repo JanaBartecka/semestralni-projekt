@@ -3,7 +3,7 @@
 .contact {
 
     max-width: calc(100vw - 2*v.$spacer-small);
-    background-color: v.$primaryColor;
+    background-color: var(--primaryColor);
     border-top-right-radius: v.$spacer-middle;
     border-bottom-left-radius: v.$spacer-middle;
     // @include v.cardStyle;
@@ -14,6 +14,7 @@
     grid-template-rows: repeat(3,auto);
     row-gap: v.$spacer-middle;
     column-gap: v.$spacer-small;
+    color: var(--textColor);
 
     &__title {
         display: block;
@@ -35,15 +36,15 @@
     }
 
     &__link:link {
-        color: v.$buttonColor;
+        color: var(--buttonColor);
     }
 
     &__link:visited {
-        color: v.$textColor;
+        color: var(--textColo)r;
     }
 
     &__link:hover {
-        color: v.$tertiaryColor;
+        color: var(--tertiaryColor);
     }
 
     &__link:after {

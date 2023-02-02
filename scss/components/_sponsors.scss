@@ -8,9 +8,14 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: v.$lightColor;
+    background-color: var(--lightColor);
     border-top-right-radius: v.$radius;
     border-bottom-left-radius: v.$radius;
+
+    @media (prefers-color-scheme: dark){
+        background-color: white;
+        opacity: 0.7;
+    }
 
     &__img {
         max-width: 70px;

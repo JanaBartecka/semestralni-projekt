@@ -1,4 +1,36 @@
 @charset "UTF-8";
+:root {
+  --primaryColor:#FFCC00;
+  --primaryColor-similar:#E6B800;
+  --secondaryColor:#8d695c;
+  --tertiaryColor:#95b2b8;
+  --buttonColor:#205c6a;
+  --carouselFontColor:black;
+  --textColor:black;
+  --lightColor:white;
+  --focusColor:#B309A6;
+  --greyColor: #707070;
+  --shadowColor:#c5c5c5;
+  --backgroundColor:white;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primaryColor:#1c474a;
+    --primaryColor-similar:#3b787d;
+    --secondaryColor:#905E14;
+    --tertiaryColor:#6DA7D9;
+    --buttonColor:#8B93A7;
+    --carouselFontColor:black;
+    --textColor:#FFCC00;
+    --lightColor:black;
+    --focusColor:#B309A6;
+    --greyColor: #707070;
+    --shadowColor:#515151;
+    --backgroundColor:rgb(105, 105, 105);
+    --darkBrightness:0.8;
+  }
+}
 html {
   box-sizing: border-box;
 }
@@ -22,6 +54,7 @@ p {
   font-weight: 400;
   line-height: 1.5;
   text-align: left;
+  color: var(--textColor);
 }
 
 p + p {
@@ -31,6 +64,7 @@ p + p {
 h1, h2, h3 {
   margin: 0;
   text-align: center;
+  color: var(--textColor);
 }
 
 h1 {
@@ -44,7 +78,7 @@ h2::after {
   content: "";
   display: block;
   padding-top: 0.5rem;
-  border-bottom: 5px dotted #FFCC00;
+  border-bottom: 5px dotted var(--primaryColor);
   width: 10vw;
   text-align: center;
   margin-left: auto;
@@ -77,12 +111,17 @@ a:focus-visible {
   outline: 6px dotted #B309A6;
 }
 
+[src$=".png"], [src$=".jpg"], [src$=".jpeg"], [src$=".svg"], svg,
+.fotogalerie__link {
+  filter: brightness(var(--darkBrightness));
+}
+
 .banner-prihlaseni {
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
   margin: 1.5rem auto 0 auto;
-  background-color: #FFCC00;
+  background-color: var(--primaryColor);
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
   padding: 1.5rem;
@@ -102,7 +141,7 @@ a:focus-visible {
   left: 0px;
   color: white;
   border-bottom-right-radius: 15px;
-  background: #B309A6;
+  background: var(--focusColor);
   transition: top 1s ease-out;
   z-index: 100;
   font-size: 1.2rem;
@@ -122,47 +161,59 @@ a:focus-visible {
   margin-top: 1rem;
   border: none;
   border-radius: 15px;
-  background-color: #205c6a;
-  color: white;
+  background-color: var(--buttonColor);
+  color: var(--lightColor);
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
   display: inline-block;
 }
 .button:hover {
-  background-color: #95b2b8;
-  color: black;
+  background-color: var(--tertiaryColor);
+  color: var(--textColor);
   transition: all 0.3s;
 }
 
 .button__link {
   padding: 0.5rem 2rem;
   margin-top: 1rem;
-  color: white;
+  color: var(--lightColor);
   font-size: 1rem;
   font-weight: 500;
   text-decoration: none;
   border-radius: 15px;
-  background-color: #205c6a;
+  background-color: var(--buttonColor);
   display: inline-block;
 }
 .button__link:hover {
-  background-color: #95b2b8;
-  color: black;
+  background-color: var(--tertiaryColor);
+  color: var(--textColor);
   transition: all 0.3s;
 }
 
 button:focus-visible {
-  outline: 6px dotted #B309A6;
+  outline: 6px dotted var(--focusColor);
 }
 
 .body--background {
   height: 100%;
   background-image: url(/images/obloha1.svg), url(/images/Kilimanjaro_my1.svg);
   background-repeat: no-repeat, no-repeat;
-  background-color: white;
+  background-color: var(--backgroundColor);
   background-position: left top, bottom;
   background-size: 100%, 100%;
+}
+
+body:after {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, calc(1 - var(--darkBrightness)));
+  pointer-events: none;
+  z-index: -1;
 }
 
 .header {
@@ -287,18 +338,18 @@ button:focus-visible {
   margin: 0;
   list-style: none;
   font-size: 1.2rem;
-  background-color: #FFCC00;
+  background-color: var(--primaryColor);
   padding: 0;
   display: none;
   width: 100%;
   z-index: 3;
 }
 .menu__item {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--lightColor);
 }
 .menu__item--active .menu__link {
-  background-color: #205c6a;
-  color: white;
+  background-color: var(--buttonColor);
+  color: var(--lightColor);
 }
 .menu__link {
   display: block;
@@ -308,7 +359,7 @@ button:focus-visible {
   font-weight: 500;
 }
 .menu__link:hover {
-  background-color: #95b2b8;
+  background-color: var(--tertiaryColor);
   color: #212121;
   transition: all 0.3s;
 }
@@ -354,7 +405,7 @@ button:focus-visible {
   }
   .menu__item {
     border-bottom: 0;
-    border-right: 1px solid white;
+    border-right: 1px solid var(--lightColor);
   }
   .menu__item:last-child {
     border: 0;
@@ -556,23 +607,23 @@ button:focus-visible {
   background-image: url(/images/carousel-nova-anglictina.svg);
   background-size: cover;
   background-position: bottom center;
-  color: white;
+  color: var(--lightColor);
 }
 .glide__picture-3 {
   background-image: url(/images/carousel-3.png);
   background-size: cover;
   background-position: bottom center;
-  color: white;
+  color: var(--lightColor);
 }
 .glide__picture-4 {
   background-image: url(/images/lucerna.svg);
   background-size: cover;
   background-position: bottom left;
-  color: white;
+  color: var(--lightColor);
 }
 .glide__event-name {
   font-size: 2.5rem;
-  color: black;
+  color: var(--carouselFontColor);
   padding: 2rem 0.5rem 0 0.5rem;
 }
 @media screen and (min-width: 37rem) {
@@ -638,7 +689,7 @@ button:focus-visible {
   }
 }
 .glide__event-date {
-  color: black;
+  color: var(--carouselFontColor);
   font-size: 1.8rem;
   font-weight: 500;
   text-align: center;
@@ -663,7 +714,7 @@ button:focus-visible {
   }
 }
 .glide__event-date--2 {
-  color: black;
+  color: var(--textColor);
   font-size: 1.7rem;
   padding-top: 1.5rem;
 }
@@ -676,7 +727,7 @@ button:focus-visible {
   }
 }
 .glide__arrow {
-  color: black;
+  color: var(--textColor);
 }
 @media screen and (min-width: 80rem) {
   .glide__track {
@@ -691,6 +742,11 @@ button:focus-visible {
     margin-right: auto;
   }
 }
+@media (prefers-color-scheme: dark) {
+  .glide__slide {
+    filter: brightness(0.9);
+  }
+}
 
 .regular-event {
   max-width: calc(100vw - 1rem);
@@ -703,15 +759,15 @@ button:focus-visible {
   grid-template-areas: "monday-grid" "tuesday-grid" "wednesday-grid" "thursday-grid" "friday-grid";
 }
 .regular-event__card {
-  background-color: #FFCC00;
+  background-color: var(--primaryColor);
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
   padding-bottom: 1.5rem;
 }
 .regular-event__day {
-  background-color: #8d695c;
+  background-color: var(--secondaryColor);
   border-top-right-radius: 15px;
-  color: white;
+  color: var(--lightColor);
   padding-bottom: 1.5rem;
 }
 .regular-event__program p {
@@ -721,7 +777,11 @@ button:focus-visible {
   padding: 0.5rem;
 }
 .regular-event__program p:nth-child(odd) {
-  background-color: #E6B800;
+  background-color: var(--primaryColor-similar);
+  border-top: 0.5px inset black;
+}
+.regular-event__program p:last-of-type {
+  border-bottom: 0.5px ridge black;
 }
 .regular-event__card--monday {
   grid-area: monday-grid;
@@ -769,7 +829,7 @@ button:focus-visible {
   width: 100%;
   height: 0%;
   transform: translateY(-50%);
-  background: #E6B800;
+  background: var(--primaryColor-similar);
   overflow: auto;
   z-index: 3;
 }
@@ -796,10 +856,10 @@ button:focus-visible {
   height: 40px;
   text-align: center;
   line-height: 40px;
-  color: black;
+  color: var(--textColor);
   font-size: 40px;
   cursor: pointer;
-  background-color: #E6B800;
+  background-color: var(--primaryColor-similar);
   border: none;
 }
 .popup.active {
@@ -865,7 +925,7 @@ button:focus-visible {
 .recent-event__card {
   width: 100%;
   padding: 1.5rem;
-  background-color: #FFCC00;
+  background-color: var(--primaryColor);
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
 }
@@ -879,10 +939,11 @@ button:focus-visible {
 }
 .recent-event__text {
   line-height: 2;
+  color: var(--textColor);
 }
 .recent-event--hyperlink {
   text-decoration: none;
-  color: black;
+  color: var(--textColor);
 }
 .recent-event__image {
   width: 100%;
@@ -944,17 +1005,17 @@ button:focus-visible {
   margin-left: 0.5em;
 }
 .aboutus__link:link {
-  color: #205c6a;
+  color: var(--buttonColor);
 }
 .aboutus__link:visited {
   color: #212121;
 }
 .aboutus__link:hover {
-  color: #95b2b8;
+  color: var(--tertiaryColor);
 }
 .aboutus__card {
   max-width: calc(100vw - 1rem);
-  background-color: #FFCC00;
+  background-color: var(--primaryColor);
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
   padding: 1.5rem;
@@ -1005,7 +1066,7 @@ button:focus-visible {
 }
 .ourteam__person {
   width: 100%;
-  background-color: #FFCC00;
+  background-color: var(--primaryColor);
   box-shadow: 1 1px 3px rgba(0, 0, 0, 0.1);
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -1031,9 +1092,9 @@ button:focus-visible {
   display: block;
   width: 120px;
   margin: 0 auto;
-  border: 1px solid black;
+  border: 1px solid var(--textColor);
   border-radius: 50%;
-  box-shadow: 0 -5px 10px #707070;
+  box-shadow: 0 -5px 10px var(--greyColor);
   background-color: white;
 }
 .ourteam__img--realfoto {
@@ -1063,21 +1124,21 @@ button:focus-visible {
   text-align: center;
 }
 .pravidelny-program__card {
-  background-color: #FFCC00;
+  background-color: var(--primaryColor);
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
 }
 .pravidelny-program__akce {
-  background-color: #8d695c;
+  background-color: var(--secondaryColor);
   border-top-right-radius: 15px;
-  color: white;
+  color: var(--lightColor);
   padding-bottom: 1.5rem;
 }
 .pravidelny-program__popis {
   padding: 1.5rem;
 }
 .pravidelny-program__casy {
-  background-color: #E6B800;
+  background-color: var(--primaryColor-similar);
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
   text-align: center;
@@ -1177,7 +1238,7 @@ button:focus-visible {
   justify-content: center;
   font-size: 3.5rem;
   font-weight: 600;
-  color: white;
+  color: var(--lightColor);
   text-decoration: none;
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -1222,9 +1283,15 @@ button:focus-visible {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: var(--lightColor);
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
+}
+@media (prefers-color-scheme: dark) {
+  .sponsors {
+    background-color: white;
+    opacity: 0.7;
+  }
 }
 .sponsors__img {
   max-width: 70px;
@@ -1255,7 +1322,7 @@ button:focus-visible {
 
 .contact {
   max-width: calc(100vw - 1rem);
-  background-color: #FFCC00;
+  background-color: var(--primaryColor);
   border-top-right-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
   margin: 1.5rem auto 40vw auto;
@@ -1266,6 +1333,7 @@ button:focus-visible {
   row-gap: 1.5rem;
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
+  color: var(--textColor);
 }
 .contact__title {
   display: block;
@@ -1283,13 +1351,13 @@ button:focus-visible {
   border-bottom-left-radius: 1.5rem;
 }
 .contact__link:link {
-  color: #205c6a;
+  color: var(--buttonColor);
 }
 .contact__link:visited {
-  color: black;
+  color: var(--textColo) r;
 }
 .contact__link:hover {
-  color: #95b2b8;
+  color: var(--tertiaryColor);
 }
 .contact__link:after {
   content: "";
@@ -1322,10 +1390,10 @@ button:focus-visible {
   display: block;
   text-decoration: none;
   padding: 1rem;
-  background-color: #707070;
+  background-color: var(--greyColor);
   text-align: center;
   font-size: 0.9rem;
   font-weight: 300;
-  color: white;
+  color: var(--lightColor);
   transform: translateY(3rem);
 }/*# sourceMappingURL=style.css.map */

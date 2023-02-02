@@ -17,7 +17,7 @@
     &__card {
         width: 100%;
         padding: v.$spacer-middle;
-        background-color: v.$primaryColor;
+        background-color: var(--primaryColor);
         border-top-right-radius: v.$radius;
         border-bottom-left-radius: v.$radius;
     }
@@ -34,17 +34,23 @@
 
     &__text {
         line-height: 2;
+        color: var(--textColor);
     }
 
     &--hyperlink {
         text-decoration: none;
-        color: v.$textColor;
+        color: var(--textColor);
     }
     &__image {
         width: 100%;
         border-top-right-radius: v.$spacer-middle;
         border-bottom-left-radius: v.$spacer-middle;
+
+        // @media (prefers-color-scheme: dark){
+            // filter:brightness(0.8);
+        // }
     }
+
     &__leaflet {
         align-self: center;
         margin-top: v.$spacer-middle;
@@ -72,3 +78,9 @@
         }
     }
 }
+
+// @media (prefers-color-scheme: dark) {
+    // .fslightbox-opacity-1 {
+        // filter:brightness(0.9); 
+    // }
+// }

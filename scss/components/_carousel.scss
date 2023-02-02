@@ -52,26 +52,26 @@
         background-image: url(/images/carousel-nova-anglictina.svg);
         background-size: cover;
         background-position: bottom center;
-        color: v.$lightColor;
+        color: var(--lightColor);
     }
 
     &__picture-3 {
         background-image: url(/images/carousel-3.png);
         background-size: cover;
         background-position: bottom center;
-        color: v.$lightColor;
+        color: var(--lightColor);
     }
 
     &__picture-4 {
         background-image: url(/images/lucerna.svg);
         background-size: cover;
         background-position: bottom left;
-        color: v.$lightColor;
+        color: var(--lightColor);
     }
     
     &__event-name {
         font-size: 2.5rem;
-        color:v.$carouselFontColor;
+        color:var(--carouselFontColor);
         padding:  v.$spacer-big v.$spacer-small 0 v.$spacer-small;
 
         @media  screen and (min-width:v.$minwidth-tablet) { 
@@ -133,7 +133,7 @@
     }
     
     &__event-date {
-        color: v.$carouselFontColor;
+        color: var(--carouselFontColor);
         font-size: 1.8rem;
         font-weight: 500;
         text-align: center;
@@ -158,7 +158,7 @@
         }
 
         &--2 {
-            color:v.$textColor;
+            color:var(--textColor);
             font-size: 1.7rem;
             padding-top: v.$spacer-middle;
         }
@@ -173,7 +173,7 @@
     }
 
     &__arrow {
-        color: v.$textColor;
+        color: var(--textColor);
     }
 
     &__track {
@@ -189,5 +189,11 @@
         margin-right: auto;
 
 
+    }
+
+    &__slide {
+        @media (prefers-color-scheme: dark) {
+            filter:brightness(0.9);
+        }
     }
 }

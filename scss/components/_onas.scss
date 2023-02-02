@@ -20,7 +20,7 @@
     }
 
     &__link:link {
-        color: v.$buttonColor;
+        color:var(--buttonColor);
     }
 
     &__link:visited {
@@ -28,7 +28,7 @@
     }
 
     &__link:hover {
-        color: v.$tertiaryColor;
+        color: var(--tertiaryColor);
     }
 
 
@@ -47,7 +47,7 @@
 
     &__card {
         max-width: calc(100vw - 2*v.$spacer-small);
-        background-color: v.$primaryColor;
+        background-color: var(--primaryColor);
         border-top-right-radius: v.$radius;
         border-bottom-left-radius: v.$radius;
         padding: v.$spacer-middle;
@@ -105,7 +105,7 @@
 
     &__person {
         width: 100%;
-        background-color: v.$primaryColor;
+        background-color: var(--primaryColor);
         box-shadow: 1 1px 3px rgba(0,0,0,0.1);
         border-top-right-radius: v.$radius;
         border-bottom-left-radius: v.$radius;
@@ -134,9 +134,9 @@
         display: block;
         width: 120px;
         margin: 0 auto;
-        border: 1px solid v.$textColor;
+        border: 1px solid var(--textColor);
         border-radius: 50%;
-        box-shadow: 0 -5px 10px v.$greyColor;
+        box-shadow: 0 -5px 10px var(--greyColor);
         background-color: white; 
 
         &--realfoto {

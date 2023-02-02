@@ -4,7 +4,16 @@
     height: 100%;
     background-image: url(/images/obloha1.svg),url(/images/Kilimanjaro_my1.svg);
     background-repeat: no-repeat, no-repeat;
-    background-color: v.$lightColor;
+    background-color: var(--backgroundColor);
     background-position: left top, bottom;
     background-size: 100%, 100%;
 }
+
+body:after {
+    content: "";
+    position: fixed;
+    top: 0; bottom: 0; left: 0; right: 0; 
+    background: rgba(0,0,0,calc(1 - var(--darkBrightness)));
+    pointer-events: none;
+    z-index: -1;
+  }

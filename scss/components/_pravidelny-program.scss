@@ -10,15 +10,15 @@
     text-align: center;
 
     &__card {
-        background-color: v.$primaryColor;
+        background-color: var(--primaryColor);
         border-top-right-radius: v.$radius;
         border-bottom-left-radius: v.$radius;
     }
 
     &__akce {
-        background-color: v.$secondaryColor;
+        background-color:var(--secondaryColor);
         border-top-right-radius: v.$radius;
-        color: v.$lightColor;
+        color: var(--lightColor);
         padding-bottom: v.$spacer-middle;
     }
 
@@ -27,7 +27,7 @@
     }
 
     &__casy {
-        background-color: v.$primaryColor-similar;
+        background-color: var(--primaryColor-similar);
         border-top-right-radius: v.$radius;
         border-bottom-left-radius: v.$radius;
         text-align: center;

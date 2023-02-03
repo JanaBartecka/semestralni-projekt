@@ -32,6 +32,10 @@
         padding-top: 0;
     }
 
+    &__noevent {
+        padding-bottom: 0;
+    }
+
     &__text {
         line-height: 2;
         color: var(--textColor);

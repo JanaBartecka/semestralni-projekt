@@ -1,1 +1,0 @@
-# semestralni-projekt

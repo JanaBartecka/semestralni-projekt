@@ -1,0 +1,4 @@
+Sitemap: https://www.mc-zirafa.cz/sitemap.xml
+
+User-agent: *
+Disallow:

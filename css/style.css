@@ -116,8 +116,11 @@ a:focus-visible {
   filter: brightness(var(--darkBrightness));
 }
 
+li {
+  text-align: left;
+}
+
 .banner-prihlaseni {
-  max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
   margin: 1.5rem auto 0 auto;
@@ -231,23 +234,6 @@ body:after {
 .snowflake {
   position: absolute;
 }
-@-webkit-keyframes vlocka-pada {
-  0% {
-    transform: translateY(0);
-  }
-  25% {
-    transform: translateY(50px) translateX(25px);
-  }
-  50% {
-    transform: translateY(100px) translateX(-25px);
-  }
-  75% {
-    transform: translateY(150px) translateX(25px);
-  }
-  100% {
-    transform: translateY(200px) translateX(-25px);
-  }
-}
 @keyframes vlocka-pada {
   0% {
     transform: translateY(0);
@@ -269,64 +255,55 @@ body:after {
   top: -40px;
   left: 10vw;
   width: 40px;
-  -webkit-animation: vlocka-pada 10s infinite both linear;
-          animation: vlocka-pada 10s infinite both linear;
+  animation: vlocka-pada 10s infinite both linear;
 }
 .snowflake--2 {
   top: -40px;
   left: 20vw;
   width: 30px;
-  -webkit-animation: vlocka-pada 8s infinite 1s both linear;
-          animation: vlocka-pada 8s infinite 1s both linear;
+  animation: vlocka-pada 8s infinite 1s both linear;
 }
 .snowflake--3 {
   top: -40px;
   left: 30vw;
   width: 20px;
-  -webkit-animation: vlocka-pada 12s infinite 5s both linear;
-          animation: vlocka-pada 12s infinite 5s both linear;
+  animation: vlocka-pada 12s infinite 5s both linear;
 }
 .snowflake--4 {
   top: -40px;
   left: 40vw;
   width: 40px;
-  -webkit-animation: vlocka-pada 19s infinite 3s both linear;
-          animation: vlocka-pada 19s infinite 3s both linear;
+  animation: vlocka-pada 19s infinite 3s both linear;
 }
 .snowflake--5 {
   top: -40px;
   left: 50vw;
   width: 30px;
-  -webkit-animation: vlocka-pada 15s infinite 9s both linear;
-          animation: vlocka-pada 15s infinite 9s both linear;
+  animation: vlocka-pada 15s infinite 9s both linear;
 }
 .snowflake--6 {
   top: -40px;
   left: 60vw;
   width: 20px;
-  -webkit-animation: vlocka-pada 13s infinite 1s both linear;
-          animation: vlocka-pada 13s infinite 1s both linear;
+  animation: vlocka-pada 13s infinite 1s both linear;
 }
 .snowflake--7 {
   top: -40px;
   left: 70vw;
   width: 40px;
-  -webkit-animation: vlocka-pada 18s infinite 6s both linear;
-          animation: vlocka-pada 18s infinite 6s both linear;
+  animation: vlocka-pada 18s infinite 6s both linear;
 }
 .snowflake--8 {
   top: -40px;
   left: 80vw;
   width: 10px;
-  -webkit-animation: vlocka-pada 8s infinite 4s both linear;
-          animation: vlocka-pada 8s infinite 4s both linear;
+  animation: vlocka-pada 8s infinite 4s both linear;
 }
 .snowflake--9 {
   top: -40px;
   left: 90vw;
   width: 30px;
-  -webkit-animation: vlocka-pada 10s infinite 8s both linear;
-          animation: vlocka-pada 10s infinite 8s both linear;
+  animation: vlocka-pada 10s infinite 8s both linear;
 }
 
 .menu {
@@ -392,7 +369,6 @@ body:after {
     display: flex;
     border-bottom-left-radius: 15px;
     border-top-right-radius: 15px;
-    max-width: -webkit-max-content;
     max-width: -moz-max-content;
     max-width: max-content;
     margin-left: auto;
@@ -424,21 +400,6 @@ body:after {
   }
 }
 
-@-webkit-keyframes mrk {
-  0% {
-    transform: scaleY(1);
-  }
-  10% {
-    transform: scaleY(0.1);
-  }
-  50% {
-    transform: scaleY(1);
-  }
-  100% {
-    transform: scaleY(1);
-  }
-}
-
 @keyframes mrk {
   0% {
     transform: scaleY(1);
@@ -451,26 +412,6 @@ body:after {
   }
   100% {
     transform: scaleY(1);
-  }
-}
-@-webkit-keyframes toceniocivlevo {
-  0% {
-    transform: rotate(0);
-  }
-  80% {
-    transform: rotate(0);
-  }
-  85% {
-    transform: rotate(90deg);
-  }
-  90% {
-    transform: rotate(180deg);
-  }
-  95% {
-    transform: rotate(270deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
 @keyframes toceniocivlevo {
@@ -491,26 +432,6 @@ body:after {
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes toceniocivpravo {
-  0% {
-    transform: rotate(0);
-  }
-  80% {
-    transform: rotate(0);
-  }
-  85% {
-    transform: rotate(-90deg);
-  }
-  90% {
-    transform: rotate(-180deg);
-  }
-  95% {
-    transform: rotate(-270deg);
-  }
-  100% {
-    transform: rotate(-360deg);
   }
 }
 @keyframes toceniocivpravo {
@@ -534,18 +455,15 @@ body:after {
   }
 }
 .header #g2290 {
-  -webkit-animation: mrk 4s infinite both ease;
-          animation: mrk 4s infinite both ease;
+  animation: mrk 4s infinite both ease;
   transform-origin: 0 281.77px;
 }
 .header #path3163 {
-  -webkit-animation: toceniocivlevo 4s infinite both ease;
-          animation: toceniocivlevo 4s infinite both ease;
+  animation: toceniocivlevo 4s infinite both ease;
   transform-origin: 390px 281.77px;
 }
 .header #path3161 {
-  -webkit-animation: toceniocivpravo 4s infinite both ease;
-          animation: toceniocivpravo 4s infinite both ease;
+  animation: toceniocivpravo 4s infinite both ease;
   transform-origin: 440px 281.77px;
 }
 .header--picture-left {
@@ -880,26 +798,11 @@ body:after {
   border: none;
 }
 .popup.active {
-  -webkit-animation: popupAnimation 1500ms ease-in-out forwards;
-          animation: popupAnimation 1500ms ease-in-out forwards;
+  animation: popupAnimation 1500ms ease-in-out forwards;
 }
 .popup.active .content {
   display: block;
   transition: all 100ms ease-in-out 1300ms;
-}
-@-webkit-keyframes popupAnimation {
-  0% {
-    width: 0%;
-    height: 0%;
-  }
-  50% {
-    width: 100%;
-    height: 2px;
-  }
-  100% {
-    width: 100%;
-    height: 100%;
-  }
 }
 @keyframes popupAnimation {
   0% {

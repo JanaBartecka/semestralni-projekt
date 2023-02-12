@@ -41,6 +41,7 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
   font-family: "Montserrat", sans-serif;
   position: relative;
   font-size: 1rem;
@@ -140,23 +141,22 @@ li {
   padding: 0.5rem;
   padding-top: 1rem;
   position: absolute;
-  top: -3rem;
+  top: -4.5rem;
   left: 0px;
   color: white;
   border-bottom-right-radius: 15px;
   background: var(--focusColor);
-  transition: top 1s ease-out;
   z-index: 100;
   font-size: 1.2rem;
   font-weight: 600;
+  text-decoration: none;
 }
 
 #skiptocontent a:focus {
   position: absolute;
   left: 0px;
   top: 0px;
-  outline-color: transparent;
-  transition: top 0.1s ease-in;
+  transition: top 0.4s ease-in-out;
 }
 
 .button {
@@ -205,6 +205,7 @@ button:focus-visible {
   background-color: var(--backgroundColor);
   background-position: left top, bottom;
   background-size: 100%, 100%;
+  position: relative;
 }
 
 body:after {
@@ -222,13 +223,6 @@ body:after {
 .header {
   width: 100%;
   position: relative;
-}
-.header__flex-logo-menu {
-  display: flex;
-  justify-content: space-between;
-  max-width: 70rem;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .snowflake {
@@ -307,99 +301,17 @@ body:after {
 }
 
 .menu {
-  padding-top: 2rem;
-  padding-bottom: 1.5rem;
-  z-index: 3;
+  min-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 36px;
+  margin: 0 auto;
+  position: relative;
 }
-.menu__list {
-  margin: 0;
-  list-style: none;
-  font-size: 1.2rem;
-  background-color: var(--primaryColor);
-  padding: 0;
-  display: none;
-  width: 100%;
-  z-index: 3;
+.menu__logo {
+  font-size: 2rem;
 }
-.menu__item {
-  border-bottom: 1px solid var(--lightColor);
-}
-.menu__item--active .menu__link {
-  background-color: var(--buttonColor);
-  color: var(--lightColor);
-}
-.menu__link {
-  display: block;
-  text-decoration: none;
-  color: black;
-  padding: 1.5rem;
-  font-weight: 500;
-}
-.menu__link:hover {
-  background-color: var(--tertiaryColor);
-  color: #212121;
-  transition: all 0.3s;
-}
-.menu__checkbox {
-  position: absolute;
-  left: -9999px;
-}
-.menu__toggler {
-  cursor: pointer;
-  text-align: left;
-  padding-right: 10vw;
-}
-.menu__toggler img {
-  height: 4rem;
-}
-.menu__checkbox:checked ~ .menu__list {
-  display: block;
-  position: absolute;
-  width: 100vw;
-  right: 0;
-}
-@media screen and (min-width: 63rem) {
-  .menu {
-    display: flex;
-  }
-  .menu__toggler {
-    display: none;
-  }
-  .menu__list {
-    display: flex;
-    border-bottom-left-radius: 15px;
-    border-top-right-radius: 15px;
-    max-width: -moz-max-content;
-    max-width: max-content;
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
-  }
-  .menu__checkbox:checked ~ .menu__list {
-    display: flex;
-    position: absolute;
-  }
-  .menu__item {
-    border-bottom: 0;
-    border-right: 1px solid var(--lightColor);
-  }
-  .menu__item:last-child {
-    border: 0;
-  }
-  .menu__item:last-child :hover {
-    border-top-right-radius: 15px;
-  }
-  .menu__item:first-child :hover {
-    border-bottom-left-radius: 15px;
-  }
-  .menu__item--active:first-child .menu__link {
-    border-bottom-left-radius: 15px;
-  }
-  .menu__item--active:last-child .menu__link {
-    border-top-right-radius: 15px;
-  }
-}
-
 @keyframes mrk {
   0% {
     transform: scaleY(1);
@@ -454,30 +366,128 @@ body:after {
     transform: rotate(-360deg);
   }
 }
-.header #g2290 {
+.menu__logo #g2290 {
   animation: mrk 4s infinite both ease;
   transform-origin: 0 281.77px;
 }
-.header #path3163 {
+.menu__logo #path3163 {
   animation: toceniocivlevo 4s infinite both ease;
   transform-origin: 390px 281.77px;
 }
-.header #path3161 {
+.menu__logo #path3161 {
   animation: toceniocivpravo 4s infinite both ease;
   transform-origin: 440px 281.77px;
 }
-.header--picture-left {
-  height: 8rem;
-  position: absolute;
-  bottom: 0;
-}
-.header--picture-left {
-  left: 10vw;
-  top: 1rem;
+.menu__logo--svg {
+  max-height: 100%;
+  transform: translateY(20px);
 }
 @media screen and (min-width: 63rem) {
-  .header--picture-left {
+  .menu__logo--svg {
     left: calc((100% - 70rem) / 2);
+  }
+}
+.menu__list {
+  display: block;
+  list-style: none;
+  z-index: 3;
+  font-size: 1.2rem;
+  background-color: var(--primaryColor);
+  padding: 0;
+  position: absolute;
+  left: -100%;
+  top: 100px;
+  gap: 0;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+.menu__list.menu__active {
+  left: 0;
+}
+.menu__link {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 1.5rem;
+  font-weight: 500;
+}
+.menu__link:hover {
+  background-color: var(--tertiaryColor);
+  color: #212121;
+}
+.menu__item {
+  text-align: center;
+  border-bottom: 1px solid var(--lightColor);
+}
+.menu__item--active .menu__link {
+  background-color: var(--buttonColor);
+  color: var(--lightColor);
+}
+.menu__hamburger.menu__active .menu__bar:nth-child(2) {
+  opacity: 0;
+}
+.menu__hamburger.menu__active .menu__bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.menu__hamburger.menu__active .menu__bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+.menu__hamburger {
+  display: block;
+  cursor: pointer;
+  background-color: var(--primaryColor);
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+.menu__bar {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--buttonColor);
+}
+@media screen and (min-width: 63rem) {
+  .menu {
+    max-width: 70rem;
+  }
+  .menu__list {
+    display: flex;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    width: auto;
+    left: auto;
+    top: auto;
+    position: relative;
+  }
+  .menu__hamburger {
+    display: none;
+  }
+  .menu__item {
+    display: block;
+    z-index: 100;
+    border-bottom: 0;
+    border-right: 1px solid var(--lightColor);
+  }
+  .menu__item:last-child {
+    border: 0;
+  }
+  .menu__item:last-child :hover {
+    border-top-right-radius: 15px;
+  }
+  .menu__item:first-child :hover {
+    border-bottom-left-radius: 15px;
+  }
+  .menu__item--active:first-child .menu__link {
+    border-bottom-left-radius: 15px;
+  }
+  .menu__item--active:last-child .menu__link {
+    border-top-right-radius: 15px;
   }
 }
 

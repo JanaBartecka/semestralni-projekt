@@ -3,16 +3,7 @@
 .header {
     width: 100%;
     position: relative;
-
-    &__flex-logo-menu {
-        display: flex;
-        justify-content: space-between;
-        max-width: v.$maxwidth;
-        margin-left: auto;
-        margin-right: auto;
-    }
 }
-
 
 .snowflake {
     position: absolute;
@@ -87,5 +78,4 @@
         width: 30px;
         animation: vlocka-pada 10s infinite 8s both linear;
         }
-
 }

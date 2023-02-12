@@ -1,28 +1,88 @@
 @use '../abstracts/variables' as v;
 
 .menu {
-    padding-top: v.$spacer-big;
-    padding-bottom: v.$spacer-middle;
-    z-index: 3;
+
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 36px;
+    margin: 0 auto;
+    position: relative;
+
+    &__logo {
+        font-size: 2rem;
+
+        @keyframes mrk {
+            0% {transform: scaleY(1)}
+            10% {transform: scaleY(0.1)}
+            50% {transform: scaleY(1)}
+            100% {transform: scaleY(1)}
+        }
+    
+        @keyframes toceniocivlevo {
+            0% {transform: rotate(0)}
+            80% {transform: rotate(0)}
+            85% {transform: rotate(90deg)}
+            90% {transform: rotate(180deg)}
+            95% {transform: rotate(270deg)}
+            100% {transform: rotate(360deg)}
+        }
+    
+        @keyframes toceniocivpravo {
+            0% {transform: rotate(0)}
+            80% {transform: rotate(0)}
+            85% {transform: rotate(-90deg)}
+            90% {transform: rotate(-180deg)}
+            95% {transform: rotate(-270deg)}
+            100% {transform: rotate(-360deg)}
+        }
+    
+        #g2290 {
+            animation: mrk 4s infinite both ease;
+            transform-origin: 0 281.77px;
+        }
+    
+        #path3163 {
+            animation: toceniocivlevo 4s infinite both ease;
+            transform-origin: 390px 281.77px;
+        }
+    
+        #path3161 {
+            animation: toceniocivpravo 4s infinite both ease;
+            transform-origin: 440px 281.77px;
+        }
+    
+        &--svg {
+            max-height: 100%;
+            transform: translateY(20px);
+        }
+    
+        @media  screen and (min-width:v.$minwidth-computer) { 
+            &--svg {
+                left: calc((100% - v.$maxwidth)/2);
+            }
+        }
+    }
 
     &__list {
-        margin: 0;
+        display: block;
         list-style: none;
+        z-index: 3;
         font-size: 1.2rem;
         background-color: var(--primaryColor);
         padding: 0;
-        display: none;       
+        position: absolute;
+        left: -100%;
+        top: 100px;
+        gap: 0;
         width: 100%;
-        z-index: 3;
+        text-align: center;
+        transition: 0.3s;
     }
 
-    &__item {
-        border-bottom: 1px solid var(--lightColor);
-    }
-
-    &__item--active &__link {
-        background-color: var(--buttonColor);
-        color: var(--lightColor);
+    &__list.menu__active {
+        left: 0;
     }
 
     &__link {
@@ -36,66 +96,71 @@
     &__link:hover {
         background-color: var(--tertiaryColor);
         color: #212121;
-        transition: all 0.3s;
     }
 
-    &__checkbox {
-        position: absolute;
-        left: -9999px;
+    &__item {
+        text-align: center;
+        border-bottom: 1px solid var(--lightColor);
     }
 
-    &__toggler {
-        cursor: pointer;
-        text-align: left;
-        padding-right: 10vw;
+    &__item--active &__link {
+        background-color: var(--buttonColor);
+        color: var(--lightColor);
     }
 
-    &__toggler img {
-        height: 4rem;
+    &__hamburger.menu__active &__bar:nth-child(2) {
+        opacity:0;
     }
 
-    &__checkbox:checked ~ &__list {
+    &__hamburger.menu__active &__bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    &__hamburger.menu__active &__bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    &__hamburger {
         display: block;
-        position: absolute;
-        width: 100vw;
-        right: 0;
+        cursor: pointer;
+        background-color: var(--primaryColor);
+        border: 1px solid black;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
     }
 
-    // &:focus-visible {
-    //     outline: 6px dotted #B309A6;
-    //     outline: auto;
-    //     outline-offset: 4px;
-    // }
+    &__bar {
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: var(--buttonColor);
+    }
 
-    // @media  screen and (max-width:v.$minwidth-computer) {
-    //     &__checkbox:checked ~ &__list {
-    //         display:block;
-    //     }
-    // }
-
-    @media  screen and (min-width:v.$minwidth-computer) {   
-        display: flex;
-        
-        &__toggler {
-            display:none;
-        }
+    @media screen and (min-width:v.$minwidth-computer) {
+        max-width: v.$maxwidth;
 
         &__list {
             display: flex;
             border-bottom-left-radius: v.$radius;
             border-top-right-radius: v.$radius;
             max-width: max-content;
-            margin-left: auto;
-            margin-right: auto;
             width: auto;
+            left: auto;
+            top: auto;
+            position: relative;
         }
 
-        &__checkbox:checked ~ &__list {
-            display:flex;
-            position: absolute;
+        &__hamburger {
+            display: none;
         }
 
         &__item {
+            display: block;
+            z-index: 100;
             border-bottom: 0;
             border-right: 1px solid var(--lightColor);
         }

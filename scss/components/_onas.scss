@@ -22,11 +22,11 @@
     &__link:link {
         color:var(--buttonColor);
     }
-
+// 
     &__link:visited {
-        color: #212121;
+        color: var(--textColor);
     }
-
+// 
     &__link:hover {
         color: var(--tertiaryColor);
     }

@@ -49,15 +49,12 @@
         width: 100%;
         border-top-right-radius: v.$spacer-middle;
         border-bottom-left-radius: v.$spacer-middle;
-
-        // @media (prefers-color-scheme: dark){
-            // filter:brightness(0.8);
-        // }
     }
 
     &__leaflet {
-        align-self: center;
-        margin-top: v.$spacer-middle;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 200px;
 
         @media screen and (min-width:v.$minwidth-computer) {
             margin-top: 0;
@@ -68,23 +65,28 @@
         &__card {
             width: calc(50% - v.$spacer-middle);
         }
+
+        &--uvod > .recent-event__card {
+            width: calc(100% - v.$spacer-middle);
+        }
     }
 
     @media screen and (min-width:v.$minwidth-computer) {
         max-width: v.$maxwidth;
 
-        &__description {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr;
-            column-gap: v.$spacer-middle;
 
+        &__description {
+            // display: grid;
+            // grid-template-columns: 1fr 1fr;
+            // grid-template-rows: 1fr auto;
+            // column-gap: v.$spacer-middle;
+            display: block;
+        }
+
+        &__leaflet {
+            float: right;
+            max-width: 200px;
+            padding:  v.$spacer-small;
         }
     }
 }
-
-// @media (prefers-color-scheme: dark) {
-    // .fslightbox-opacity-1 {
-        // filter:brightness(0.9); 
-    // }
-// }

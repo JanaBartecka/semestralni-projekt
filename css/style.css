@@ -62,10 +62,14 @@ p + p {
   padding-top: 0.5rem;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   margin: 0;
   text-align: center;
   color: var(--textColor);
+}
+
+h4 {
+  text-align: left;
 }
 
 h1 {
@@ -119,6 +123,40 @@ a:focus-visible {
 
 li {
   text-align: left;
+  color: var(--textColor);
+}
+
+.openNewTab:after {
+  content: "";
+  display: inline-block;
+  background-image: url(/images/newtab.svg);
+  background-position: cover;
+  background-repeat: no-repeat;
+  width: 0.9em;
+  height: 0.9em;
+  margin-left: 0.5em;
+}
+
+.pdf-icon:before {
+  content: "";
+  display: inline-block;
+  background-image: url(/images/pdf-icon.svg);
+  background-position: cover;
+  background-repeat: no-repeat;
+  width: 0.9em;
+  height: 0.9em;
+  margin-right: 0.5em;
+}
+
+.word-icon:before {
+  content: "";
+  display: inline-block;
+  background-image: url(/images/word-icon.svg);
+  background-position: cover;
+  background-repeat: no-repeat;
+  width: 0.9em;
+  height: 0.9em;
+  margin-right: 0.5em;
 }
 
 .banner-prihlaseni {
@@ -401,6 +439,7 @@ body:after {
   width: 100%;
   text-align: center;
   transition: 0.3s;
+  color: var(--textColor);
 }
 .menu__list.menu__active {
   left: 0;
@@ -409,8 +448,10 @@ body:after {
   display: block;
   text-decoration: none;
   color: black;
-  padding: 1.5rem;
+  padding: 1rem;
   font-weight: 500;
+  color: var(--textColor);
+  padding: 1.5rem 1.5rem;
 }
 .menu__link:hover {
   background-color: var(--tertiaryColor);
@@ -419,6 +460,7 @@ body:after {
 .menu__item {
   text-align: center;
   border-bottom: 1px solid var(--lightColor);
+  color: var(--textColor);
 }
 .menu__item--active .menu__link {
   background-color: var(--buttonColor);
@@ -448,7 +490,7 @@ body:after {
   height: 3px;
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
-  background-color: var(--buttonColor);
+  background-color: var(--textColor);
 }
 @media screen and (min-width: 63rem) {
   .menu {
@@ -914,8 +956,9 @@ body:after {
   border-bottom-left-radius: 1.5rem;
 }
 .recent-event__leaflet {
-  align-self: center;
-  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 200px;
 }
 @media screen and (min-width: 63rem) {
   .recent-event__leaflet {
@@ -926,17 +969,21 @@ body:after {
   .recent-event__card {
     width: calc(50% - 1.5rem);
   }
+  .recent-event--uvod > .recent-event__card {
+    width: calc(100% - 1.5rem);
+  }
 }
 @media screen and (min-width: 63rem) {
   .recent-event {
     max-width: 70rem;
   }
   .recent-event__description {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    -moz-column-gap: 1.5rem;
-         column-gap: 1.5rem;
+    display: block;
+  }
+  .recent-event__leaflet {
+    float: right;
+    max-width: 200px;
+    padding: 0.5rem;
   }
 }
 
@@ -971,7 +1018,7 @@ body:after {
   color: var(--buttonColor);
 }
 .aboutus__link:visited {
-  color: #212121;
+  color: var(--textColor);
 }
 .aboutus__link:hover {
   color: var(--tertiaryColor);

@@ -3,27 +3,28 @@
   <h2>Aktuální akce</h2>
   
   <div class="recent-event recent-event--uvod" id="akce">
-      {% for akce in collections.akce | reverse | limit(0) %}  
+      {% for akce in collections.akce | reverse | limit(1) %}  
         <div class="recent-event__card">
             <h3 class="recent-event__title">{{ akce.data.title }}</h3>
             <div class="recent-event__description">
+                <div class="recent-event__leaflet">
+                  <a data-fslightbox href="/images/{{ akce.data.fotomax }}"><img src="/images/{{ akce.data.fotomin }}" class="recent-event__image" alt="{{ akce.data.alt }}"></a>
+                </div>
                 <div class="recent-event__text">
                     <em>Kdy:</em> {{ akce.data.kdy }} <br>
                     <em>Kde:</em> {{ akce.data.kde }} <br>
                     {{ akce.templateContent | safe }}
                 </div>
               
-                <div class="recent-event__leaflet">
-                  <a data-fslightbox href="/images/{{ akce.data.fotomax }}"><img src="/images/{{ akce.data.fotomin }}" class="recent-event__image" alt="{{ akce.data.alt }}"></a>
-                </div>
+
             </div>
           </div>      
       {% endfor %}
         
       <!-- neni vypsana zadna akce -->
-      <div class="recent-event__card">
-          <h3 class="recent-event__title recent-event__noevent">Momentálně není vypsaná žádná akce</h3>
-        </div> 
-      </div>
+      <!-- <div class="recent-event__card"> -->
+          <!-- <h3 class="recent-event__title recent-event__noevent">Momentálně není vypsaná žádná akce</h3> -->
+        <!-- </div>  -->
+      <!-- </div> -->
     
 </section>

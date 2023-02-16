@@ -27,10 +27,14 @@ p + p {
     padding-top: v.$spacer-small;
 }
 
-h1,h2,h3 {
+h1,h2,h3,h4 {
     margin: 0;
     text-align: center;
     color: var(--textColor);
+}
+
+h4 {
+    text-align: left;
 }
 
 h1 {
@@ -70,7 +74,7 @@ h3 {
 
 a:focus-visible {
     outline: 6px dotted #B309A6;
-}   
+}  
 
 [src$=".png"], [src$=".jpg"],[src$=".jpeg"],[src$=".svg"],svg,
 .fotogalerie__link {
@@ -79,7 +83,40 @@ a:focus-visible {
 
 li {
     text-align: left;
+    color: var(--textColor);
 }
 
+.openNewTab:after {
+    content: '';
+    display: inline-block;
+    background-image: url(/images/newtab.svg);
+    background-position: cover;
+    background-repeat: no-repeat;
+    width: 0.9em;
+    height: 0.9em;
+    margin-left: 0.5em;
+}
+
+.pdf-icon:before {
+    content: '';
+    display: inline-block;
+    background-image: url(/images/pdf-icon.svg);
+    background-position: cover;
+    background-repeat: no-repeat;
+    width: 0.9em;
+    height: 0.9em;
+    margin-right: 0.5em;;
+}
+
+.word-icon:before {
+    content: '';
+    display: inline-block;
+    background-image: url(/images/word-icon.svg);
+    background-position: cover;
+    background-repeat: no-repeat;
+    width: 0.9em;
+    height: 0.9em;
+    margin-right: 0.5em;
+}
 
 

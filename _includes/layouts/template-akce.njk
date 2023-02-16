@@ -50,15 +50,16 @@
           <div class="recent-event__card">
             <h3 class="recent-event__title">{{ akce.data.title }}</h3>
             <div class="recent-event__description">
+              <div class="recent-event__leaflet">
+                <a data-fslightbox href="/images/{{ akce.data.fotomax }}"><img src="/images/{{ akce.data.fotomin }}" class="recent-event__image" alt="{{ akce.data.alt }}"></a>
+              </div>
                 <div class="recent-event__text">
                     <em>Kdy:</em> {{ akce.data.kdy }} <br>
                     <em>Kde:</em> {{ akce.data.kde }} <br>
                     {{ akce.data.content | safe }}
                 </div>
             
-                <div class="recent-event__leaflet">
-                  <a data-fslightbox href="/images/{{ akce.data.fotomax }}"><img src="/images/{{ akce.data.fotomin }}" class="recent-event__image" alt="{{ akce.data.alt }}"></a>
-                </div>
+
             </div>
           </div>
       

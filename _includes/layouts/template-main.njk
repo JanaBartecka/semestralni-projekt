@@ -48,6 +48,7 @@
 
   {% include 'partials/skipToMainContent.njk' %}
     {% include 'partials/header.njk' %}
+    {% include 'partials/modalWindow.njk' %}
 
     <main id="main">
         {{ content | safe }}
@@ -57,7 +58,7 @@
     {% include 'partials/contact.njk' %}
     {% include 'partials/footer.njk' %}
 
-    <script>
+    <!-- <script>
       // Modal window START
       document.querySelector("#popup-open-btn1").addEventListener("click",function(){
       document.querySelector(".popup1").classList.add("active");
@@ -103,7 +104,8 @@
         });
       // Modal window END
 
-    </script>
+    </script> -->
+    <script src="/js/dialogWindow.js"></script>
 
     <!-- // carousel -->
     <script src="/js/glide.min.js"></script>

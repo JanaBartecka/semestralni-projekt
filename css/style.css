@@ -554,9 +554,9 @@ body:after {
   background-position: bottom center;
 }
 .glide__picture-dilnicky {
-  background-image: url(/images/krmitko.svg);
+  background-image: url(/images/KLAUN.svg);
   background-size: cover;
-  background-position: bottom left;
+  background-position: bottom center;
 }
 .glide__picture-cviceni {
   background-image: url(/images/carousel-cviceni.png);
@@ -717,9 +717,6 @@ body:after {
 }
 .glide__event-date--nemoc {
   font-size: 1.7rem;
-}
-.glide__event-date--dilnicky {
-  padding-top: 90px;
 }
 @media screen and (min-width: 37rem) {
   .glide__event-date--dilnicky {

@@ -588,6 +588,11 @@ body:after {
   background-size: cover;
   background-position: bottom center;
 }
+.glide__picture-bazarek {
+  background-image: url(/images/bazarek.svg);
+  background-size: cover;
+  background-position: bottom center;
+}
 .glide__picture-2 {
   background-image: url(/images/karneval.svg);
   background-size: cover;
@@ -632,6 +637,15 @@ body:after {
 }
 @media screen and (min-width: 63rem) {
   .glide__event-name--uzavreni {
+    font-size: 2.4rem;
+  }
+}
+.glide__event-name--bazarek {
+  font-size: 1.8rem;
+}
+@media screen and (min-width: 63rem) {
+  .glide__event-name--bazarek {
+    padding-top: 190px;
     font-size: 2.4rem;
   }
 }
@@ -727,6 +741,10 @@ body:after {
   color: var(--textColor);
   font-size: 1.7rem;
   padding-top: 1.5rem;
+}
+.glide__event-date--bazarek {
+  color: var(--textColor);
+  font-size: 1.7rem;
 }
 .glide__event-date--2 {
   font-size: 1.7rem;
@@ -834,6 +852,23 @@ body:after {
   font-style: italic;
   font-size: 0.9rem;
   text-align: center;
+}
+
+.zruseni-programu {
+  max-width: calc(100vw - 1rem);
+  padding: 1.5rem;
+  margin: 1.5rem auto 0 auto;
+  display: flex;
+  background-color: var(--primaryColor);
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+@media screen and (min-width: 63rem) {
+  .zruseni-programu {
+    max-width: 70rem;
+  }
 }
 
 .regular-event {

@@ -1,5 +1,21 @@
 @use '../abstracts/variables' as v;
 
+.zruseni-programu {
+    max-width: calc(100vw - 2*v.$spacer-small);
+    padding: v.$spacer-middle; 
+    margin: v.$spacer-middle auto 0 auto;
+    display: flex;
+    background-color: var(--primaryColor);
+    border-top-right-radius: v.$radius;
+    border-bottom-left-radius: v.$radius;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    @media screen and (min-width:v.$minwidth-computer) {
+        max-width: v.$maxwidth;
+    }
+}
+
 .regular-event {
     max-width: calc(100vw - 2*v.$spacer-small);
     display: grid;

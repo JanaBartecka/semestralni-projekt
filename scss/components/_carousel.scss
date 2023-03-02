@@ -66,6 +66,12 @@
         background-position: bottom center;
     }
 
+    &__picture-bazarek {
+        background-image: url(/images/bazarek.svg);
+        background-size: cover;
+        background-position: bottom center;
+    }
+
     &__picture-2 {
         background-image: url(/images/karneval.svg);
         background-size: cover;
@@ -110,6 +116,14 @@
         &--uzavreni {
             font-size: 1.8rem;
             @media  screen and (min-width:v.$minwidth-computer) { 
+                font-size: 2.4rem;
+            }
+        }
+
+        &--bazarek {
+            font-size: 1.8rem;
+            @media  screen and (min-width:v.$minwidth-computer) { 
+                padding-top: 190px;
                 font-size: 2.4rem;
             }
         }
@@ -207,6 +221,12 @@
             color:var(--textColor);
             font-size: 1.7rem;
             padding-top: v.$spacer-middle;
+        }
+
+        &--bazarek {
+            color:var(--textColor);
+            font-size: 1.7rem;
+            // padding-top: v.$spacer-middle;
         }
 
         &--2 {

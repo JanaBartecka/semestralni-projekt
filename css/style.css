@@ -554,7 +554,7 @@ body:after {
   background-position: bottom center;
 }
 .glide__picture-dilnicky {
-  background-image: url(/images/KLAUN.svg);
+  background-image: url(/images/vitanijara.svg);
   background-size: cover;
   background-position: bottom center;
 }
@@ -696,6 +696,16 @@ body:after {
     padding-top: 60px;
   }
 }
+.glide__event-name--dilnicky {
+  font-size: 2rem;
+  padding-top: 250px;
+  text-align: right;
+}
+@media screen and (min-width: 63rem) {
+  .glide__event-name--dilnicky {
+    padding-top: 60px;
+  }
+}
 .glide__event-name--2 {
   font-size: 1.8rem;
 }
@@ -731,6 +741,9 @@ body:after {
 }
 .glide__event-date--nemoc {
   font-size: 1.7rem;
+}
+.glide__event-date--dilnicky {
+  text-align: right;
 }
 @media screen and (min-width: 37rem) {
   .glide__event-date--dilnicky {
@@ -858,12 +871,14 @@ body:after {
   max-width: calc(100vw - 1rem);
   padding: 1.5rem;
   margin: 1.5rem auto 0 auto;
-  display: flex;
   background-color: var(--primaryColor);
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
   font-size: 1.5rem;
   font-weight: 600;
+}
+.zruseni-programu h2 {
+  padding-top: 0;
 }
 @media screen and (min-width: 63rem) {
   .zruseni-programu {

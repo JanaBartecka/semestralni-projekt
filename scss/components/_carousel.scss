@@ -80,7 +80,7 @@
     }
 
     &__picture-3 {
-        background-image: url(/images/carousel-3.png);
+        background-image: url(/images/20230330_bartonova.svg);
         background-size: cover;
         background-position: bottom center;
         color: var(--lightColor);
@@ -181,7 +181,7 @@
             }
         }
 
-        &--2 {
+        &--3 {
             font-size: 1.8rem;
 
             @media  screen and (min-width:v.$minwidth-tablet) { 
@@ -244,8 +244,8 @@
             padding-top: v.$spacer-small;
         }
 
-        &--4 {
-            font-size: 1.4rem;
+        &--3 {
+            font-size: 1.2rem;
             @media  screen and (min-width:v.$minwidth-computer) { 
                 font-size: 2rem;
             }

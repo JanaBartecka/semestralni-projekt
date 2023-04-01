@@ -600,7 +600,7 @@ body:after {
   color: var(--lightColor);
 }
 .glide__picture-3 {
-  background-image: url(/images/carousel-3.png);
+  background-image: url(/images/20230330_bartonova.svg);
   background-size: cover;
   background-position: bottom center;
   color: var(--lightColor);
@@ -706,11 +706,11 @@ body:after {
     padding-top: 60px;
   }
 }
-.glide__event-name--2 {
+.glide__event-name--3 {
   font-size: 1.8rem;
 }
 @media screen and (min-width: 37rem) {
-  .glide__event-name--2 {
+  .glide__event-name--3 {
     font-size: 2.5rem;
   }
 }
@@ -763,11 +763,11 @@ body:after {
   font-size: 1.7rem;
   padding-top: 0.5rem;
 }
-.glide__event-date--4 {
-  font-size: 1.4rem;
+.glide__event-date--3 {
+  font-size: 1.2rem;
 }
 @media screen and (min-width: 63rem) {
-  .glide__event-date--4 {
+  .glide__event-date--3 {
     font-size: 2rem;
   }
 }

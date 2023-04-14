@@ -594,7 +594,7 @@ body:after {
   background-position: bottom center;
 }
 .glide__picture-2 {
-  background-image: url(/images/karneval.svg);
+  background-image: url(/images/zoo-cely1.png);
   background-size: cover;
   background-position: bottom center;
   color: var(--lightColor);
@@ -717,13 +717,8 @@ body:after {
 .glide__event-name--anglictina {
   font-size: 2.5rem;
 }
-.glide__event-name--4 {
-  font-size: 2rem;
-}
-@media screen and (min-width: 63rem) {
-  .glide__event-name--4 {
-    font-size: 2.5rem;
-  }
+.glide__event-name--2 {
+  padding-top: 100px;
 }
 .glide__event-date {
   color: var(--carouselFontColor);

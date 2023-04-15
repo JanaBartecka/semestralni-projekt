@@ -606,9 +606,15 @@ body:after {
   color: var(--lightColor);
 }
 .glide__picture-4 {
-  background-image: url(/images/lucerna.svg);
+  background-image: url(/images/20230414_odrazedla-velky-carousel.png);
   background-size: cover;
-  background-position: bottom left;
+  background-position: bottom center;
+  color: var(--lightColor);
+}
+.glide__picture-5 {
+  background-image: url(/images/20230414_bartonova_dovolena.svg);
+  background-size: cover;
+  background-position: bottom center;
   color: var(--lightColor);
 }
 .glide__event-name {
@@ -714,6 +720,14 @@ body:after {
     font-size: 2.5rem;
   }
 }
+.glide__event-name--5 {
+  font-size: 1.8rem;
+}
+@media screen and (min-width: 37rem) {
+  .glide__event-name--5 {
+    font-size: 2.5rem;
+  }
+}
 .glide__event-name--anglictina {
   font-size: 2.5rem;
 }
@@ -763,6 +777,14 @@ body:after {
 }
 @media screen and (min-width: 63rem) {
   .glide__event-date--3 {
+    font-size: 2rem;
+  }
+}
+.glide__event-date--5 {
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 63rem) {
+  .glide__event-date--5 {
     font-size: 2rem;
   }
 }

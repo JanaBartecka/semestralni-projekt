@@ -3,8 +3,8 @@ layout: /layouts/template-akce.njk
 title: Piknik s odrážedly
 kdy: Úterý 23.5. od 10:00
 kde: dopravní hřiště Podharť
-fotomin: akce/20230414_odrazedla-maly.png
-fotomax: akce/20230414_odrazedla-maly.png
+fotomin: akce/20230414_odrazedla-plakat.png
+fotomax: akce/20230414_odrazedla-plakat.png
 alt: Piknik s odrážedly v Poharti
 tags: akce
 ---

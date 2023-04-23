@@ -1,7 +1,8 @@
 @use '../abstracts/variables' as v;
 
 /* skok na hlavní oblast*/
-#skiptocontent a {
+#skiptocontent {
+  & a {
     padding: 0.5rem;
     padding-top: 1rem;
     position: absolute;
@@ -18,6 +19,11 @@
     font-weight: 600;
     text-decoration: none;
   }
+}
+
+.skiptocontent__text {
+  color: white;
+}
   
   #skiptocontent a:focus {
     position: absolute;

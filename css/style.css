@@ -190,6 +190,10 @@ li {
   text-decoration: none;
 }
 
+.skiptocontent__text {
+  color: white;
+}
+
 #skiptocontent a:focus {
   position: absolute;
   left: 0px;

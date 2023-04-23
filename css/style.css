@@ -550,6 +550,28 @@ body:after {
   width: 100%;
   z-index: 2;
 }
+.glide__accesibility {
+  padding: 0.5rem 1rem;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: white;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  z-index: 3;
+  visibility: visible;
+  opacity: 0;
+}
+.glide__accesibility button {
+  margin-top: 0;
+}
 .glide__slides {
   height: 25rem;
 }

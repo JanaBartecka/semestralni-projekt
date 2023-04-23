@@ -4,6 +4,34 @@
     width: 100%;
     z-index: 2;
 
+    &__accesibility {
+        padding: v.$spacer-small v.$spacer;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        color: white;
+        // border-right: 1px solid white;
+        // border-bottom: 1px solid white;
+        border-top-right-radius: v.$radius;
+        border-bottom-left-radius: v.$radius;
+        background: white;
+        // transition: top 1s ease-in-out;
+        // z-index: 100;
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        gap: v.$spacer;
+        z-index: 3;
+        visibility: visible;
+        opacity: 0;
+
+        & button {
+            margin-top: 0;
+        }
+    }
+
     &__slides {
         height: 25rem;
     }

@@ -55,8 +55,9 @@
     <script src="/js/menu.js"></script>
 
     <script>
-      new Glide('.glide', {
-        autoplay: 8000,
+      const autoplayValue=8000;
+      let glide=new Glide('.glide', {
+        autoplay: autoplayValue,
         hoverpause: false,
         perView: 1,
         type: 'carousel'

@@ -341,14 +341,24 @@ body:after {
 .menu {
   min-height: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  padding: 0 36px;
+  gap: 1.5rem;
+  padding: 0 5px;
   margin: 0 auto;
   position: relative;
+  padding-right: 1rem;
+}
+.menu__icon {
+  align-self: center;
+}
+.menu__icon svg {
+  width: 100%;
+  height: 40px;
 }
 .menu__logo {
   font-size: 2rem;
+  justify-self: flex-start;
 }
 @keyframes mrk {
   0% {
@@ -456,6 +466,8 @@ body:after {
 .menu__link:hover {
   background-color: var(--tertiaryColor);
   color: #212121;
+  height: -moz-max-content;
+  height: max-content;
 }
 .menu__item {
   text-align: center;
@@ -502,6 +514,7 @@ body:after {
     border-top-right-radius: 15px;
     max-width: -moz-max-content;
     max-width: max-content;
+    align-items: stretch;
     width: auto;
     left: auto;
     top: auto;
@@ -952,6 +965,13 @@ body:after {
 }
 .regular-event__card--friday {
   grid-area: friday-grid;
+}
+.regular-event__today {
+  color: var(--lightColor);
+  border: 1px solid var(--lightColor);
+  padding: 2px 1rem;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 @media screen and (min-width: 37rem) {
   .regular-event {

@@ -20,3 +20,14 @@ document.querySelectorAll(".menu__link").forEach(n=>n.addEventListener("click", 
     hamburger.classList.remove("menu__active");
     MenuList.classList.remove("menu__active");
 }))
+
+const mediaQuery = window.matchMedia("(max-width: 63rem)");
+
+function handleMediaQueryChange(mediaQuery) {
+    if (!mediaQuery.matches) {
+        MenuItem.forEach(item=>item.setAttribute('aria-hidden','false'))
+    }
+  }
+
+mediaQuery.addListener(handleMediaQueryChange);
+handleMediaQueryChange(mediaQuery);

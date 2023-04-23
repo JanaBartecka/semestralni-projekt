@@ -3,7 +3,7 @@ layout: /layouts/template-akce.njk
 title: Jak si užít dovolenou s dětmi
 kdy: Čtvrtek 18.5. 10:00-11:30
 kde: v MC Žirafa
-fotomin: akce/20230414_bartonova_dovolena-plakat.png
+fotomin: akce/20230414_bartonova_dovolena-plakat-min.jpg
 fotomax: akce/20230414_bartonova_dovolena-plakat.png
 alt: leták přednášky na téma Jak si užít dovolenou s dětmi
 tags: akce

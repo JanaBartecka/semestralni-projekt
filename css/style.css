@@ -592,12 +592,12 @@ body:after {
   background-position: bottom center;
 }
 .glide__picture-zviratka {
-  background-image: url(/images/zviratka.svg);
+  background-image: url(/images/zviratka.jpg);
   background-size: cover;
   background-position: bottom center;
 }
 .glide__picture-narozeniny {
-  background-image: url(/images/narozeniny.png);
+  background-image: url(/images/narozeniny.jpg);
   background-size: cover;
   background-position: bottom center;
 }
@@ -607,7 +607,7 @@ body:after {
   background-position: bottom center;
 }
 .glide__picture-2 {
-  background-image: url(/images/zoo-cely1.png);
+  background-image: url(/images/zoo-cely1.jpg);
   background-size: cover;
   background-position: bottom center;
   color: var(--lightColor);
@@ -619,7 +619,7 @@ body:after {
   color: var(--lightColor);
 }
 .glide__picture-4 {
-  background-image: url(/images/20230414_odrazedla-velky-carousel.png);
+  background-image: url(/images/20230414_odrazedla-velky-carousel.jpg);
   background-size: cover;
   background-position: bottom center;
   color: var(--lightColor);

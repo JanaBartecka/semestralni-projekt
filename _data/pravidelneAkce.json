@@ -1,0 +1,72 @@
+[
+    {
+        "nazevAkce": "Cvičení maminek s miminky",
+        "Casy": "Pondělí 9:00-10:00",
+        "zkraceneCasy": "Pondělí 9-10",
+        "popis": "Společné cvičení s maminkou přirozeně prohlubuje vazbu mezi rodičem a dítětem. Také miminku přináší nové podněty a stimuly, které příznivě působí na jeho psychomotorický vývoj.",
+        "cena": "50 Kč",
+        "kapacita": "",
+        "prihlaseni":true,
+        "fotogalerie":true
+    },
+    {
+        "nazevAkce": "Hrátky s Angličtinou",
+        "Casy": ["Pondělí 15:00-15:45", "Úterý 15:00-15:45"],
+        "zkraceneCasy": ["Pondělí 15-15:45", "Úterý 15-15:45"],
+        "popis": "Kroužek angličtiny je určen pro děti cca od 3 do 6 let. Seznámení s cizím jazykem probíhá pod vedením Mgr. Barbory Janečkové hravou formou písniček, básniček a pohybových aktivit. Hlavním cílem kroužku je přirozené osvojování angličtiny za pomoci hry.",
+        "cena": "50 Kč",
+        "kapacita": "7 dětí",
+        "prihlaseni":true,
+        "fotogalerie":true
+    },
+    {
+        "nazevAkce": "Klub Žirafky Ve Školce",
+        "Casy": "Úterý, Středa 8:00-12:00",
+        "zkraceneCasy": "Úterý, Středa 8-12",
+        "popis": "Hlídání dětí, které funguje jako školka nanečisto, má za cíl sloužit rodičům pro vyřízení nezbytných záležitostí. Zábavný program, hry, písničky, říkanky, výtvarné, tvořivé a pohybové činnosti pod vedením dvou laskavých učitelek z mateřské školy. Cena: 150 - 250 Kč dle délky hlídání.&lt;ul &gt; Dítě můžete přihlásit na 2 hodiny nebo 4 hodiny. &lt;/ul&gt;&lt;ul&gt;Kolem cca 10:00 děti svačí. Doporučujeme krabičku se svačinou i pití označit jménem dítěte. &lt;/ul &gt;&lt;ul &gt;V případě, že přijdete, ale vaše dítě nebude schopné ve školičce vydržet samo, můžete s ním být i vy nebo odejít a neplatíte nic.&lt;/ul&gt;",
+        "cena": "150Kč/2hodiny nebo 250Kč/4hodiny.",
+        "kapacita": "10 dětí",
+        "prihlaseni":true,
+        "fotogalerie":true
+    },
+    {
+        "nazevAkce": "Rytmíček",
+        "Casy": "Středa 15:00-16:00",
+        "zkraceneCasy": "Středa 15-16",
+        "popis": "Pohybový kroužek pro děti (cca 2 – 4 roky) s doprovodem. Cvičení formou hry a zábavy, kladný vztah k pohybu, nové zážitky a kamarádi pod vedením zkušené lektorky.",
+        "cena": "50 Kč",
+        "kapacita": "7 dětí + rodiče",
+        "prihlaseni":true,
+        "fotogalerie":false
+    },
+    {
+        "nazevAkce": "Setkávání Se Zvířátky (v areálu Nový Svět)",
+        "Casy": "Středa od 10:00",
+        "zkraceneCasy": "Středa od 10",
+        "popis": "Setkávání se zvířátky v areálu Nový svět je určeno pro rodiče s dětmi. Během návštěvy se děti seznámí s kočkami, psem, poníky a kozami. Děti se mohou zapojit do péče o zvířata, pomoci při krmení, hřebelcování a na poníkovi se mohou svézt.&lt;p&gt;Setkání probíhá na adrese: &lt;a class=&quot;openNewTab&quot; href=&quot;https://mapy.cz/zakladni?x=15.8204392&y=50.4257648&z=17&source=addr&id=11719174&quot;&gt;17.listopadu 3129, 544 01 Dvůr Králové nad Labem&lt;/a&gt; &lt;/p&gt;",
+        "cena": "70 Kč",
+        "kapacita": "10 dětí + rodiče",
+        "prihlaseni":true,
+        "fotogalerie":true
+    },
+    {
+        "nazevAkce": "Svépomocné skupiny",
+        "Casy": "Pondělí 13-14 (Hrošíci), Úterý 10-12 (Opičky), Čtvrtek 15-15 (Lvíčci), Pátek 13-15 (Safari)",
+        "zkraceneCasy": "Pondělí 13-14 (Hrošíci), Úterý 10-12 (Opičky), Čtvrtek 15-15 (Lvíčci), Pátek 13-15 (Safari)",
+        "popis": "Jedná se o setkávání rodičů s dětmi obdobného věku ( Hrošíci - děti od 0 měsíců do 1 roku, Opičky - děti od 1 roku do 2 let, Lvíčci - děti od 2 let do 3 let, Safari - děti od 0 měsíců do 3 let) , kteří mezi sebou formou diskuze a diskuze s aktivizačním pracovníkem sdíleji své zkušenosti, otevírá se tu prostor pro prohlubování dovedností v rodičovství, podpora zdravého vývoje dětí. Je tu místo a čas pro posilování rodičovských kompetencí. Rodiče se zúčastňují aktivně společně se svými dětmi za doprovodu aktivizačního pracovníka. Aktivizační pracovník vybírá téma na základě předchozí poptávky skupiny a skupinu následně vede.&lt;p&gt;Svépomocnou skupinu doprovází Hana Flégelová (Hrošíci a Lvíčci) a Zdeňka Kučerová (Opičky a Safari).&lt;/p&gt;",
+        "cena": "",
+        "kapacita": "10 dětí + rodiče",
+        "prihlaseni":false,
+        "fotogalerie":false
+    },
+    {
+        "nazevAkce": "Volná Herna",
+        "Casy": "Pondělí 10-13, Úterý 16-18, Čtvrtek 9-12 a 16-18, Pátek 9-12",
+        "zkraceneCasy": "Pondělí 10-13, Úterý 16-18, Čtvrtek 9-12 a 16-18, Pátek 9-12",
+        "popis": "Možnost využítí prostoru naší herničky. Součástí je i posezení pro děti, kde si děti malují nebo svačí. U nás si také můžete dát kávu nebo čaj za symbolickou cenu. K dispozici je přebalovací pult, mikrovlnná trouba, varná konvice nebo lednička.",
+        "cena": "",
+        "kapacita": "",
+        "prihlaseni":false,
+        "fotogalerie":false
+    }
+]

@@ -4,17 +4,18 @@ let dialogButtonID;
 let dialogNumber;
 let dialog;
 let dialogWindow;
+let dialogButtons=document.querySelectorAll('.dialog__button')
 
-document.addEventListener('click', (e) => {
-  console.log(e.target.id.slice(0,15))
+dialogButtons.forEach(function(oneButton){
+  oneButton.addEventListener('click', (e) => {
+
   if (e.target.id.slice(0,15)==='dialog__openBtn') {
-  dialogButtonID=e.target.id
-  dialogNumber=dialogButtonID.split("--")[1];
-  dialog=document.getElementById('dialog--' + dialogNumber);
-// const dialog_mask=dialog.querySelector('.dialog__mask');
-  dialogWindow=dialog.querySelector('.dialog .dialog__window');
-  OpenDialog();
-}});
+    dialogButtonID=e.target.id
+    dialogNumber=dialogButtonID.split("--")[1];
+    dialog=document.getElementById('dialog--' + dialogNumber);
+    dialogWindow=dialog.querySelector('.dialog .dialog__window');
+    OpenDialog();
+}})});
 
 const KEYCODE= {
   ESC:27
@@ -32,7 +33,6 @@ function OpenDialog () {
   dialog.classList.add('active');
 
   // close dialog
-  // dialogMask.addEventListener('click',closeDialog);
   dialogWindow.querySelectorAll('button').forEach(btn => {
     btn.addEventListener('click',closeDialog);
   });

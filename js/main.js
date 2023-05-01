@@ -77,6 +77,10 @@ skipToMain.addEventListener('click', (event) => {
 mainContent.addEventListener('blur', () => {
     mainContent.tabIndex = 0;
   });
+
+
+
+
   
 
 

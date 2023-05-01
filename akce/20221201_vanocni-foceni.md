@@ -9,6 +9,6 @@ alt: vanocni foceni
 tags: akce
 ---
 
-*Cena:* 500Kč / 3 fotografie 
+*Cena:* 500Kč / 3 fotografie
 
 Registrace není nutná

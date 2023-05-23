@@ -54,10 +54,15 @@
     &__leaflet {
         margin-left: auto;
         margin-right: auto;
-        max-width: 200px;
+        max-width: 70%;
+
+        @media screen and (min-width:v.$minwidth-tablet) {
+            max-width: 50%;
+        }
 
         @media screen and (min-width:v.$minwidth-computer) {
             margin-top: 0;
+            max-width: 30%;
         }
     }
 
@@ -85,7 +90,7 @@
 
         &__leaflet {
             float: right;
-            max-width: 200px;
+            //max-width: 200px;
             padding:  v.$spacer-small;
         }
     }

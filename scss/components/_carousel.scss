@@ -100,6 +100,13 @@
         background-position: bottom center;
     }
 
+    &__picture-1 {
+        background-image: url(/images/20230628_denRodiny.png);
+        background-size: cover;
+        background-position: bottom center;
+        color: var(--lightColor);
+    }
+
     &__picture-2 {
         background-image: url(/images/zoo-cely1.jpg);
         background-size: cover;
@@ -108,7 +115,7 @@
     }
 
     &__picture-3 {
-        background-image: url(/images/20230330_bartonova.svg);
+        background-image: url(/images/20230601_denDeti.png);
         background-size: cover;
         background-position: bottom center;
         color: var(--lightColor);
@@ -122,7 +129,8 @@
     }
 
     &__picture-5 {
-        background-image: url(/images/20230414_bartonova_dovolena.svg);
+        background-color: rgb(241, 255, 235);
+        background-image: url(/images/20230606_felcarskaStezka.png);
         background-size: cover;
         background-position: bottom center;
         color: var(--lightColor);
@@ -240,6 +248,12 @@
             padding-top: 100px;
             
         }
+
+        &--1 {
+            padding-top: 250px;
+            color: white;
+            
+        }
     }
     
     &__event-date {
@@ -282,6 +296,10 @@
         &--2 {
             font-size: 1.7rem;
             padding-top: v.$spacer-small;
+        }
+
+        &--1 {
+            color: white;
         }
 
         &--3 {

@@ -632,6 +632,12 @@ body:after {
   background-size: cover;
   background-position: bottom center;
 }
+.glide__picture-1 {
+  background-image: url(/images/20230628_denRodiny.png);
+  background-size: cover;
+  background-position: bottom center;
+  color: var(--lightColor);
+}
 .glide__picture-2 {
   background-image: url(/images/zoo-cely1.jpg);
   background-size: cover;
@@ -639,7 +645,7 @@ body:after {
   color: var(--lightColor);
 }
 .glide__picture-3 {
-  background-image: url(/images/20230330_bartonova.svg);
+  background-image: url(/images/20230601_denDeti.png);
   background-size: cover;
   background-position: bottom center;
   color: var(--lightColor);
@@ -651,7 +657,8 @@ body:after {
   color: var(--lightColor);
 }
 .glide__picture-5 {
-  background-image: url(/images/20230414_bartonova_dovolena.svg);
+  background-color: rgb(241, 255, 235);
+  background-image: url(/images/20230606_felcarskaStezka.png);
   background-size: cover;
   background-position: bottom center;
   color: var(--lightColor);
@@ -773,6 +780,10 @@ body:after {
 .glide__event-name--2 {
   padding-top: 100px;
 }
+.glide__event-name--1 {
+  padding-top: 250px;
+  color: white;
+}
 .glide__event-date {
   color: var(--carouselFontColor);
   font-size: 1.8rem;
@@ -810,6 +821,9 @@ body:after {
 .glide__event-date--2 {
   font-size: 1.7rem;
   padding-top: 0.5rem;
+}
+.glide__event-date--1 {
+  color: white;
 }
 .glide__event-date--3 {
   font-size: 1.2rem;
@@ -1070,11 +1084,17 @@ body:after {
 .recent-event__leaflet {
   margin-left: auto;
   margin-right: auto;
-  max-width: 200px;
+  max-width: 70%;
+}
+@media screen and (min-width: 37rem) {
+  .recent-event__leaflet {
+    max-width: 50%;
+  }
 }
 @media screen and (min-width: 63rem) {
   .recent-event__leaflet {
     margin-top: 0;
+    max-width: 30%;
   }
 }
 @media screen and (min-width: 30rem) {
@@ -1094,7 +1114,6 @@ body:after {
   }
   .recent-event__leaflet {
     float: right;
-    max-width: 200px;
     padding: 0.5rem;
   }
 }

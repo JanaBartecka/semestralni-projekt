@@ -3,7 +3,7 @@
   <h2>Aktuální akce</h2>
   
   <div class="recent-event recent-event--uvod" id="akce">
-      {% for akce in collections.akce | reverse | limit(5) %}  
+      {% for akce in collections.akce | reverse | limit(4) %}  
         <div class="recent-event__card">
             <h3 class="recent-event__title">{{ akce.data.title }}</h3>
             <div class="recent-event__description">

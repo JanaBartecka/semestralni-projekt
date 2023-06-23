@@ -4,10 +4,17 @@
     max-width: calc(100vw - 2*v.$spacer-small);
     margin: v.$spacer-middle auto 0 auto;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: var(--lightColor);
     border-top-right-radius: v.$radius;
     border-bottom-left-radius: v.$radius;
@@ -34,6 +41,8 @@
 
     &__item {
         padding: v.$spacer-middle;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(16% - 20px);
         flex: 0 0 calc(16% - 20px);
     }
 

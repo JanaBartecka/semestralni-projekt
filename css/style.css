@@ -659,9 +659,7 @@ body:after {
   color: var(--lightColor);
 }
 .glide__picture-5 {
-  background-color: rgb(241, 255, 235);
-  background-image: url(/images/20230606_felcarskaStezka.png);
-  background-size: cover;
+  background-color: var(--primaryColor);
   background-position: bottom center;
   color: var(--lightColor);
 }

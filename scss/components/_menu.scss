@@ -160,6 +160,7 @@
 
     @media screen and (min-width:v.$minwidth-computer-menu) {
         max-width: v.$maxwidth;
+        margin: auto;
 
         &__list {
             display: flex;

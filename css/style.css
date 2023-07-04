@@ -512,6 +512,7 @@ body:after {
 @media screen and (min-width: 70rem) {
   .menu {
     max-width: 70rem;
+    margin: auto;
   }
   .menu__list {
     display: flex;

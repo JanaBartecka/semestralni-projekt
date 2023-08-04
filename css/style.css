@@ -1069,6 +1069,8 @@ body:after {
 }
 .recent-event__noevent {
   padding-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 .recent-event__text {
   line-height: 2;

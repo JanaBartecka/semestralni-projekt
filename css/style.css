@@ -635,8 +635,14 @@ body:after {
   background-size: cover;
   background-position: bottom center;
 }
+.glide__picture-zoo {
+  background-image: url(/images/zoo-cely1.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  color: var(--lightColor);
+}
 .glide__picture-1 {
-  background-image: url(/images/20230628_denRodiny.png);
+  background-image: url(/images/balduvSvet.png);
   background-size: cover;
   background-position: bottom center;
   color: var(--lightColor);
@@ -759,6 +765,10 @@ body:after {
     padding-top: 60px;
   }
 }
+.glide__event-name--zoo {
+  padding-top: 100px;
+  color: black;
+}
 .glide__event-name--3 {
   font-size: 1.8rem;
 }
@@ -782,8 +792,7 @@ body:after {
   padding-top: 100px;
 }
 .glide__event-name--1 {
-  padding-top: 250px;
-  color: white;
+  padding-top: 50px;
 }
 .glide__event-date {
   color: var(--carouselFontColor);
@@ -819,12 +828,14 @@ body:after {
   color: var(--textColor);
   font-size: 1.7rem;
 }
+.glide__event-date--zoo {
+  font-size: 1.7rem;
+  padding-top: 0.5rem;
+  color: black;
+}
 .glide__event-date--2 {
   font-size: 1.7rem;
   padding-top: 0.5rem;
-}
-.glide__event-date--1 {
-  color: white;
 }
 .glide__event-date--3 {
   font-size: 1.2rem;

@@ -100,8 +100,15 @@
         background-position: bottom center;
     }
 
+    &__picture-zoo {
+        background-image: url(/images/zoo-cely1.jpg);
+        background-size: cover;
+        background-position: bottom center;
+        color: var(--lightColor);
+    }
+
     &__picture-1 {
-        background-image: url(/images/20230628_denRodiny.png);
+        background-image: url(/images/balduvSvet.png);
         background-size: cover;
         background-position: bottom center;
         color: var(--lightColor);
@@ -224,6 +231,11 @@
             }
         }
 
+        &--zoo {
+            padding-top: 100px;
+            color: black;
+        }
+
         &--3 {
             font-size: 1.8rem;
 
@@ -250,8 +262,7 @@
         }
 
         &--1 {
-            padding-top: 250px;
-            color: white;
+            padding-top: 50px;
             
         }
     }
@@ -293,14 +304,17 @@
             // padding-top: v.$spacer-middle;
         }
 
+        &--zoo {
+            font-size: 1.7rem;
+            padding-top: v.$spacer-small;
+            color: black;
+        }
+
         &--2 {
             font-size: 1.7rem;
             padding-top: v.$spacer-small;
         }
 
-        &--1 {
-            color: white;
-        }
 
         &--3 {
             font-size: 1.2rem;

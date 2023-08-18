@@ -9,6 +9,6 @@ alt: Plakát akce - výlet do Baldova světa
 tags: akce
 ---
 
-Vydejme se společně do Baldova světa v Mladých Bucích.
+Vydejme se společně do Baldova světa v Mladých Bucích. Sraz mezi 9:30-10:00 u hlavní brány. Adresa: Kalná Voda 7, Mladé Buky. Využijeme skupinové vstupné. 
 
 

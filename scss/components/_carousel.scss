@@ -122,9 +122,9 @@
     }
 
     &__picture-3 {
-        background-image: url(/images/tongo-plakatA4-carousel.png);
+        background-image: url(/images/20231005_otevVeVychove.png);
         background-size: cover;
-        background-position: bottom center;
+        background-position: top center;
         color: var(--lightColor);
     }
 
@@ -238,6 +238,15 @@
 
         &--3 {
             font-size: 1.8rem;
+            background-color: rgba(201,197,186,0.5);
+            padding: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            max-width: max-content;
 
             @media  screen and (min-width:v.$minwidth-tablet) { 
                 font-size: 2.5rem;
@@ -318,6 +327,12 @@
 
         &--3 {
             font-size: 1.2rem;
+            max-width: max-content;
+            background-color: rgba(201,197,186,0.5);
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+
             @media  screen and (min-width:v.$minwidth-computer) { 
                 font-size: 2rem;
             }

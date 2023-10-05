@@ -642,19 +642,19 @@ body:after {
   color: var(--lightColor);
 }
 .glide__picture-1 {
-  background-image: url(/images/balduvSvet.png);
+  background-image: url(/images/20231020_knihovna.png);
   background-size: cover;
   background-position: bottom center;
   color: var(--lightColor);
 }
 .glide__picture-2 {
-  background-image: url(/images/zoo-cely1.jpg);
+  background-image: url(/images/20231005_hasicarna-banner.png);
   background-size: cover;
   background-position: bottom center;
   color: var(--lightColor);
 }
 .glide__picture-3 {
-  background-image: url(/images/20231005_otevVeVychove.png);
+  background-image: url(/images/20231012_imunita-banner.png);
   background-size: cover;
   background-position: top center;
   color: var(--lightColor);
@@ -666,7 +666,8 @@ body:after {
   color: var(--lightColor);
 }
 .glide__picture-5 {
-  background-color: var(--primaryColor);
+  background-image: url(/images/20231025_halloween.png);
+  background-size: cover;
   background-position: bottom center;
   color: var(--lightColor);
 }
@@ -788,21 +789,17 @@ body:after {
   }
 }
 .glide__event-name--5 {
-  font-size: 1.8rem;
-}
-@media screen and (min-width: 37rem) {
-  .glide__event-name--5 {
-    font-size: 2.5rem;
-  }
+  color: white;
 }
 .glide__event-name--anglictina {
   font-size: 2.5rem;
 }
 .glide__event-name--2 {
-  padding-top: 100px;
+  margin-top: -30px;
 }
 .glide__event-name--1 {
-  padding-top: 50px;
+  padding-top: 220px;
+  color: white;
 }
 .glide__event-date {
   color: var(--carouselFontColor);
@@ -847,6 +844,10 @@ body:after {
   font-size: 1.7rem;
   padding-top: 0.5rem;
 }
+.glide__event-date--1 {
+  font-size: 1.7rem;
+  color: white;
+}
 .glide__event-date--3 {
   font-size: 1.2rem;
   max-width: -moz-max-content;
@@ -862,12 +863,7 @@ body:after {
   }
 }
 .glide__event-date--5 {
-  font-size: 1.2rem;
-}
-@media screen and (min-width: 63rem) {
-  .glide__event-date--5 {
-    font-size: 2rem;
-  }
+  color: white;
 }
 .glide__arrow {
   color: var(--textColor);

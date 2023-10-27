@@ -115,21 +115,21 @@
     }
 
     &__picture-2 {
-        background-image: url(/images/20231005_hasicarna-banner.png);
+        background-image: url(/images/20231130_bartonova-ytratz-banner.png);
         background-size: cover;
         background-position: bottom center;
         color: var(--lightColor);
     }
 
     &__picture-3 {
-        background-image: url(/images/20231012_imunita-banner.png);
+        background-image: url(/images/tongo-plakatA4-carousel.png);
         background-size: cover;
         background-position: top center;
         color: var(--lightColor);
     }
 
     &__picture-4 {
-        background-image: url(/images/felcarskaStezka.png);
+        background-image: url(/images/20231026_vanocniFoceni-banner.png);
         background-size: cover;
         background-position: bottom center;
         color: var(--lightColor);
@@ -267,7 +267,11 @@
         }
 
         &--2 {
-            margin-top: -30px;
+            margin-top: 20px;
+            font-size: 1.5rem;
+            @media  screen and (min-width:v.$minwidth-tablet) { 
+                font-size: 2.5rem;
+            }
             
         }
 
@@ -322,8 +326,11 @@
         }
 
         &--2 {
-            font-size: 1.7rem;
+            font-size: 1.3rem;
             padding-top: v.$spacer-small;
+            @media  screen and (min-width:v.$minwidth-tablet) { 
+                font-size: 1.7rem;
+        }
         }
 
         &--1 {

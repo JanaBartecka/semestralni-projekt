@@ -108,7 +108,7 @@
     }
 
     &__picture-1 {
-        background-image: url(/images/20231020_knihovna.png);
+        background-image: url(/images/20231205_mikulas-banner.png);
         background-size: cover;
         background-position: bottom center;
         color: var(--lightColor);
@@ -136,7 +136,7 @@
     }
 
     &__picture-5 {
-        background-image: url(/images/20231025_halloween.png);
+        background-image: url(/images/20231207_bolehovska-vyvoj-banner.png);
         //background-image: url(/images/20230606_felcarskaStezka.png);
         background-size: cover;
         background-position: bottom center;
@@ -254,12 +254,11 @@
         }
 
         &--5 {
-            //font-size: 1.8rem;
+            font-size: 1.8rem;
 
-            // @media  screen and (min-width:v.$minwidth-tablet) { 
-            //     font-size: 2.5rem;
-            // }
-            color: white;
+            @media  screen and (min-width:v.$minwidth-tablet) { 
+                font-size: 2.5rem;
+            }
         }
 
         &--anglictina {
@@ -276,10 +275,9 @@
         }
 
         &--1 {
-            padding-top: 220px;
-            color: white;
-            
+            margin-top: -30px;
         }
+
     }
     
     &__event-date {
@@ -333,11 +331,6 @@
         }
         }
 
-        &--1 {
-            font-size: 1.7rem;
-            color: white;
-        }
-
 
         &--3 {
             font-size: 1.2rem;
@@ -353,11 +346,10 @@
         }
 
         &--5 {
-            //font-size: 1.2rem;
-            color: white;
-            // @media  screen and (min-width:v.$minwidth-computer) { 
-            //     font-size: 2rem;
-            // }
+            font-size: 1.2rem;
+            @media  screen and (min-width:v.$minwidth-computer) { 
+                font-size: 2rem;
+            }
         }
     }
 

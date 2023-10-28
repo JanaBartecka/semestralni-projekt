@@ -642,7 +642,7 @@ body:after {
   color: var(--lightColor);
 }
 .glide__picture-1 {
-  background-image: url(/images/20231020_knihovna.png);
+  background-image: url(/images/20231205_mikulas-banner.png);
   background-size: cover;
   background-position: bottom center;
   color: var(--lightColor);
@@ -666,7 +666,7 @@ body:after {
   color: var(--lightColor);
 }
 .glide__picture-5 {
-  background-image: url(/images/20231025_halloween.png);
+  background-image: url(/images/20231207_bolehovska-vyvoj-banner.png);
   background-size: cover;
   background-position: bottom center;
   color: var(--lightColor);
@@ -789,7 +789,12 @@ body:after {
   }
 }
 .glide__event-name--5 {
-  color: white;
+  font-size: 1.8rem;
+}
+@media screen and (min-width: 37rem) {
+  .glide__event-name--5 {
+    font-size: 2.5rem;
+  }
 }
 .glide__event-name--anglictina {
   font-size: 2.5rem;
@@ -804,8 +809,7 @@ body:after {
   }
 }
 .glide__event-name--1 {
-  padding-top: 220px;
-  color: white;
+  margin-top: -30px;
 }
 .glide__event-date {
   color: var(--carouselFontColor);
@@ -855,10 +859,6 @@ body:after {
     font-size: 1.7rem;
   }
 }
-.glide__event-date--1 {
-  font-size: 1.7rem;
-  color: white;
-}
 .glide__event-date--3 {
   font-size: 1.2rem;
   max-width: -moz-max-content;
@@ -874,7 +874,12 @@ body:after {
   }
 }
 .glide__event-date--5 {
-  color: white;
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 63rem) {
+  .glide__event-date--5 {
+    font-size: 2rem;
+  }
 }
 .glide__arrow {
   color: var(--textColor);

@@ -102,11 +102,6 @@ h3 {
   padding-top: 1.5rem;
 }
 
-*::-moz-selection {
-  background-color: yellow;
-  color: rgb(20, 10, 2);
-}
-
 *::selection {
   background-color: yellow;
   color: rgb(20, 10, 2);
@@ -160,7 +155,6 @@ li {
 }
 
 .banner-prihlaseni {
-  max-width: -moz-max-content;
   max-width: max-content;
   margin: 1.5rem auto 0 auto;
   background-color: var(--primaryColor);
@@ -470,7 +464,6 @@ body:after {
 .menu__link:hover {
   background-color: var(--tertiaryColor);
   color: #212121;
-  height: -moz-max-content;
   height: max-content;
 }
 .menu__item {
@@ -506,6 +499,7 @@ body:after {
   width: 30px;
   height: 3px;
   margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: var(--textColor);
 }
@@ -518,7 +512,6 @@ body:after {
     display: flex;
     border-bottom-left-radius: 15px;
     border-top-right-radius: 15px;
-    max-width: -moz-max-content;
     max-width: max-content;
     align-items: stretch;
     width: auto;
@@ -780,7 +773,6 @@ body:after {
   text-align: center;
   justify-content: center;
   align-items: center;
-  max-width: -moz-max-content;
   max-width: max-content;
 }
 @media screen and (min-width: 37rem) {
@@ -861,7 +853,6 @@ body:after {
 }
 .glide__event-date--3 {
   font-size: 1.2rem;
-  max-width: -moz-max-content;
   max-width: max-content;
   background-color: rgba(201, 197, 186, 0.5);
   text-align: center;
@@ -1059,8 +1050,7 @@ body:after {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     row-gap: 1rem;
-    -moz-column-gap: 1rem;
-         column-gap: 1rem;
+    column-gap: 1rem;
     align-items: stretch;
     grid-template-areas: "monday-grid    monday-grid     tuesday-grid    tuesday-grid" "wednesday-grid wednesday-grid  thursday-grid   thursday-grid" ".              friday-grid        friday-grid  .";
   }
@@ -1071,8 +1061,7 @@ body:after {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
     row-gap: 1rem;
-    -moz-column-gap: 1rem;
-         column-gap: 1rem;
+    column-gap: 1rem;
     align-items: stretch;
     grid-template-areas: "monday-grid    monday-grid     tuesday-grid    tuesday-grid wednesday-grid wednesday-grid  " ".              thursday-grid   thursday-grid   friday-grid  friday-grid    .           ";
   }
@@ -1245,8 +1234,7 @@ body:after {
   align-items: stretch;
   flex: 1 1 calc(50% - 1.5rem);
   row-gap: 90px;
-  -moz-column-gap: 1.5rem;
-       column-gap: 1.5rem;
+  column-gap: 1.5rem;
 }
 .ourteam__person {
   width: 100%;
@@ -1363,8 +1351,7 @@ body:after {
   height: 100%;
   vertical-align: middle;
   display: inline-block;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 0.5rem;
 }
 .fotogalerie__grid--wide {
@@ -1432,8 +1419,7 @@ body:after {
   .fotogalerie {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto);
-    -moz-column-gap: 1.5rem;
-         column-gap: 1.5rem;
+    column-gap: 1.5rem;
     grid-template-areas: "hernicka hernicka akce akce" ".        program   program   .";
   }
 }
@@ -1442,8 +1428,7 @@ body:after {
     max-width: 70rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    -moz-column-gap: 1.5rem;
-         column-gap: 1.5rem;
+    column-gap: 1.5rem;
     grid-template-areas: "hernicka akce program";
   }
   .fotogalerie__link:hover {
@@ -1467,9 +1452,16 @@ blockquote {
   max-width: calc(100vw - 1rem);
   margin: 1.5rem auto 0 auto;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: var(--lightColor);
   border-top-right-radius: 15px;
@@ -1497,6 +1489,8 @@ blockquote {
 }
 .sponsors__item {
   padding: 1.5rem;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 calc(16% - 20px);
   flex: 0 0 calc(16% - 20px);
 }
 .sponsors__item ~ .sponsors__item {
@@ -1519,8 +1513,7 @@ blockquote {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, auto);
   row-gap: 1.5rem;
-  -moz-column-gap: 0.5rem;
-       column-gap: 0.5rem;
+  column-gap: 0.5rem;
   color: var(--textColor);
 }
 .contact__title {

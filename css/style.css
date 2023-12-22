@@ -583,6 +583,11 @@ body:after {
   background-size: cover;
   background-position: bottom left;
 }
+.glide__picture-vanoce {
+  background-image: url(/images/vanocni-oteviraci-doba.png);
+  background-size: cover;
+  background-position: bottom left;
+}
 .glide__picture-uzavreni {
   background-image: url(/images/CAROUSEL-UYAVRENI.svg);
   background-size: cover;
@@ -682,6 +687,17 @@ body:after {
 }
 @media screen and (min-width: 63rem) {
   .glide__event-name--nemoc {
+    font-size: 2.4rem;
+  }
+}
+.glide__event-name--vanoce {
+  font-size: 1.6rem;
+  color: black;
+  background-color: rgba(247, 247, 221, 0.8);
+  margin: auto;
+}
+@media screen and (min-width: 63rem) {
+  .glide__event-name--vanoce {
     font-size: 2.4rem;
   }
 }
@@ -819,6 +835,16 @@ body:after {
 }
 .glide__event-date--nemoc {
   font-size: 1.7rem;
+}
+.glide__event-date--vanoce {
+  font-size: 1.5rem;
+  color: black;
+  background-color: rgba(247, 247, 221, 0.8);
+}
+@media screen and (min-width: 37rem) {
+  .glide__event-date--vanoce {
+    font-size: 1.7rem;
+  }
 }
 .glide__event-date--dilnicky {
   text-align: right;

@@ -1,10 +1,10 @@
 ---
 layout: /layouts/template-akce.njk
 title: Výlet do herny Tongo V Hradci
-kdy: Pátek 20.1. od 8:00 
+kdy: Pátek 19.1. od 8:00 
 kde: sraz na nádraží nebo v Tongu
-fotomin: akce/20231124_tongo-plakatA4-min.jpg
-fotomax: akce/20231124_tongo-plakatA4.png
+fotomin: akce/20240119_tongo-plakatA4-min.jpg
+fotomax: akce/20240119_tongo-plakatA4.png
 alt: Plakát akce - Výlet do herny Tongo V Hradci
 tags: akce
 ---

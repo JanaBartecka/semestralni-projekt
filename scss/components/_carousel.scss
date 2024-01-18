@@ -142,7 +142,7 @@
     }
 
     &__picture-5 {
-        background-image: url(/images/20231207_bolehovska-vyvoj-banner.png);
+        background-image: url(/images/20240208_BOLEHOVSKA-NOHY-banner.png);
         //background-image: url(/images/20230606_felcarskaStezka.png);
         background-size: cover;
         background-position: bottom center;
@@ -270,11 +270,11 @@
         }
 
         &--5 {
-            font-size: 1.8rem;
+            font-size: 2.5rem;
 
-            @media  screen and (min-width:v.$minwidth-tablet) { 
-                font-size: 2.5rem;
-            }
+            // @media  screen and (min-width:v.$minwidth-tablet) { 
+            //     font-size: 2.5rem;
+            // }
         }
 
         &--anglictina {
@@ -371,10 +371,10 @@
         }
 
         &--5 {
-            font-size: 1.2rem;
-            @media  screen and (min-width:v.$minwidth-computer) { 
-                font-size: 2rem;
-            }
+            font-size: 2rem;
+            // @media  screen and (min-width:v.$minwidth-computer) { 
+            //     font-size: 2rem;
+            // }
         }
     }
 

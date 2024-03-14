@@ -128,21 +128,21 @@
     }
 
     &__picture-3 {
-        background-image: url(/images/tongo-plakatA4-carousel.png);
+        background-image: url(/images/20240321_setkaniSpolicisty-banner.svg);
         background-size: cover;
         background-position: top center;
         color: var(--lightColor);
     }
 
     &__picture-4 {
-        background-image: url(/images/20240202_hromnice-banner.png);
+        background-image: url(/images/felcarskaStezka.png);
         background-size: cover;
         background-position: bottom center;
         color: var(--lightColor);
     }
 
     &__picture-5 {
-        background-image: url(/images/20240208_BOLEHOVSKA-NOHY-banner.png);
+        background-image: url(/images/20240318_pohadkaVelikaRepa_banner.png);
         //background-image: url(/images/20230606_felcarskaStezka.png);
         background-size: cover;
         background-position: bottom center;
@@ -253,8 +253,8 @@
         }
 
         &--3 {
-            font-size: 1.8rem;
-            background-color: rgba(201,197,186,0.5);
+            font-size: 2rem;
+            // background-color: rgba(201,197,186,0.5);
             padding: 1rem;
             margin-left: auto;
             margin-right: auto;
@@ -270,11 +270,11 @@
         }
 
         &--5 {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
 
-            // @media  screen and (min-width:v.$minwidth-tablet) { 
-            //     font-size: 2.5rem;
-            // }
+            @media  screen and (min-width:v.$minwidth-tablet) { 
+                font-size: 2.5rem;
+            }
         }
 
         &--anglictina {
@@ -358,9 +358,9 @@
 
 
         &--3 {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             max-width: max-content;
-            background-color: rgba(201,197,186,0.5);
+            // background-color: rgba(201,197,186,0.5);
             text-align: center;
             margin-left: auto;
             margin-right: auto;
@@ -371,10 +371,10 @@
         }
 
         &--5 {
-            font-size: 2rem;
-            // @media  screen and (min-width:v.$minwidth-computer) { 
-            //     font-size: 2rem;
-            // }
+            font-size: 1.8rem;
+            @media  screen and (min-width:v.$minwidth-computer) { 
+                font-size: 2rem;
+            }
         }
     }
 

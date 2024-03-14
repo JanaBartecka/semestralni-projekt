@@ -1,7 +1,7 @@
 ---
 layout: /layouts/template-akce.njk
 title: Stezka Na Felčarské cestě 
-kdy: Úterý 18.3. od 15:30
+kdy: Úterý 19.3. od 15:30
 kde: sraz u spodní brány hřbitova (v Krkonošské ulici)
 fotomin: akce/20240318_felcarskaStezka-plakat-min.jpg
 fotomax: akce/20240318_felcarskaStezka-plakat.png

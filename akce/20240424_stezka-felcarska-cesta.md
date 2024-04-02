@@ -1,7 +1,7 @@
 ---
 layout: /layouts/template-akce.njk
 title: Stezka Na Felčarské cestě 
-kdy: Úterý 24.4. od 15:30
+kdy: Středa 24.4. od 15:30
 kde: sraz u spodní brány hřbitova (v Krkonošské ulici)
 fotomin: akce/20240424_felcarskaStezka-plakat-min.jpg
 fotomax: akce/20240424_felcarskaStezka-plakat.png
